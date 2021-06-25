@@ -14,12 +14,22 @@ const Sidebar = () => {
 
   return (
     <div className={styles['sidebar']}>
-      <div className={styles['sidebar__inner']}>
-        <Logo img={logo} />
-        <Menu menu={menu} />
-        <Contacts contacts={author.contacts} />
-        <Copyright copyright={copyright} />
-      </div>
+      <nav className={styles['sidebar__inner']}>
+        <ul className={styles['sidebar__inner_list']}>
+          <li className={styles['sidebar__inner_list_item']}>
+            <Logo img={logo} />
+          </li>
+          <li className={styles['sidebar__inner_list_item']}>
+            <Menu menu={menu} />
+          </li>
+          <li className={styles['sidebar__inner_list_item']}>
+            <Contacts contacts={author.contacts} />
+          </li>
+          <li className={styles['sidebar__inner_list_item']}>
+            <Copyright copyright={copyright} />
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 };
