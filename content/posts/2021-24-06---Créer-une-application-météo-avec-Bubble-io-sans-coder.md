@@ -49,7 +49,7 @@ Revenons à présent au design de notre application.
  
 Le tableau ci-dessus est un repeating groupe : chaque ligne suit un même modèle, et adapte les informations à la ville qu’elle contient. La colonne du milieu est un lien amenant à la page de l’API contenant les informations météorologiques de la ville présente sur sa ligne.
 
-Afin de visualiser toutes les données générées et traitées par notre application, il suffit de se dirigier vers la rubrique data, qui constitue en fait notre base de données. Deux parties m'ont particulièrement été utiles :
+Afin de visualiser toutes les données générées et traitées par notre application, il suffit de se diriger vers la rubrique data, qui constitue en fait notre base de données. Deux parties m'ont particulièrement été utiles :
 
 - Les data types ou les différentes tables existantes avec leurs attributs accompagnés de leur nature (text, yes/no...)
 
