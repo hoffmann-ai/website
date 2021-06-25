@@ -34,11 +34,11 @@ Le site originel, qui avait été créé par le client avec un autre thème de W
 
 - **Création de la page du site**
 
-![logo Moka Tunes](/home/manon/Documents/website/static/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/logo.png)
+![logo Moka Tunes](/website/static/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/logo.png)
 
 Pour créer une page, 3 choix s'offrent à nous avec Divi.
 
-![3 choix](/home/manon/Documents/website/static/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/choix.png)
+![3 choix](website/static/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/choix.png)
 
   1. Le premier choix, aussi appelé "from scratch", permet de partir d'une page vierge et de créer son propre design, tout en implémentant les élements souhaités. Cela permet de laisser libre cours à son imagination, d'explorer sa créativité, mais représente également une bonne méthode de prise en main de Divi lorsque l'on débute.
 
@@ -48,7 +48,7 @@ Pour créer une page, 3 choix s'offrent à nous avec Divi.
 
 Pour la création de la page du site Moka Tunes, j'ai donc opté pour un layout préconçu nommé "Design Agency Landing Page", que j'ai, par la suite, modifié afin de qu'il corresponde aux attentes pour le site Moka Tunes.
 
-![Design Agency](/home/manon/Documents/website/static/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/designagency.png)
+![Design Agency](./website/static/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/designagency.png)
 
 Afin de modifier ce layout et d'y ajouter les éléments essentiels au site Moka Tunes, je me suis servie du site déjà existant afin de repérer les parties à implémenter pour ensuite les organiser de façon élégante sur la nouvelle page.
 L'avantage de choisir un layout dans ce cas a été pour moi d'avoir un modèle de page élégant, avec des couleurs et des polices d'écriture spécifiques. J'ai ensuite pu modifier à ma guise l'intégralité de la page afin de la personnaliser pour le site Moka Tunes.
