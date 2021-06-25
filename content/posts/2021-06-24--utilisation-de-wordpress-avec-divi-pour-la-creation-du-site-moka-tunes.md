@@ -51,11 +51,11 @@ Pour créer une page, 3 choix s'offrent à nous avec Divi.
 
 ![3 choix](choix.png)
 
-    - Le premier choix, aussi appelé "from scratch", permet de partir d'une page vierge et de créer son propre design, tout en implémentant les élements souhaités. Cela permet de laisser libre cours à son imagination, d'explorer sa créativité, mais représente également une bonne méthode de prise en main de Divi lorsque l'on débute.
+  - Le premier choix, aussi appelé "from scratch", permet de partir d'une page vierge et de créer son propre design, tout en implémentant les élements souhaités. Cela permet de laisser libre cours à son imagination, d'explorer sa créativité, mais représente également une bonne méthode de prise en main de Divi lorsque l'on débute.
 
-    - Le deuxième choix est une excellente alternative au premier lorsque l'on recherche un design préconçu. En effet, "choisir sa mise en page" permet d'accéder à un large choix de layouts déjà conçus sur lesquels on peut apporter toutes les modifications souhaitées afin de personnaliser sa page et de rajouter, supprimer ou modifier les éléments de son choix.
+  - Le deuxième choix est une excellente alternative au premier lorsque l'on recherche un design préconçu. En effet, "choisir sa mise en page" permet d'accéder à un large choix de layouts déjà conçus sur lesquels on peut apporter toutes les modifications souhaitées afin de personnaliser sa page et de rajouter, supprimer ou modifier les éléments de son choix.
 
-    - Le troisième choix consiste à cloner une page déjà existante, ce qui s'avère particulièrement utile lorsque l'on ne recherche que des modificatios mineures, telles que des changements de textes, d'images, etc d'une page à l'autre mais que l'on souhaite conserver le design déjà établi.
+  - Le troisième choix consiste à cloner une page déjà existante, ce qui s'avère particulièrement utile lorsque l'on ne recherche que des modificatios mineures, telles que des changements de textes, d'images, etc d'une page à l'autre mais que l'on souhaite conserver le design déjà établi.
 
 Pour la création de la page du site Moka Tunes, j'ai donc opté pour un layout préconçu nommé "Design Agency Landing Page", que j'ai, par la suite, modifié afin de qu'il corresponde aux attentes pour le site Moka Tunes.
 
