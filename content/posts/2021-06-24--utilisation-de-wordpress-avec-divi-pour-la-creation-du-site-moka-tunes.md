@@ -17,54 +17,39 @@ socialImage: "/media/2021-06-24--utilisation-de-wordpress-avec-divi-pour-la-crea
 ## CAS CONCRET :  Moka Tunes
  
 
-&nbsp;
 
-
-**Qu'est-ce que WordPress ?**
-&nbsp;
+### QU'EST-CE QUE WORDPRESS ?
 
 Il s'agit d'un système de gestion de contenu (SGC) qui permet la création rapide de sites web, de blogs, de boutiques en ligne et bien d'autres types de sites. En plus d'être gratuit, WordPress est facile et rapide à installer, et permet une prise en main accessible à tous, de par l'ergonomie de son interface permettant une grande intuitivité. De plus, WordPress s'adresse à tous grâce à une interface ne nécessitant pas forcément de connaissances approfondies en programmation, tout en permettant aux plus avancés d'utiliser du code pour implémenter davantage leur site.
 &nbsp;
 
 WordPress permet également l'installation de divers thèmes, utiles à la personnalisation des pages du site, ce qui permet de multiplier ses possibilités d'utilisation.
 
-&nbsp;
 
-**Qu'est-ce que Divi ?**
-&nbsp;
+### QU'EST-CE QUE DIVI ?
 
 Il s'agit d'un des thèmes les plus connus de WordPress, mais aussi d'un plugin, permettant à tout utilisateur, même les moins expérimentés en programmation de créer des sites web. En effet, Divi propose un éventail de possibilités en terme de création de contenu, tout en offrant un éditeur visuel, idéal pour la création et la modification de pages web sans avoir nécessairement recours au code informatique. Grâce à son concept de base, "WYSIWYG", c'est-à-dire "What You See Is What You Get", Divi permet une grande interactivité entre l'utilisateur et son site.
 
-&nbsp;
 
 **CREATION DE MOKA TUNES AVEC DIVI**
-&nbsp;
 
 Moka Tunes est un site de web radio.
-&nbsp;
+
 
 **Problématique :**
-&nbsp;
+
 Le site originel, qui avait été créé par le client avec un autre thème de WordPress appelé Elementor, contenait plusieurs pages contenant chacune des éléments précis. Or, étant une web radio, le créateur de Moka Tunes recharchait un site où toutes les informations seraient bien organisées mais, avant tout, disponibles sur la même page afin de pouvoir écouter le son de la radio en continu, tout en naviguant comme à son bon vouloir sur le site, sans risquer d'interrompre le son à chaque changement.
 
-&nbsp;
 
 **Les principaux élements qu'il a fallu implémenter**
 
-&nbsp;
-
 - **Création de la page du site**
 
-&nbsp;
 ![logo Moka Tunes](logo.png)
 
-&nbsp;
-
 Pour créer une page, 3 choix s'offrent à nous avec Divi.
-&nbsp;
 
 ![3 choix](choix.png)
-&nbsp;
 
     - Le premier choix, aussi appelé "from scratch", permet de partir d'une page vierge et de créer son propre design, tout en implémentant les élements souhaités. Cela permet de laisser libre cours à son imagination, d'explorer sa créativité, mais représente également une bonne méthode de prise en main de Divi lorsque l'on débute.
 
@@ -73,14 +58,11 @@ Pour créer une page, 3 choix s'offrent à nous avec Divi.
     - Le troisième choix consiste à cloner une page déjà existante, ce qui s'avère particulièrement utile lorsque l'on ne recherche que des modificatios mineures, telles que des changements de textes, d'images, etc d'une page à l'autre mais que l'on souhaite conserver le design déjà établi.
 
 Pour la création de la page du site Moka Tunes, j'ai donc opté pour un layout préconçu nommé "Design Agency Landing Page", que j'ai, par la suite, modifié afin de qu'il corresponde aux attentes pour le site Moka Tunes.
-&nbsp;
 
 ![Design Agency](designagency.png)
 
 Afin de modifier ce layout et d'y ajouter les éléments essentiels au site Moka Tunes, je me suis servie du site déjà existant afin de repérer les parties à implémenter pour ensuite les organiser de façon élégante sur la nouvelle page.
 L'avantage de choisir un layout dans ce cas a été pour moi d'avoir un modèle de page élégant, avec des couleurs et des polices d'écriture spécifiques. J'ai ensuite pu modifier à ma guise l'intégralité de la page afin de la personnaliser pour le site Moka Tunes.
-
-&nbsp;
 
 - **Un menu**
 
@@ -98,7 +80,6 @@ La deuxième et dernière étape consiste à se rendre sur l'élément sur leque
 
 Ainsi, au lieu de changer de page en cliquant sur un élément du menu, on reste sur la même page mais chaque élément renvoie à la partie correspondante de la page.
 
-&nbsp;
 
 - **Liens externes**
 
@@ -120,8 +101,7 @@ Le radio player, permettant d'écouter les sons diffusés sur Moka Tunes et de v
 
 Divi propose également de nombreuses possibilités afin de rendre le site que l'on crée le plus interactif et intuitif possible. Par exemple, j'ai rajouté une flèche à droite de la barre du radio player afin de pouvoir revenir au menu du début de page facilement et rapidement, par un simple clic sur la flèche. De plus, j'ai rendu cette barre "sticky to Bottom", c'est-à-dire qu'elle reste toujours présente sur le bas de la page, même en la faisant défiler.
 
-&nbsp;
-
-&nbsp;
-
+  
+  
+  
 Pour conclure, j'ai apprécié travailler sur WordPress avec Divi pour la création de ce site, notamment grâce à la multitude de choix que propose Divi en terme de design et de personnalisation. De plus, la caractère intuitif de Divi le rend facile d'utilisation et permet de créer la page que l'on souhaite, sans être contraint par des connaissances précises dans un certain langage de programmation. Mais, appréciant programmer, j'ai aimé avoir la possibilité d'explorer le CSS, langage que je n'avais jamais utilisé auparavant.
