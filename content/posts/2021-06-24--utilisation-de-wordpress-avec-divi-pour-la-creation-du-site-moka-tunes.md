@@ -23,13 +23,13 @@ socialImage: "/media/2021-06-24--utilisation-de-wordpress-avec-divi-pour-la-crea
 Il s'agit d'un système de gestion de contenu (SGC) qui permet la création rapide de sites web, de blogs, de boutiques en ligne et bien d'autres types de sites. En plus d'être gratuit, WordPress est facile et rapide à installer, et permet une prise en main accessible à tous, de par l'ergonomie de son interface permettant une grande intuitivité. De plus, WordPress s'adresse à tous grâce à une interface ne nécessitant pas forcément de connaissances approfondies en programmation, tout en permettant aux plus avancés d'utiliser du code pour implémenter davantage leur site.
 &nbsp;
 
-WordPress permet également l'installation de divers thèmes, utiles à la personnalisation des pages du site, ce qui permet de multiplier ses possibilités d'utilisation.
-
+WordPress permet également l'installation de divers thèmes, utiles à la personnalisation des pages du site, ce qui permet de multiplier ses possibilités d'utilisation.  
+  
 
 ### QU'EST-CE QUE DIVI ?
 
-Il s'agit d'un des thèmes les plus connus de WordPress, mais aussi d'un plugin, permettant à tout utilisateur, même les moins expérimentés en programmation de créer des sites web. En effet, Divi propose un éventail de possibilités en terme de création de contenu, tout en offrant un éditeur visuel, idéal pour la création et la modification de pages web sans avoir nécessairement recours au code informatique. Grâce à son concept de base, "WYSIWYG", c'est-à-dire "What You See Is What You Get", Divi permet une grande interactivité entre l'utilisateur et son site.
-
+Il s'agit d'un des thèmes les plus connus de WordPress, mais aussi d'un plugin, permettant à tout utilisateur, même les moins expérimentés en programmation de créer des sites web. En effet, Divi propose un éventail de possibilités en terme de création de contenu, tout en offrant un éditeur visuel, idéal pour la création et la modification de pages web sans avoir nécessairement recours au code informatique. Grâce à son concept de base, "WYSIWYG", c'est-à-dire "What You See Is What You Get", Divi permet une grande interactivité entre l'utilisateur et son site.  
+  
 
 ### CREATION DE MOKA TUNES AVEC DIVI
 
@@ -38,8 +38,8 @@ Moka Tunes est un site de web radio.
 
 **Problématique :**
 
-Le site originel, qui avait été créé par le client avec un autre thème de WordPress appelé Elementor, contenait plusieurs pages contenant chacune des éléments précis. Or, étant une web radio, le créateur de Moka Tunes recharchait un site où toutes les informations seraient bien organisées mais, avant tout, disponibles sur la même page afin de pouvoir écouter le son de la radio en continu, tout en naviguant comme à son bon vouloir sur le site, sans risquer d'interrompre le son à chaque changement.
-
+Le site originel, qui avait été créé par le client avec un autre thème de WordPress appelé Elementor, contenait plusieurs pages contenant chacune des éléments précis. Or, étant une web radio, le créateur de Moka Tunes recharchait un site où toutes les informations seraient bien organisées mais, avant tout, disponibles sur la même page afin de pouvoir écouter le son de la radio en continu, tout en naviguant comme à son bon vouloir sur le site, sans risquer d'interrompre le son à chaque changement.  
+  
 
 **Les principaux élements qu'il a fallu implémenter**
 
@@ -78,8 +78,7 @@ La deuxième et dernière étape consiste à se rendre sur l'élément sur leque
 
 ![Moka, t'es qui ? (menu)](mokatquimenu.png)
 
-Ainsi, au lieu de changer de page en cliquant sur un élément du menu, on reste sur la même page mais chaque élément renvoie à la partie correspondante de la page.
-
+Ainsi, au lieu de changer de page en cliquant sur un élément du menu, on reste sur la même page mais chaque élément renvoie à la partie correspondante de la page.  
 
 - **Liens externes**
 
@@ -91,17 +90,15 @@ Pour associer un élément, tel qu'une image, à un lien, il suffit de se rendre
 
 ![Liens externes](lienbouton.png)
 
-&nbsp;
-
 - **Radio player**
 
 Le radio player, permettant d'écouter les sons diffusés sur Moka Tunes et de voir les 5 derniers sons écoutés, représente la partie la plus avancée du site en terme de code dans la mesure où il a fallu utiliser le CSS afin d'obtenir la barre ci-dessous :
 
 ![Radio Player](radioplayer.png)
 
-Divi propose également de nombreuses possibilités afin de rendre le site que l'on crée le plus interactif et intuitif possible. Par exemple, j'ai rajouté une flèche à droite de la barre du radio player afin de pouvoir revenir au menu du début de page facilement et rapidement, par un simple clic sur la flèche. De plus, j'ai rendu cette barre "sticky to Bottom", c'est-à-dire qu'elle reste toujours présente sur le bas de la page, même en la faisant défiler.
-
-
-
-  
+Divi propose également de nombreuses possibilités afin de rendre le site que l'on crée le plus interactif et intuitif possible. Par exemple, j'ai rajouté une flèche à droite de la barre du radio player afin de pouvoir revenir au menu du début de page facilement et rapidement, par un simple clic sur la flèche. De plus, j'ai rendu cette barre "sticky to Bottom", c'est-à-dire qu'elle reste toujours présente sur le bas de la page, même en la faisant défiler.  
+    
+      
+        
+        
 Pour conclure, j'ai apprécié travailler sur WordPress avec Divi pour la création de ce site, notamment grâce à la multitude de choix que propose Divi en terme de design et de personnalisation. De plus, la caractère intuitif de Divi le rend facile d'utilisation et permet de créer la page que l'on souhaite, sans être contraint par des connaissances précises dans un certain langage de programmation. Mais, appréciant programmer, j'ai aimé avoir la possibilité d'explorer le CSS, langage que je n'avais jamais utilisé auparavant.
