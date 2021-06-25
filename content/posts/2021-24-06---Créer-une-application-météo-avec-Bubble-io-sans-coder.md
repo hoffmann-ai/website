@@ -1,15 +1,15 @@
 ---
-title: Utilisation de Bubble.io
+title: Créer une application météo avec Bubble.io sans coder
 date: "2021-24-06T23:46:37.121Z"
 template: "post"
 draft: false
-slug: "Créer une application météo avec Bubble.io sans coder"
+slug: "2021-24-06---Créer-une-application-météo-avec-Bubble-io-sans-coder"
 category: "No-code tools"
 tags:
   - "Creating an application"
   - "Learning to use Bubble"
 description: "Application météo avec une API et Bubble.io"
-socialImage: "/media/2021-24-06---Créer-une-application-météo-avec-Bubble.io-sans-coder/FinalApp.png"
+socialImage: "/media/2021-24-06---Créer-une-application-météo-avec-Bubble-io-sans-coder/FinalApp.png"
 ---
 
 Cela fait maintenant 3 jours que j’utilise l’application Bubble. Dans un premier temps j’ai suivi différents tutoriels proposés par la plateforme qui m’ont appris quelques fonctionnalités. Mon objectif était de créer une application météo : d’abord pour Paris, puis pour n’importe quelle ville du monde. L’objectif a été atteint pour afficher la météo à Paris, mais pas encore totalement pour toutes les villes. 
