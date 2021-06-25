@@ -5,7 +5,7 @@ import Sidebar from '../components/Sidebar';
 import Page from '../components/Page';
 
 const HomeTemplate = () => (
-  <Layout>
+  <Layout title="home page">
     <Sidebar isIndex />
     <Page title="Home page">
       <p>
