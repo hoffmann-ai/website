@@ -207,6 +207,42 @@ exports[`TagTemplate renders correctly 1`] = `
       >
         Test copyright
       </div>
+      <div
+        className="newsletter__module"
+      >
+        <div
+          className="newsletter__module__inner"
+        >
+          <h4>
+            Abonnez-vous à notre newsletter !
+          </h4>
+          <div
+            className="newsletter__module__form"
+          >
+            <form
+              className="newsletter__module__form__subscribe"
+              onSubmit={[Function]}
+            >
+              <input
+                className="newsletter__module__form__subscribe__input"
+                id="email"
+                name="email"
+                onChange={1}
+                placeholder="votre email..."
+                required={true}
+                type="email"
+              />
+              <button
+                className="newsletter__module__form__subscribe__submit"
+                type="submit"
+              >
+                S'abonner
+              </button>
+              <h6 />
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div
