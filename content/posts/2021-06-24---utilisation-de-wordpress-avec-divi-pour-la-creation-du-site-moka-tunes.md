@@ -34,11 +34,11 @@ Le site originel, qui avait été créé par le client avec un autre thème de W
 
 - **Création de la page du site**
 
-![logo Moka Tunes](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/choix.png)
+![logo Moka Tunes](./media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/choix.png)
 
 Pour créer une page, 3 choix s'offrent à nous avec Divi.
 
-![3 choix](choix.png )
+![3 choix](choix.png)
 
   1. Le premier choix, aussi appelé "from scratch", permet de partir d'une page vierge et de créer son propre design, tout en implémentant les élements souhaités. Cela permet de laisser libre cours à son imagination, d'explorer sa créativité, mais représente également une bonne méthode de prise en main de Divi lorsque l'on débute.
 
