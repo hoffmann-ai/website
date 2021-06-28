@@ -26,11 +26,11 @@ Il s'agit d'un des thèmes les plus connus de WordPress, mais aussi d'un plugin,
 
 Moka Tunes est un site de web radio.
 
-**Problématique :**
+### Problématique :
 
 Le site originel, qui avait été créé par le client avec un autre thème de WordPress appelé Elementor, contenait plusieurs pages contenant chacune des éléments précis. Or, étant une web radio, le créateur de Moka Tunes recharchait un site où toutes les informations seraient bien organisées mais, avant tout, disponibles sur la même page afin de pouvoir écouter le son de la radio en continu, tout en naviguant comme à son bon vouloir sur le site, sans risquer d'interrompre le son à chaque changement.
 
-**Les principaux élements qu'il a fallu implémenter**
+### Les principaux élements qu'il a fallu implémenter
 
 - **Création de la page du site**
 
