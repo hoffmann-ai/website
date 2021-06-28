@@ -22,7 +22,7 @@ module.exports = {
     },
     {
       label: 'Contact',
-      path: '/contacts'
+      path: '/contact'
     }
   ],
   author: {
