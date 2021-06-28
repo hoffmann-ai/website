@@ -20,8 +20,6 @@ const Navbar = () => {
           <li className={styles['navbar__inner_list_item']}>
             <Menu menu={menu} />
           </li>
-          <li className={styles['navbar__inner_list_item']}>
-          </li>
         </ul>
       </nav>
     </div>
