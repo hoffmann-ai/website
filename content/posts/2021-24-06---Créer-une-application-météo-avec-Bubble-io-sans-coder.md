@@ -4,11 +4,11 @@ date: "2021-06-25T23:46:37.121Z"
 template: "post"
 draft: false
 slug: "creer-une-application-meteo-avec-bubble-io-sans-coder"
-category: "No-code tools"
+category: "No Code"
 tags:
-  - "Creating an application"
-  - "Learning to use Bubble"
-description: "Application météo avec une API et Bubble.io"
+  - "No Code"
+  - "Application web"
+description: "Création d'une application météo avec Bubble.io, une plateforme No Code conçue pour la création d'applications mobile et web."
 socialImage: "/media/2021-24-06---Créer-une-application-météo-avec-Bubble-io-sans-coder/FinalApp.png"
 ---
 
