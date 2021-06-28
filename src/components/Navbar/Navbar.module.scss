@@ -1,7 +1,7 @@
 @import '../../assets/scss/variables';
 @import '../../assets/scss/mixins';
 
-.sidebar {
+.navbar {
     width: 100%;
     position: -webkit-sticky;
     position: sticky;
@@ -21,7 +21,7 @@
 }
 
 @include breakpoint-sm {
-    .sidebar {
+    .navbar {
         &__inner {
             padding: 0 10px;
             &:after {
@@ -40,7 +40,7 @@
 }
 
 @include breakpoint-md {
-    .sidebar {
+    .navbar {
         &__inner {
             padding: 0;
         }
