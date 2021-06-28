@@ -34,7 +34,7 @@ Le site originel, qui avait été créé par le client avec un autre thème de W
 
 - **Création de la page du site**
 
-![logo Moka Tunes](./media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/logo.png)
+![logo Moka Tunes](/static/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/logo.png)
 
 Pour créer une page, 3 choix s'offrent à nous avec Divi.
 
