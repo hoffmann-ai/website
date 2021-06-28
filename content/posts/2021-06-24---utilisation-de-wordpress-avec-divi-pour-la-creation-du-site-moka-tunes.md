@@ -20,7 +20,7 @@ WordPress permet également l'installation de divers thèmes, utiles à la perso
 
 ## QU'EST-CE QUE DIVI ?
 
-Il s'agit d'un des thèmes les plus connus de WordPress, mais aussi d'un plugin, permettant à tout utilisateur, même les moins expérimentés en programmation de créer des sites web. En effet, Divi propose un éventail de possibilités en terme de création de contenu, tout en offrant un éditeur visuel, idéal pour la création et la modification de pages web sans avoir nécessairement recours au code informatique. Grâce à son concept de base, "WYSIWYG", c'est-à-dire "What You See Is What You Get", Divi permet une grande interactivité entre l'utilisateur et son site.
+Il s'agit d'un des thèmes les plus connus de WordPress, mais aussi d'un plugin, permettant à tous les utilisateurs, même les moins expérimentés en programmation, de créer des sites web. En effet, Divi propose un éventail de possibilités en terme de création de contenu, tout en offrant un éditeur visuel, idéal pour la création et la modification de pages web sans avoir nécessairement recours au code informatique. Grâce à son concept de base, "WYSIWYG", c'est-à-dire "What You See Is What You Get", Divi permet une grande interactivité entre l'utilisateur et son site.
 
 ## CREATION DE MOKA TUNES AVEC DIVI
 
@@ -28,13 +28,13 @@ Moka Tunes est un site de web radio.
 
 ### Problématique :
 
-Le site originel, qui avait été créé par le client avec un autre thème de WordPress appelé Elementor, contenait plusieurs pages contenant chacune des éléments précis. Or, étant une web radio, le créateur de Moka Tunes recharchait un site où toutes les informations seraient bien organisées mais, avant tout, disponibles sur la même page afin de pouvoir écouter le son de la radio en continu, tout en naviguant comme à son bon vouloir sur le site, sans risquer d'interrompre le son à chaque changement.
+Le site originel, qui avait été créé par le client avec un autre thème de WordPress appelé Elementor, contenait plusieurs pages, disposant chacune d'éléments précis. Or, étant une web radio, le créateur de Moka Tunes recharchait un site où toutes les informations pourraient être bien organisées mais, avant tout, disponibles sur la même page afin de pouvoir écouter le son de la radio en continu, tout en naviguant comme à son bon vouloir sur le site, sans risquer d'interrompre le son à chaque changement.
 
 ### Les principaux élements qu'il a fallu implémenter
 
 - **Création de la page du site**
 
-![logo Moka Tunes](logo.png)
+![logo Moka Tunes](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/logo.png)
 
 Pour créer une page, 3 choix s'offrent à nous avec Divi.
 
@@ -63,7 +63,7 @@ La première étape consiste à aller sur l'élément sur lequel on souhaiterait
 
 ![Moka, t'es qui ? (élément)](mokatquielement.png)
 
-La deuxième et dernière étape consiste à se rendre sur l'élément sur lequel on cliquera pour nous renvoyer sur une partie de la page. Dans notre exemple, cet élément est le troisième du menu. Dans les paramètres, on accède au "Contenu" puis on rentre l'URL du lien. Cet URL doit porter le même nom que celui attribué dans la première étape, par exemple, "mokatqui", mais en précédant ce nom de #.
+La deuxième et dernière étape consiste à se rendre sur l'élément sur lequel on cliquera pour nous renvoyer sur une partie de la page. Dans notre exemple, cet élément est le troisième du menu. Dans les paramètres, on accède au "Contenu" puis on rentre l'URL du lien. Cet URL doit porter le même nom que celui attribué à la première étape, par exemple, "mokatqui", mais en précédant ce nom de #.
 
 ![Moka, t'es qui ? (menu)](mokatquimenu.png)
 
@@ -71,11 +71,11 @@ Ainsi, au lieu de changer de page en cliquant sur un élément du menu, on reste
 
 - **Liens externes**
 
-Les liens externes sont souvent nécessaires à de nombreux sites. Ils permettent, en cliquant sur un élément de notre choix, d'être envoyé sur une page externe au site WordPress. Dans le cas de Moka Tunes, j'ai opté pour un clic gauche sur certains mots ou groupes de mots, par exemple, "Facebook" et "Instagram" sur l'image ci-dessous, afin de renvoyer l'utilisateur sur une page externe au site. Pour se faire, il suffit de sélectionner le texte que l'on souhaite puis de cliquer sur l'icône "Insérer un lien" qui s'affiche après la séléction et de rentrer l'URL voulu dans le champs.
+Les liens externes sont souvent nécessaires à de nombreux sites. Ils permettent, en cliquant sur un élément de notre choix, d'être envoyé sur une page externe au site WordPress. Dans le cas de Moka Tunes, j'ai opté pour un clic gauche sur certains mots ou groupes de mots, par exemple, "Facebook" et "Instagram" sur l'image ci-dessous, afin de renvoyer l'utilisateur sur une page externe au site. Pour se faire, il suffit de sélectionner le texte que l'on souhaite puis de cliquer sur l'icône "Insérer un lien" qui s'affiche après la séléction et de rentrer l'URL voulu dans le champ.
 
 ![Liens externes](lienextfi.png)
 
-Pour associer un élément, tel qu'une image, à un lien, il suffit de se rendre dans les paramètres de cet élément, puis dans "Contenu", et entrer l'URL du lien de la page externe dans le champs URL de l'élément (ici, dans le champs "URL du lien de l'image".
+Pour associer un élément, tel qu'une image, à un lien, il suffit de se rendre dans les paramètres de cet élément, puis dans "Contenu", et entrer l'URL du lien de la page externe dans le champs URL de l'élément (ici, dans le champ "URL du lien de l'image".
 
 ![Liens externes](lienbouton.png)
 
@@ -85,6 +85,6 @@ Le radio player, permettant d'écouter les sons diffusés sur Moka Tunes et de v
 
 ![Radio Player](radioplayer.png)
 
-Divi propose également de nombreuses possibilités afin de rendre le site que l'on crée le plus interactif et intuitif possible. Par exemple, j'ai rajouté une flèche à droite de la barre du radio player afin de pouvoir revenir au menu du début de page facilement et rapidement, par un simple clic sur la flèche. De plus, j'ai rendu cette barre "sticky to Bottom", c'est-à-dire qu'elle reste toujours présente sur le bas de la page, même en la faisant défiler.
+Divi propose également de nombreuses possibilités afin de rendre le site que l'on crée le plus interactif et intuitif possible. Par exemple, j'ai rajouté une flèche à droite de la barre du radio player afin de pouvoir revenir au menu du début de page facilement et rapidement, par un simple clic sur la flèche. De plus, j'ai rendu cette barre "sticky to Bottom", c'est-à-dire qu'elle reste toujours présente sur le bas de la page, même en faisant défiler cette dernière.
         
-Pour conclure, j'ai apprécié travailler sur WordPress avec Divi pour la création de ce site, notamment grâce à la multitude de choix que propose Divi en terme de design et de personnalisation. De plus, la caractère intuitif de Divi le rend facile d'utilisation et permet de créer la page que l'on souhaite, sans être contraint par des connaissances précises dans un certain langage de programmation. Mais, appréciant programmer, j'ai aimé avoir la possibilité d'explorer le CSS, langage que je n'avais jamais utilisé auparavant.
+Pour conclure, j'ai apprécié travailler sur WordPress avec Divi pour la création de ce site, notamment grâce aux nombreux choix que propose Divi en terme de design et de personnalisation. De plus, la caractère intuitif de Divi le rend facile d'utilisation et permet de créer la page que l'on souhaite, sans être contraint par des connaissances précises dans un certain langage de programmation. Mais, appréciant programmer, j'ai aimé avoir la possibilité d'explorer le CSS, langage que je n'avais encore jamais utilisé auparavant.
