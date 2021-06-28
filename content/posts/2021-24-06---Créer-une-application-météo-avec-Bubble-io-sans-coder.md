@@ -16,7 +16,7 @@ Cela fait maintenant 3 jours que j’utilise l’application Bubble. Dans un pre
 
 Voici le premier rendu, simple et fonctionnel, affichant la météo actuelle à Paris :
 
-![Weather app Paris](media/2021-24-06---Créer-une-application-météo-avec-Bubble-io-sans-coderweather/AppParis.PNG)
+![Weather app Paris](static/media/2021-24-06---Créer-une-application-météo-avec-Bubble-io-sans-coderweather/AppParis.PNG)
  
 Bubble a pour particularité de permettre la création d'applications mobiles et web sans coder. Bien sûr, les principales notions, et une certaine logique sont similaires à celles vues en programmation (C/Java) et peuvent aider. 
 
