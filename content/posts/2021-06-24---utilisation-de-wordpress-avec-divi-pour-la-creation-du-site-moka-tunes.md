@@ -8,7 +8,7 @@ category: "Web design"
 tags:
   - "Web design"
   - "Web Development"
-description: "WordPress est devenu un outil très utile et facile d'utilisation dans le monde du web design, notament avec les thèmes proposés, tels que Divi. C'est pourquoi j'ai utilisé ces outils afin de créear le site de web radio du nom de Moka Tunes."
+description: "WordPress est devenu un outil très utile et facile d'utilisation dans le monde du web design, notament avec les thèmes proposés, tels que Divi. C'est pourquoi j'ai utilisé ces outils afin de créer le site de web radio du nom de Moka Tunes."
 socialImage: "/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/imagepage.png"
 ---
 
@@ -48,14 +48,14 @@ Pour créer une page, 3 choix s'offrent à nous avec Divi.
 
 Pour la création de la page du site Moka Tunes, j'ai donc opté pour un layout préconçu nommé "Design Agency Landing Page", que j'ai, par la suite, modifié afin de qu'il corresponde aux attentes pour le site Moka Tunes.
 
-![Design Agency](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/designagency.png)
+![Design Agency](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/designagency.PNG)
 
 Afin de modifier ce layout et d'y ajouter les éléments essentiels au site Moka Tunes, je me suis servie du site déjà existant afin de repérer les parties à implémenter pour ensuite les organiser de façon élégante sur la nouvelle page.
 L'avantage de choisir un layout dans ce cas a été pour moi d'avoir un modèle de page élégant, avec des couleurs et des polices d'écriture spécifiques. J'ai ensuite pu modifier à ma guise l'intégralité de la page afin de la personnaliser pour le site Moka Tunes.
 
 - **Un menu**
 
-![menu](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/menu.png)
+![menu](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/menu.PNG)
 
 Sur le précédent site, en cliquant sur un élément du menu, le site envoyait la personne sur la page correspondante, la faisant ainsi quitter la page sur laquelle elle se trouvait. Or, il ne fallait qu'une seule page sur le site et donc un menu renvoyant à un endroit précis d’une même page. Pour cela, une manipulation très simple permet de créer des liens internes à une même page.
 
