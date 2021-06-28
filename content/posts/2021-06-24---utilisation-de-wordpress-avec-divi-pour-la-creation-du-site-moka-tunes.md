@@ -38,7 +38,7 @@ Le site originel, qui avait été créé par le client avec un autre thème de W
 
 Pour créer une page, 3 choix s'offrent à nous avec Divi.
 
-![3 choix](choix.png)
+![3 choix](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/choix.png)
 
   1. Le premier choix, aussi appelé "from scratch", permet de partir d'une page vierge et de créer son propre design, tout en implémentant les élements souhaités. Cela permet de laisser libre cours à son imagination, d'explorer sa créativité, mais représente également une bonne méthode de prise en main de Divi lorsque l'on débute.
 
@@ -48,24 +48,24 @@ Pour créer une page, 3 choix s'offrent à nous avec Divi.
 
 Pour la création de la page du site Moka Tunes, j'ai donc opté pour un layout préconçu nommé "Design Agency Landing Page", que j'ai, par la suite, modifié afin de qu'il corresponde aux attentes pour le site Moka Tunes.
 
-![Design Agency](designagency.png)
+![Design Agency](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/designagency.png)
 
 Afin de modifier ce layout et d'y ajouter les éléments essentiels au site Moka Tunes, je me suis servie du site déjà existant afin de repérer les parties à implémenter pour ensuite les organiser de façon élégante sur la nouvelle page.
 L'avantage de choisir un layout dans ce cas a été pour moi d'avoir un modèle de page élégant, avec des couleurs et des polices d'écriture spécifiques. J'ai ensuite pu modifier à ma guise l'intégralité de la page afin de la personnaliser pour le site Moka Tunes.
 
 - **Un menu**
 
-![menu](menu.png)
+![menu](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/menu.png)
 
 Sur le précédent site, en cliquant sur un élément du menu, le site envoyait la personne sur la page correspondante, la faisant ainsi quitter la page sur laquelle elle se trouvait. Or, il ne fallait qu'une seule page sur le site et donc un menu renvoyant à un endroit précis d’une même page. Pour cela, une manipulation très simple permet de créer des liens internes à une même page.
 
 La première étape consiste à aller sur l'élément sur lequel on souhaiterait se rendre après avoir cliqué sur un élément du menu et d'accéder à la partie "Avancé" de ses paramètres. Dans le champs ID CSS, on attribue le nom de notre choix à l'élément : par exemple, ci-dessous, "mokatqui" correspond à la partie intitulée "Moka, t'es qui ?".
 
-![Moka, t'es qui ? (élément)](mokatquielement.png)
+![Moka, t'es qui ? (élément)](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/mokatquielement.png)
 
 La deuxième et dernière étape consiste à se rendre sur l'élément sur lequel on cliquera pour nous renvoyer sur une partie de la page. Dans notre exemple, cet élément est le troisième du menu. Dans les paramètres, on accède au "Contenu" puis on rentre l'URL du lien. Cet URL doit porter le même nom que celui attribué à la première étape, par exemple, "mokatqui", mais en précédant ce nom de #.
 
-![Moka, t'es qui ? (menu)](mokatquimenu.png)
+![Moka, t'es qui ? (menu)](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/mokatquimenu.png)
 
 Ainsi, au lieu de changer de page en cliquant sur un élément du menu, on reste sur la même page mais chaque élément renvoie à la partie correspondante de la page.
 
@@ -73,17 +73,17 @@ Ainsi, au lieu de changer de page en cliquant sur un élément du menu, on reste
 
 Les liens externes sont souvent nécessaires à de nombreux sites. Ils permettent, en cliquant sur un élément de notre choix, d'être envoyé sur une page externe au site WordPress. Dans le cas de Moka Tunes, j'ai opté pour un clic gauche sur certains mots ou groupes de mots, par exemple, "Facebook" et "Instagram" sur l'image ci-dessous, afin de renvoyer l'utilisateur sur une page externe au site. Pour se faire, il suffit de sélectionner le texte que l'on souhaite puis de cliquer sur l'icône "Insérer un lien" qui s'affiche après la séléction et de rentrer l'URL voulu dans le champ.
 
-![Liens externes](lienextfi.png)
+![Liens externes](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/lienextfi.png)
 
 Pour associer un élément, tel qu'une image, à un lien, il suffit de se rendre dans les paramètres de cet élément, puis dans "Contenu", et entrer l'URL du lien de la page externe dans le champs URL de l'élément (ici, dans le champ "URL du lien de l'image".
 
-![Liens externes](lienbouton.png)
+![Liens externes](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/lienbouton.png)
 
 - **Radio player**
 
 Le radio player, permettant d'écouter les sons diffusés sur Moka Tunes et de voir les 5 derniers sons écoutés, représente la partie la plus avancée du site en terme de code dans la mesure où il a fallu utiliser le CSS afin d'obtenir la barre ci-dessous :
 
-![Radio Player](radioplayer.png)
+![Radio Player](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/radioplayer.png)
 
 Divi propose également de nombreuses possibilités afin de rendre le site que l'on crée le plus interactif et intuitif possible. Par exemple, j'ai rajouté une flèche à droite de la barre du radio player afin de pouvoir revenir au menu du début de page facilement et rapidement, par un simple clic sur la flèche. De plus, j'ai rendu cette barre "sticky to Bottom", c'est-à-dire qu'elle reste toujours présente sur le bas de la page, même en faisant défiler cette dernière.
         
