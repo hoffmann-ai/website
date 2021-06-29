@@ -17,6 +17,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://hoffmann.us6.list-manage.com/subscribe/post?u=f880b9abf25929e3db4656a9d&amp;id=364fa011c9',
+        timeout: 3500,
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/static`,
