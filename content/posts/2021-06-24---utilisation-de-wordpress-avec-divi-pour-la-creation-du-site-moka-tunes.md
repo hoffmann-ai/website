@@ -61,11 +61,11 @@ Sur le précédent site, en cliquant sur un élément du menu, le site envoyait 
 
 La première étape consiste à aller sur l'élément sur lequel on souhaiterait se rendre après avoir cliqué sur un élément du menu et d'accéder à la partie "Avancé" de ses paramètres. Dans le champs ID CSS, on attribue le nom de notre choix à l'élément : par exemple, ci-dessous, "mokatqui" correspond à la partie intitulée "Moka, t'es qui ?".
 
-![Moka, t'es qui ? (élément)](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/mokatquielement.png)
+![Moka, t'es qui ? (élément)](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/mokatquielement.PNG)
 
 La deuxième et dernière étape consiste à se rendre sur l'élément sur lequel on cliquera pour nous renvoyer sur une partie de la page. Dans notre exemple, cet élément est le troisième du menu. Dans les paramètres, on accède au "Contenu" puis on rentre l'URL du lien. Cet URL doit porter le même nom que celui attribué à la première étape, par exemple, "mokatqui", mais en précédant ce nom de #.
 
-![Moka, t'es qui ? (menu)](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/mokatquimenu.png)
+![Moka, t'es qui ? (menu)](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/mokatquimenu.PNG)
 
 Ainsi, au lieu de changer de page en cliquant sur un élément du menu, on reste sur la même page mais chaque élément renvoie à la partie correspondante de la page.
 
@@ -73,17 +73,17 @@ Ainsi, au lieu de changer de page en cliquant sur un élément du menu, on reste
 
 Les liens externes sont souvent nécessaires à de nombreux sites. Ils permettent, en cliquant sur un élément de notre choix, d'être envoyé sur une page externe au site WordPress. Dans le cas de Moka Tunes, j'ai opté pour un clic gauche sur certains mots ou groupes de mots, par exemple, "Facebook" et "Instagram" sur l'image ci-dessous, afin de renvoyer l'utilisateur sur une page externe au site. Pour se faire, il suffit de sélectionner le texte que l'on souhaite puis de cliquer sur l'icône "Insérer un lien" qui s'affiche après la séléction et de rentrer l'URL voulu dans le champ.
 
-![Liens externes](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/lienextfi.png)
+![Liens externes](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/lienextfi.PNG)
 
 Pour associer un élément, tel qu'une image, à un lien, il suffit de se rendre dans les paramètres de cet élément, puis dans "Contenu", et entrer l'URL du lien de la page externe dans le champs URL de l'élément (ici, dans le champ "URL du lien de l'image".
 
-![Liens externes](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/lienbouton.png)
+![Liens externes](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/lienbouton.PNG)
 
 - **Radio player**
 
 Le radio player, permettant d'écouter les sons diffusés sur Moka Tunes et de voir les 5 derniers sons écoutés, représente la partie la plus avancée du site en terme de code dans la mesure où il a fallu utiliser le CSS afin d'obtenir la barre ci-dessous :
 
-![Radio Player](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/radioplayer.png)
+![Radio Player](/media/2021-06-24---utilisation-de-wordpress-avec-divi-pour-la-creation-du-site-moka-tunes/radioplayer.PNG)
 
 Divi propose également de nombreuses possibilités afin de rendre le site que l'on crée le plus interactif et intuitif possible. Par exemple, j'ai rajouté une flèche à droite de la barre du radio player afin de pouvoir revenir au menu du début de page facilement et rapidement, par un simple clic sur la flèche. De plus, j'ai rendu cette barre "sticky to Bottom", c'est-à-dire qu'elle reste toujours présente sur le bas de la page, même en faisant défiler cette dernière.
         
