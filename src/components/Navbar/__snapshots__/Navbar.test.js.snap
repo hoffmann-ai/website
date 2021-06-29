@@ -22,8 +22,8 @@ exports[`Navbar renders correctly 1`] = `
             <img
               alt="logo"
               className="logo__photo"
-              height="75"
-              width="75"
+              height="70"
+              width="70"
             />
           </a>
         </div>
@@ -70,9 +70,6 @@ exports[`Navbar renders correctly 1`] = `
           </ul>
         </nav>
       </li>
-      <li
-        className="navbar__inner_list_item"
-      />
     </ul>
   </nav>
 </div>
