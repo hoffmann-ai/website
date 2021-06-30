@@ -67,7 +67,7 @@ plugins: [
 ];
 ```
 
-Vous devez ensuite entrez votre "endpoint". Le "endpoint" est un URL que vous pouvez retrouver sur votre admin Mailchimp, dans le code que nous trouvé dans <a href="#sur-wordpress">cette section</a>. Le lien recherché se trouve dans le "action" de la balise "form" :
+Vous devez ensuite entrer votre "endpoint". Le "endpoint" est un URL que vous pouvez retrouver sur votre admin Mailchimp, dans le code que nous trouvé dans <a href="#sur-wordpress">cette section</a>. Le lien recherché se trouve dans le "action" de la balise "form" :
 
 ![dashboard Mailchimp](/media/2021-30-06---Ajouter-une-newsletter-facilement-avec-Mailchimp/lien.png)
 
