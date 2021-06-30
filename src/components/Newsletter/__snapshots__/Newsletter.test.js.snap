@@ -7,9 +7,15 @@ exports[`Newsletter renders correctly 1`] = `
   <div
     className="newsletter__module__inner"
   >
+<<<<<<< HEAD
     <h4>
       Abonnez-vous à notre newsletter !
     </h4>
+=======
+    <h5>
+      Abonnez-vous à notre newsletter !
+    </h5>
+>>>>>>> fa05346 (feat article on mailchimp usage)
     <div
       className="newsletter__module__form"
     >
