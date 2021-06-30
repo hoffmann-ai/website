@@ -5,6 +5,7 @@ import type { Node as ReactNode } from 'react';
 import Navbar from '../Navbar/Navbar';
 import { useSiteMetadata } from '../../hooks';
 import styles from './Layout.module.scss';
+import Navbar from '../Navbar/Navbar';
 
 type Props = {
   children: ReactNode,

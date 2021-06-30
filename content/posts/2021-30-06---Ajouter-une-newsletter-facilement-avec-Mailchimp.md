@@ -44,7 +44,7 @@ Une autre possibilité implémentable très facilement, est d'utiliser directeme
 Si vous travaillez sur un site statique avec Gatsby, l'étape reste relativement simple. Il nous faut d'abord installer le plugin Mailchimp.
 Rendez-vous sur le terminal de la racine de votre projet, et tapez l'une des lignes suivantes (yarn ou npm en fonction du manager de paquets que vous utilisez) :
 
-```js
+```bash
 # npm
 $ npm install gatsby-plugin-mailchimp
 
