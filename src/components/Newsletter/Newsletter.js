@@ -16,13 +16,12 @@ const Newsletter = () => {
     e.preventDefault();
     validate();
     addToMailchimp(email)
-      .then((data) => {
-        console.log(data);
+      .then(() => {
+        setEmail('');
       })
       .catch(() => {
-        console.log('failed adding email to newsletter.');
+        setEmail('Une erreur est survenue.');
       });
-    setEmail('');
   };
 
   return (
