@@ -75,7 +75,7 @@ Après avoir renseigné l'url, le tour est joué ! Il ne reste plus qu'à créer
 
 #### Étape 1 : Créer le formulaire
 
-Nous allons dans un premier temps créer un component ReactJS que l'on va appeler Newsletter. Dans mon dossier components, je crée un nouveau dossier Newsletter, dans lequel je vais créer un fichier Newsletter.js. Dans mon cas je priviligirai l'utilisation des Hooks React, mais vous aurez le même résultat si vous passez par les classes React.
+Nous allons dans un premier temps créer un component ReactJS que l'on va appeler Newsletter. Dans mon dossier components, je crée un nouveau dossier Newsletter, dans lequel je vais créer un fichier Newsletter.js. Dans mon cas je priviligierai l'utilisation des Hooks React, mais vous aurez le même résultat si vous passez par les classes React.
 D'abord, on importe React et ce dont on aura besoin :
 
 ```js
