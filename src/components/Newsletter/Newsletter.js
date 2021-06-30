@@ -20,7 +20,7 @@ const Newsletter = () => {
         setEmail('');
       })
       .catch(() => {
-        setEmail('Une erreur est survenue.');
+        setValidationMessage('Une erreur est survenue.');
       });
   };
 
