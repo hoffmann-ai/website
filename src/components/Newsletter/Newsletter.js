@@ -8,16 +8,16 @@ const Newsletter = () => {
   const [email, setEmail] = useState('');
   const validate = () => {
     setValidationMessage('Merci pour votre abonnement.');
+    setEmail('');
   };
   const changeEmailHandler = (event) => {
     setEmail(event.target.value);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    validate();
     addToMailchimp(email)
       .then(() => {
-        setEmail('');
+        validate();
       })
       .catch(() => {
         setValidationMessage('Une erreur est survenue.');
