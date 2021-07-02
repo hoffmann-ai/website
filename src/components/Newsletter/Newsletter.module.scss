@@ -6,6 +6,8 @@
   --text-color-dark: #4a4a4a;
 }
 .newsletter__module {
+  max-width: 100%;
+  width: 100%;
   color: #222;
   line-height: 1.625;
   font-size: 1rem;
@@ -16,12 +18,16 @@
   justify-content: center;
   align-items: center;
 }
+.newsletter__module__inner{
+  max-width: 100%;
+}
 .newsletter__module__form__subscribe {
+  max-width: 100%;
   background-color: transparent;
   width: 100%;
   display: grid;
   margin: auto;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 60% 50%;
 }
 .newsletter__module__form__subscribe__input {
   font-size: 1rem;
