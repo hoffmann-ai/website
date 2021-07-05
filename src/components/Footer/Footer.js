@@ -1,6 +1,9 @@
 import React from 'react';
+import { Link } from 'gatsby';
+import { getIcon } from '../../utils';
 import styles from './Footer.module.scss';
 import Newsletter from '../Newsletter/Newsletter';
+import Icon from '../Icon';
 
 const Footer = () => (
   <div className={styles['footer']}>
@@ -10,7 +13,7 @@ const Footer = () => (
           <img
             className={styles['footer__hoffmann__title__image']}
             src='/logo.png'
-          ></img>{' '}
+          ></img>
           HOFFMANN.AI
         </h6>
         <ul className={styles['footer__list']}>
@@ -25,19 +28,19 @@ const Footer = () => (
         <h6 className={styles['footer__liens__title']}>Liens</h6>
         <ul className={styles['footer__list']}>
           <li className={styles['footer__list__other__row']}>
-            <a className={styles['footer__list__link']} href='#'>
+            <Link to='/#' className={styles['footer__list__link']}>
               À propos
-            </a>
+            </Link>
           </li>
           <li className={styles['footer__list__other__row']}>
-            <a className={styles['footer__list__link']} href='#'>
+            <Link to='/#' className={styles['footer__list__link']}>
               Blog
-            </a>
+            </Link>
           </li>
           <li className={styles['footer__list__other__row']}>
-            <a className={styles['footer__list__link']} href='#'>
+            <Link to='/#' className={styles['footer__list__link']}>
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -45,19 +48,19 @@ const Footer = () => (
         <h6 className={styles['footer__legal__title']}>Légal</h6>
         <ul className={styles['footer__list']}>
           <li className={styles['footer__list__other__row']}>
-            <a className={styles['footer__list__link']} href='#'>
+            <Link to='/#' className={styles['footer__list__link']}>
               Politique de confidentialité
-            </a>
+            </Link>
           </li>
           <li className={styles['footer__list__other__row']}>
-            <a className={styles['footer__list__link']} href='#'>
+            <Link to='/#' className={styles['footer__list__link']}>
               Conditions d'utilisation
-            </a>
+            </Link>
           </li>
           <li className={styles['footer__list__other__row']}>
-            <a className={styles['footer__list__link']} href='#'>
+            <Link to='/#' className={styles['footer__list__link']}>
               Cookies
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -66,20 +69,28 @@ const Footer = () => (
 
         <ul className={styles['footer__list']}>
           <li className={styles['footer__list__first__row']}>
-            <a target='blank' className={styles['footer__list__link']} href='#'>
-              <img src='https://www.clipartmax.com/png/middle/35-351662_update-to-our-address-email-icon-png.png'></img>
+            <Link to='/#' className={styles['footer__list__link']}>
+              <Icon
+                className={styles['footer__list__icon']}
+                name='email'
+                icon={getIcon('email')}
+              />
               contact@hoffmann.ai
-            </a>
+            </Link>
           </li>
           <li className={styles['footer__list__first__row']}>
-            <a target='blank' className={styles['footer__list__link']} href='#'>
-              <img src='https://venus-sauna.fr/wp-content/uploads/2019/12/phone.png'></img>
-              06 21 19 56 74
-            </a>
+            <Link to='/#' className={styles['footer__list__link']}>
+              <Icon
+                className={styles['footer__list__icon']}
+                name='phone'
+                icon={getIcon('line')}
+              />
+              +33 6 21 19 56 74
+            </Link>
           </li>
         </ul>
         <div className={styles['footer__newsletter']}>
-          <Newsletter></Newsletter>
+          <Newsletter />
         </div>
       </div>
     </div>
