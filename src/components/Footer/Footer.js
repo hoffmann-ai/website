@@ -5,7 +5,14 @@ import styles from './Footer.module.scss';
 import Newsletter from '../Newsletter/Newsletter';
 import Icon from '../Icon';
 
-const Footer = () => (
+type Props = {
+  menu: {
+    label: string,
+    path: string,
+  }[],
+};
+
+const Footer = ({ menu }: Props) => (
   <div className={styles['footer']}>
     <div className={styles['footer__inner']}>
       <div className={styles['footer__inner__row']}>
@@ -28,17 +35,17 @@ const Footer = () => (
         <h6 className={styles['footer__liens__title']}>Liens</h6>
         <ul className={styles['footer__list']}>
           <li className={styles['footer__list__other__row']}>
-            <Link to='/#' className={styles['footer__list__link']}>
+            <Link to={menu[1].path} className={styles['footer__list__link']}>
               À propos
             </Link>
           </li>
           <li className={styles['footer__list__other__row']}>
-            <Link to='/#' className={styles['footer__list__link']}>
+            <Link to={menu[0].path} className={styles['footer__list__link']}>
               Blog
             </Link>
           </li>
           <li className={styles['footer__list__other__row']}>
-            <Link to='/#' className={styles['footer__list__link']}>
+            <Link to={menu[2].path} className={styles['footer__list__link']}>
               Contact
             </Link>
           </li>
@@ -69,24 +76,30 @@ const Footer = () => (
 
         <ul className={styles['footer__list']}>
           <li className={styles['footer__list__first__row']}>
-            <Link to='/#' className={styles['footer__list__link']}>
+            <a
+              href='mailto:contact@hoffmann.ai'
+              className={styles['footer__list__link']}
+            >
               <Icon
                 className={styles['footer__list__icon']}
                 name='email'
                 icon={getIcon('email')}
               />
               contact@hoffmann.ai
-            </Link>
+            </a>
           </li>
           <li className={styles['footer__list__first__row']}>
-            <Link to='/#' className={styles['footer__list__link']}>
+            <a
+              href='tel:06 21 21 82 2'
+              className={styles['footer__list__link']}
+            >
               <Icon
                 className={styles['footer__list__icon']}
                 name='phone'
                 icon={getIcon('line')}
               />
               +33 6 21 19 56 74
-            </Link>
+            </a>
           </li>
         </ul>
         <div className={styles['footer__newsletter']}>

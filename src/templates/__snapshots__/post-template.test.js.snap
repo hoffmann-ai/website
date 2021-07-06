@@ -210,7 +210,7 @@ exports[`PostTemplate renders correctly 1`] = `
           >
             <a
               className="footer__list__link"
-              href="/#"
+              href="/test/2/"
             >
               À propos
             </a>
@@ -220,7 +220,7 @@ exports[`PostTemplate renders correctly 1`] = `
           >
             <a
               className="footer__list__link"
-              href="/#"
+              href="/test/1/"
             >
               Blog
             </a>
@@ -230,7 +230,7 @@ exports[`PostTemplate renders correctly 1`] = `
           >
             <a
               className="footer__list__link"
-              href="/#"
+              href="/test/3/"
             >
               Contact
             </a>
@@ -296,7 +296,7 @@ exports[`PostTemplate renders correctly 1`] = `
           >
             <a
               className="footer__list__link"
-              href="/#"
+              href="mailto:contact@hoffmann.ai"
             >
               <svg
                 className="icon"
@@ -317,7 +317,7 @@ exports[`PostTemplate renders correctly 1`] = `
           >
             <a
               className="footer__list__link"
-              href="/#"
+              href="tel:06 21 21 82 2"
             >
               <svg
                 className="icon"

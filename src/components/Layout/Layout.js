@@ -20,7 +20,7 @@ const Layout = ({
   description,
   socialImage = ''
 }: Props) => {
-  const { author, url } = useSiteMetadata();
+  const { author, url, menu } = useSiteMetadata();
   const metaImage = socialImage || author.photo;
   const metaImageUrl = url + metaImage;
 
@@ -39,7 +39,7 @@ const Layout = ({
         <meta name="twitter:image" content={metaImageUrl} />
       </Helmet>
       {children}
-      <Footer></Footer>
+      <Footer menu={menu}/>
     </div>
   );
 };
