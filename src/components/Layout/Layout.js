@@ -25,7 +25,7 @@ const Layout = ({
 
   return (
     <div className={styles.layout}>
-      <Navbar/>
+      <Navbar />
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
