@@ -3,7 +3,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
 import Layout from '../components/Layout';
-import Navbar from '../components/Navbar';
 import Page from '../components/Page';
 import { useSiteMetadata, useTagsList } from '../hooks';
 
@@ -13,7 +12,6 @@ const TagsListTemplate = () => {
 
   return (
     <Layout title={`Tags - ${title}`} description={subtitle}>
-      <Navbar />
       <Page title="Tags">
         <ul>
           {tags.map((tag) => (
