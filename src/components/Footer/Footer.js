@@ -34,21 +34,17 @@ const Footer = ({ menu }: Props) => (
       <div className={styles['footer__inner__row__liens']}>
         <h6 className={styles['footer__liens__title']}>Liens</h6>
         <ul className={styles['footer__list']}>
-          <li className={styles['footer__list__other__row']}>
-            <Link to={menu[1].path} className={styles['footer__list__link']}>
-              À propos
-            </Link>
-          </li>
-          <li className={styles['footer__list__other__row']}>
-            <Link to={menu[0].path} className={styles['footer__list__link']}>
-              Blog
-            </Link>
-          </li>
-          <li className={styles['footer__list__other__row']}>
-            <Link to={menu[2].path} className={styles['footer__list__link']}>
-              Contact
-            </Link>
-          </li>
+          {menu.map((item) => (
+            <li className={styles['footer__list__other__row']} key={item.path}>
+              <Link
+                to={item.path}
+                className={styles['footer__list__link']}
+                activeClassName={styles['menu__list-item-link--active']}
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
       <div className={styles['footer__inner__row']}>
@@ -90,7 +86,7 @@ const Footer = ({ menu }: Props) => (
           </li>
           <li className={styles['footer__list__first__row']}>
             <a
-              href='tel:06 21 21 82 2'
+              href='tel:+33 6 21 19 56 74'
               className={styles['footer__list__link']}
             >
               <Icon
@@ -101,6 +97,7 @@ const Footer = ({ menu }: Props) => (
               +33 6 21 19 56 74
             </a>
           </li>
+          <li></li>
         </ul>
         <div className={styles['footer__newsletter']}>
           <Newsletter />

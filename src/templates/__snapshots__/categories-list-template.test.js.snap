@@ -159,9 +159,9 @@ exports[`CategoriesListTemplate renders correctly 1`] = `
           >
             <a
               className="footer__list__link"
-              href="/test/2/"
+              href="/test/1/"
             >
-              À propos
+              Test label 1
             </a>
           </li>
           <li
@@ -169,9 +169,9 @@ exports[`CategoriesListTemplate renders correctly 1`] = `
           >
             <a
               className="footer__list__link"
-              href="/test/1/"
+              href="/test/2/"
             >
-              Blog
+              Test label 2
             </a>
           </li>
           <li
@@ -181,7 +181,7 @@ exports[`CategoriesListTemplate renders correctly 1`] = `
               className="footer__list__link"
               href="/test/3/"
             >
-              Contact
+              Test label 3
             </a>
           </li>
         </ul>
@@ -266,7 +266,7 @@ exports[`CategoriesListTemplate renders correctly 1`] = `
           >
             <a
               className="footer__list__link"
-              href="tel:06 21 21 82 2"
+              href="tel:+33 6 21 19 56 74"
             >
               <svg
                 className="icon"
@@ -282,6 +282,7 @@ exports[`CategoriesListTemplate renders correctly 1`] = `
               +33 6 21 19 56 74
             </a>
           </li>
+          <li />
         </ul>
         <div
           className="footer__newsletter"

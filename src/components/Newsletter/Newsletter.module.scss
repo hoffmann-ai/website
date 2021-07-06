@@ -20,6 +20,7 @@
 }
 .newsletter__module__inner{
   max-width: 100%;
+  max-height: 120px;
 }
 .newsletter__module__form__subscribe {
   max-width: 100%;
@@ -28,6 +29,9 @@
   display: grid;
   margin: auto;
   grid-template-columns: 60% 50%;
+}
+.newsletter__module__title{
+  margin-top: 0px;
 }
 .newsletter__module__form__subscribe__input {
   font-size: 1rem;
