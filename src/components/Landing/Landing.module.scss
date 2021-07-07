@@ -1,0 +1,22 @@
+.landing__page {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.landing__divider {
+  height: 1px;
+  padding: 0px;
+  margin: 0px;
+  width:90%;
+  border-bottom:solid 1px rgba(0, 0, 0, 0.1);
+}
+.landing__page__tiny__text{
+  margin-top:-70px;
+  margin-bottom:50px;
+  font-size:14px;
+  color:rgba(0, 0, 0, 0.5);
+  font-weight:normal;
+}
