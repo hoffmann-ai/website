@@ -1,0 +1,30 @@
+* {
+  --primary-color: #0873e8;
+  --text-color-dark-light: #d4d4d4;
+  --text-color-dark: #4a4a4a;
+}
+.tabs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-bottom: 2px solid var(--primary-color);
+}
+.tabs__list > li {
+  margin: 0 1em;
+  padding: 0.5em 1em;
+}
+.current {
+  font-weight: bold;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color)!important;
+  border-bottom: 0;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background: rgb(255, 255, 255);
+  position:relative;
+  top:2px;
+}
+.tabs__module{
+  max-width:100%;
+}
