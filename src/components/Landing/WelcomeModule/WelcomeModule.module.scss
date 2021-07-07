@@ -1,0 +1,30 @@
+* {
+    --primary-color: #0873e8;
+    --text-color-dark-light: #d4d4d4;
+    --text-color-dark: #4a4a4a;
+  }
+.welcome__module {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome__module__title {
+  color: var(--primary-color);
+  margin: 25px 0px 0px 0px;
+  font-size: 63px;
+  width: 100%;
+  text-align: center;
+}
+.welcome__module__image {
+  margin: 0px;
+  max-height: 550px;
+  object-fit: cover;
+}
+.welcome__module__text{
+  margin-top: 23px;
+  color:rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
