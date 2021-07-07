@@ -97,7 +97,6 @@ const Footer = ({ menu }: Props) => (
               +33 6 21 19 56 74
             </a>
           </li>
-          <li></li>
         </ul>
         <div className={styles['footer__newsletter']}>
           <Newsletter />
