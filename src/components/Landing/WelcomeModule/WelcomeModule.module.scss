@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
 }
-
+// contact@hoffmann.ai
 .welcome__module__title {
   color: var(--primary-color);
   margin: 25px 0px 0px 0px;
@@ -28,3 +28,8 @@
   color:rgba(0, 0, 0, 0.5);
   font-weight: 500;
 }
+@media screen and (max-width: 700px) {
+  .welcome__module__title {
+    font-size: 43px;
+  }
+} 

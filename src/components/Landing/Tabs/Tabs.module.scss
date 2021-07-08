@@ -9,10 +9,12 @@
   padding: 0;
   display: flex;
   border-bottom: 2px solid var(--primary-color);
+  width: 100% !important;
 }
 .tabs__list > li {
   margin: 0 1em;
   padding: 0.5em 1em;
+  width:auto;
 }
 .current {
   font-weight: bold;
@@ -26,5 +28,10 @@
   top:2px;
 }
 .tabs__module{
-  max-width:100%;
+  width: 100% !important;
 }
+@media screen and (max-width: 900px) {
+  .tabs__list {
+flex-direction: column;
+  }
+} 
