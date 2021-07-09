@@ -7,6 +7,7 @@
   // padding:0;
   // margin:0;
 }
+
 .newsletter__module {
   max-width: 100%;
   width: 100%;
@@ -48,7 +49,7 @@
   height: 39px;
   margin-left: 7%;
   border-radius: 3px;
-  background-color: var(--primary-color);
+  background-color: $color-primary;
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: 0.1s ease-in;
@@ -60,7 +61,7 @@
   margin-left: 7%;
   border-radius: 3px;
   background-color: rgb(255, 255, 255);
-  color: var(--primary-color);
+  color: $color-primary;
   cursor: pointer;
   transition: 0.1s ease-in;
   border: 1px solid var(--primary-color);
