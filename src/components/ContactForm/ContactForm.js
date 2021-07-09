@@ -2,37 +2,43 @@ import React, { useState } from 'react';
 import styles from './ContactForm.module.scss';
 
 const ContactForm = () => {
+  // variables
   const [name, setName] = useState('');
-  const [company, setCompany] = useState('');
+  const [firstname, setFirstname] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [submit, setSubmit] = useState(false);
+  // empty inputs messages
+  const error = 'Ce champ est requis.';
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    sendFeedback('***TEMPLAYE_ID***', {
+    setSubmit(true);
+    sendFeedback('***TEMPLATE_ID***', {
       name,
-      company,
+      firstname,
       phone,
       email,
       message,
     });
   };
 
-  const sendFeedback = (templateId, variables) => {
-    window.emailjs
-      .send('gmail', templateId, variables)
-      .then(() => {
-        setName('');
-        setCompany('');
-        setPhone('');
-        setEmail('');
-        setMessage('');
-      })
-      .catch(() => {
-        document.querySelector('.form-message').innerHTML = 'Une erreur s est produite, veuillez réessayer.';
-      });
+  // reeceives templateId, variables in parameters
+  const sendFeedback = () => {
+    // window.emailjs
+    //   .send('gmail', templateId, variables)
+    //   .then(() => {
+    //     setName('');
+    //     setFirstname('');
+    //     setPhone('');
+    //     setEmail('');
+    //     setMessage('');
+    //   })
+    //   .catch(() => {
+    //     document.querySelector('.form-message').innerHTML =
+    //       'Une erreur s est produite, veuillez réessayer.';
+    //   });
   };
 
   return (
@@ -45,28 +51,34 @@ const ContactForm = () => {
           <label className={styles['form__inner__grid__element__child']}>
             Prénom
             <span className={styles['form__inner__star']}> *</span>
+            <span className={styles['form__inner__error__message']}>
+              {firstname.length === 0 && submit ? error : ''}
+            </span>
           </label>
           <input
             type='text'
             className={styles['form__inner__grid__element__child']}
             name='name'
-            onChange={(e) => setName(e.target.value)}
+            onChange={(e) => setFirstname(e.target.value)}
             placeholder='Saisir votre prénom'
-            value={name}
+            value={firstname}
             autoComplete='off'
           />
         </div>
         <div className={styles['form__inner__grid__element']}>
           <label className={styles['form__inner__grid__element__child']}>
             Nom <span className={styles['form__inner__star']}> *</span>
+            <span className={styles['form__inner__error__message']}>
+              {name.length === 0 && submit ? error : ''}
+            </span>
           </label>
           <input
             type='text'
             className={styles['form__inner__grid__element__child']}
-            name='company'
-            onChange={(e) => setCompany(e.target.value)}
+            name='firstname'
+            onChange={(e) => setName(e.target.value)}
             placeholder='Saisir votre Nom'
-            value={company}
+            value={name}
           />
         </div>
         <div className={styles['form__inner__grid__element']}>
@@ -85,6 +97,9 @@ const ContactForm = () => {
         <div className={styles['form__inner__grid__element']}>
           <label className={styles['form__inner__grid__element__child']}>
             Email <span className={styles['form__inner__star']}> *</span>
+            <span className={styles['form__inner__error__message']}>
+              {email.length === 0 && submit ? error : ''}
+            </span>
           </label>
           <label className={styles['form__not-email']}>Email non valide</label>
           <input
@@ -116,10 +131,7 @@ const ContactForm = () => {
           className={styles['form__inner__grid__element__checkbox']}
           type='checkbox'
         />
-        <label
-          for='checkbox'
-          className={styles['form__inner__grid__element__child']}
-        >
+        <label className={styles['form__inner__grid__element__child']}>
           J'accepte de recevoir d'autres communications de HOFFMANN.AI. Vous
           pouvez vous désabonner à tout moment.<br></br>
           <span className={styles['form__inner__checkbox__message']}>
@@ -128,13 +140,15 @@ const ContactForm = () => {
           </span>
         </label>
       </div>
-      <input
-        className={styles['form__input']}
-        type='button'
-        value='Envoyer'
-        onClick={handleSubmit}
-      />
-      <div className={styles['form__message']}></div>
+      <div className={styles['form__inner__grid__element__message']}>
+        <input
+          className={styles['form__input']}
+          type='button'
+          value='Envoyer'
+          onClick={handleSubmit}
+        />
+        <div className={styles['form__message']}></div>
+      </div>
     </form>
   );
 };

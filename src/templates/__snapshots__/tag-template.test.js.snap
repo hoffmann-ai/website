@@ -452,6 +452,11 @@ exports[`TagTemplate renders correctly 1`] = `
           >
              *
           </span>
+          <span
+            className="form__inner__error__message"
+          >
+            
+          </span>
         </label>
         <input
           autoComplete="off"
@@ -475,10 +480,15 @@ exports[`TagTemplate renders correctly 1`] = `
           >
              *
           </span>
+          <span
+            className="form__inner__error__message"
+          >
+            
+          </span>
         </label>
         <input
           className="form__inner__grid__element__child"
-          name="company"
+          name="firstname"
           onChange={[Function]}
           placeholder="Saisir votre Nom"
           type="text"
@@ -513,6 +523,11 @@ exports[`TagTemplate renders correctly 1`] = `
             className="form__inner__star"
           >
              *
+          </span>
+          <span
+            className="form__inner__error__message"
+          >
+            
           </span>
         </label>
         <label
@@ -557,7 +572,6 @@ exports[`TagTemplate renders correctly 1`] = `
       />
       <label
         className="form__inner__grid__element__child"
-        for="checkbox"
       >
         J'accepte de recevoir d'autres communications de HOFFMANN.AI. Vous pouvez vous désabonner à tout moment.
         <br />
@@ -568,15 +582,19 @@ exports[`TagTemplate renders correctly 1`] = `
         </span>
       </label>
     </div>
-    <input
-      className="form__input"
-      onClick={[Function]}
-      type="button"
-      value="Envoyer"
-    />
     <div
-      className="form__message"
-    />
+      className="form__inner__grid__element__message"
+    >
+      <input
+        className="form__input"
+        onClick={[Function]}
+        type="button"
+        value="Envoyer"
+      />
+      <div
+        className="form__message"
+      />
+    </div>
   </form>
 >>>>>>> d4b99c8 (feat new ContactForm component)
 </div>
