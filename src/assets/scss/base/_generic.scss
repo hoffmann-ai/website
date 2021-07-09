@@ -95,10 +95,12 @@ a {
   color: $typographic-link-p-font-color;
   text-decoration: none;
 
-  &:hover,
-  &:focus,
-  &:active {
+  &:focus{
     color: $typographic-link-s-font-color;
+  }
+  &:hover,
+  &:active{
+    color: #0873e8;
   }
 
 }
