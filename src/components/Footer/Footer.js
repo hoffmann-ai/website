@@ -23,13 +23,11 @@ const Footer = ({ menu }: Props) => (
           ></img>
           HOFFMANN.AI
         </h6>
-        <ul className={styles['footer__list']}>
-          <li className={styles['footer__list__first__row']}>
+          <p className={styles['footer__list__text']}>
             Société par actions simplifiée, spécialisée dans le secteur
             d'activité du conseil pour les affaires et autres conseils de
             gestion.
-          </li>
-        </ul>
+          </p>
       </div>
       <div className={styles['footer__inner__row__liens']}>
         <h6 className={styles['footer__liens__title']}>Liens</h6>
