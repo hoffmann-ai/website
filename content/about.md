@@ -1,6 +1,6 @@
 ---
 title: "About me"
-template: "page" 
+template: "page"
 socialImage: "/media/image-2.jpg"
 ---
 
