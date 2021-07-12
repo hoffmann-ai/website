@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: Le guide ultime pour mettre en place votre newsletter avec Mailchimp
 date: "2021-06-30T23:46:37.121Z"
 template: "post"
@@ -37,43 +36,6 @@ Sur Wordpress, plusieurs options s'offrent à vous. Elles sont toutes relativeme
 La première méthode consiste à ajouter un module de code à votre site. Sur votre espace admin de Mailchimp, rendez-vous dans l'onglet "Create" puis "Signup Form" et choisissez "Embedded Form". Appuyez enfin sur "Begin". Copiez-collez le code qui s'y trouve un peu plus bas. Vous pourrez ensuite l'ajouter dans une balise code de votre builder Wordpress.
 
 Une autre possibilité facilement implémentable est d'utiliser directement les extensions Mailchimp disponibles dans votre gestionnaire de plugins. Au moins 3 extensions s'offrent à vous : "MC4WP: Mailchimp for Wordpress", "Easy Forms for MailChimp" et "Mailchimp for WooCommerce" si vous utilisez WooCommmerce. Téléchargez l'une de ces extensions et suivez les étapes d'installation.
-=======
-title: Ajouter une newsletter facilement avec Mailchimp
-date: "2021-06-30T23:46:37.121Z"
-template: "post"
-draft: false
-slug: "ajouter-un-newsletter-facilement-avec-mailchimp"
-category: "plugin"
-tags:
-  - "Newsletter"
-  - "Extension"
-description: "Ajoutez facilement une newsletter à votre site n'a jamais été aussi facile grâce à Mailchimmp."
-socialImage: "/media/2021-30-06---Ajouter-une-newsletter-facilement-avec-Mailchimp/Mailchimp-logo.jpg"
----
-
-Si vous souhaitez regrouper les données de votre audience et communiquer facilement avec celle-ci, intégrer une newsletter à votre site n'est pas forcément une mauvaise idée. Heureusement pour nous, la tâche nous est grandement facilitée avec Mailchimp !
-
-## Mailchimp, c'est quoi ?
-
-![Logo Mailchimp](/media/2021-30-06---Ajouter-une-newsletter-facilement-avec-Mailchimp/Mailchimp-logo.jpg)
-
-Mailchimp, c'est une plateforme qui offre des services de marketing diversifiés pour les petites et moyennes entreprises. L'un des pricipaux services proposés, et celui qui vas nous intéresser aujourd'hui, est celui de la gestion de newsletter.
-
-## Comment ajouter une newsletter sur mon site avec Mailchimp ?
-
-La première étape va être de vous créer un compte sur Mailchimp si cela n'est pas déjà fait. Pour cela, rendez-vous sur https://login.mailchimp.com/signup. Après connexion, vous devriez vous retrouvez sur le dashboard :
-
-![dashboard Mailchimp](/media/2021-30-06---Ajouter-une-newsletter-facilement-avec-Mailchimp/dashboard.png)
-
-Ensuite, il faut ajouter un module de newsletter à votre site internet.
-
-### Sur Wordpress
-
-Sur Wordpress, plusieurs options s'offrent à vous, mais toutes les méthodes sont relativement simples.
-La première méthode consiste à ajouter un module de code à votre site. Sur votre espace admin de Mailchimp, rendez-vous dans l'onglet "Create" puis "Signup Form" et choisissez "Embedded Form"; appuyez enfin sur "Begin". Copiez-collez le code qui s'y trouve un peu plus bas.
-Vous pourrez ensuite l'ajouter dans une balise code de votre builder Wordpress.
-Une autre possibilité implémentable très facilement, est d'utiliser directement les extensions Mailchimp disponibles dans votre gestionnaire de plugins. Au moins 3 extensions s'offrent à vous : "MC4WP: Mailchimp for Wordpress", "Easy Forms for MailChimp" et "Mailchimp for WooCommerce" si vous utilisez WooCommmerce. Téléchargez l'une de ces extensions et suivez les étapes d'installation.
->>>>>>> dfe0115 (feat article on mailchimp usage)
 
 ![dashboard Mailchimp](/media/2021-30-06---Ajouter-une-newsletter-facilement-avec-Mailchimp/plugins.png)
 
