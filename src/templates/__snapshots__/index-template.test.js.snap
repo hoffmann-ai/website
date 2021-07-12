@@ -223,36 +223,42 @@ exports[`IndexTemplate renders correctly 1`] = `
       <div
         className="footer__inner__row"
       >
-        <h6
-          className="footer__hoffmann__title"
-        >
-          <img
-            className="footer__hoffmann__title__image"
-            src="/logo.png"
-          />
-          HOFFMANN.AI
-        </h6>
         <ul
           className="footer__list"
         >
-          <li
-            className="footer__list__first__row"
-          >
-            Société par actions simplifiée, spécialisée dans le secteur d'activité du conseil pour les affaires et autres conseils de gestion.
+          <li>
+            <h6
+              className="footer__hoffmann__title"
+            >
+              <img
+                className="footer__hoffmann__title__image"
+                src="/logo.png"
+              />
+              HOFFMANN.AI
+            </h6>
+          </li>
+          <li>
+            <p
+              className="footer__list__text"
+            >
+              Société par actions simplifiée, spécialisée dans le secteur d'activité du conseil pour les affaires et autres conseils de gestion.
+            </p>
           </li>
         </ul>
       </div>
       <div
         className="footer__inner__row__liens"
       >
-        <h6
-          className="footer__liens__title"
-        >
-          Liens
-        </h6>
         <ul
           className="footer__list"
         >
+          <li>
+            <h6
+              className="footer__liens__title"
+            >
+              Liens
+            </h6>
+          </li>
           <li
             className="footer__list__other__row"
           >
@@ -288,14 +294,16 @@ exports[`IndexTemplate renders correctly 1`] = `
       <div
         className="footer__inner__row"
       >
-        <h6
-          className="footer__legal__title"
-        >
-          Légal
-        </h6>
         <ul
           className="footer__list"
         >
+          <li>
+            <h6
+              className="footer__legal__title"
+            >
+              Légal
+            </h6>
+          </li>
           <li
             className="footer__list__other__row"
           >
@@ -331,14 +339,16 @@ exports[`IndexTemplate renders correctly 1`] = `
       <div
         className="footer__inner__row__contact"
       >
-        <h6
-          className="footer__contact__title"
-        >
-          Contact
-        </h6>
         <ul
           className="footer__list"
         >
+          <li>
+            <h6
+              className="footer__legal__title"
+            >
+              Contact
+            </h6>
+          </li>
           <li
             className="footer__list__first__row"
           >
@@ -346,17 +356,6 @@ exports[`IndexTemplate renders correctly 1`] = `
               className="footer__list__link"
               href="mailto:contact@hoffmann.ai"
             >
-              <svg
-                className="icon"
-                viewBox="0 0 28 28"
-              >
-                <title>
-                  email
-                </title>
-                <path
-                  d="M26 23.5v-12c-0.328 0.375-0.688 0.719-1.078 1.031-2.234 1.719-4.484 3.469-6.656 5.281-1.172 0.984-2.625 2.188-4.25 2.188h-0.031c-1.625 0-3.078-1.203-4.25-2.188-2.172-1.813-4.422-3.563-6.656-5.281-0.391-0.313-0.75-0.656-1.078-1.031v12c0 0.266 0.234 0.5 0.5 0.5h23c0.266 0 0.5-0.234 0.5-0.5zM26 7.078c0-0.391 0.094-1.078-0.5-1.078h-23c-0.266 0-0.5 0.234-0.5 0.5 0 1.781 0.891 3.328 2.297 4.438 2.094 1.641 4.188 3.297 6.266 4.953 0.828 0.672 2.328 2.109 3.422 2.109h0.031c1.094 0 2.594-1.437 3.422-2.109 2.078-1.656 4.172-3.313 6.266-4.953 1.016-0.797 2.297-2.531 2.297-3.859zM28 6.5v17c0 1.375-1.125 2.5-2.5 2.5h-23c-1.375 0-2.5-1.125-2.5-2.5v-17c0-1.375 1.125-2.5 2.5-2.5h23c1.375 0 2.5 1.125 2.5 2.5z"
-                />
-              </svg>
               contact@hoffmann.ai
             </a>
           </li>
@@ -367,21 +366,9 @@ exports[`IndexTemplate renders correctly 1`] = `
               className="footer__list__link"
               href="tel:+33 6 21 19 56 74"
             >
-              <svg
-                className="icon"
-                viewBox="0 0 24 24"
-              >
-                <title>
-                  phone
-                </title>
-                <path
-                  d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.572-3.843 2.572-5.992zm-18.988-2.595c.129 0 .234.105.234.234v4.153h2.287c.129 0 .233.104.233.233v.842c0 .129-.104.234-.233.234h-3.363c-.063 0-.119-.025-.161-.065l-.001-.001-.002-.002-.001-.001-.003-.003c-.04-.042-.065-.099-.065-.161v-5.229c0-.129.104-.234.233-.234h.842zm14.992 0c.129 0 .233.105.233.234v.842c0 .129-.104.234-.233.234h-2.287v.883h2.287c.129 0 .233.105.233.234v.842c0 .129-.104.234-.233.234h-2.287v.884h2.287c.129 0 .233.105.233.233v.842c0 .129-.104.234-.233.234h-3.363c-.063 0-.12-.025-.162-.065l-.003-.004-.003-.003c-.04-.042-.066-.099-.066-.161v-5.229c0-.062.025-.119.065-.161l.004-.004.003-.003c.042-.04.099-.066.162-.066h3.363zm-10.442.001c.129 0 .234.104.234.233v5.229c0 .128-.105.233-.234.233h-.842c-.129 0-.234-.105-.234-.233v-5.229c0-.129.105-.233.234-.233h.842zm2.127 0h.008l.012.001.013.001.01.001.013.003.008.003.014.004.008.003.013.006.007.003.013.007.007.004.012.009.006.004.013.011.004.004.014.014.002.002.018.023 2.396 3.236v-3.106c0-.129.105-.233.234-.233h.841c.13 0 .234.104.234.233v5.229c0 .128-.104.233-.234.233h-.841l-.06-.008-.004-.001-.015-.005-.007-.003-.012-.004-.011-.006-.007-.003-.014-.009-.002-.002-.06-.058-2.399-3.24v3.106c0 .128-.104.233-.234.233h-.841c-.129 0-.234-.105-.234-.233v-5.229c0-.129.105-.233.234-.233h.841z"
-                />
-              </svg>
               +33 6 21 19 56 74
             </a>
           </li>
-          <li />
         </ul>
         <div
           className="footer__newsletter"
