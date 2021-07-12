@@ -26,6 +26,10 @@ const createPages = async ({ graphql, actions }) => {
     path: '/categories',
     component: path.resolve('./src/templates/categories-list-template.js'),
   });
+  createPage({
+    path: '/',
+    component: path.resolve('./src/templates/landing-template.js'),
+  });
 
   // Posts and pages from markdown
   const result = await graphql(`
@@ -58,12 +62,6 @@ const createPages = async ({ graphql, actions }) => {
       createPage({
         path: edge.node.fields.slug,
         component: path.resolve('./src/templates/post-template.js'),
-        context: { slug: edge.node.fields.slug },
-      });
-    } else if (_.get(edge, 'node.frontmatter.template') === 'landing') {
-      createPage({
-        path: edge.node.fields.slug,
-        component: path.resolve('./src/templates/landing-template.js'),
         context: { slug: edge.node.fields.slug },
       });
     }
