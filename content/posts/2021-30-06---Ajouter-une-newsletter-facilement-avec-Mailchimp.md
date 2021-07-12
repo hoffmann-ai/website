@@ -9,17 +9,17 @@ tags:
   - "newsletter"
   - "mailchimp"
   - "mailing"
-description: "Si vous souhaitez regrouper les données de votre audience et communiquer facilement avec celle-ci, intégrer une newsletter à votre site n'est pas une mauvaise idée. Heureusement pour nous, la tâche nous est grandement facilitée avec Mailchimp !"
+description: "Si vous souhaitez regrouper les données de votre audience et communiquer facilement avec celle-ci, intégrer une newsletter à votre site n'est pas une mauvaise idée. Heureusement pour vous, la tâche est grandement facilitée avec Mailchimp !"
 socialImage: "/media/2021-30-06---Ajouter-une-newsletter-facilement-avec-Mailchimp/Mailchimp-logo.jpg"
 ---
 
-Si vous souhaitez regrouper les données de votre audience et communiquer facilement avec celle-ci, intégrer une newsletter à votre site n'est pas une mauvaise idée. Heureusement pour nous, la tâche nous est grandement facilitée avec Mailchimp !
+Si vous souhaitez regrouper les données de votre audience et communiquer facilement avec celle-ci, intégrer une newsletter à votre site n'est pas une mauvaise idée. Heureusement pour vous, la tâche est grandement facilitée avec Mailchimp !
 
 ## Mailchimp, c'est quoi ?
 
 ![Logo Mailchimp](/media/2021-30-06---Ajouter-une-newsletter-facilement-avec-Mailchimp/Mailchimp-logo.jpg)
 
-Mailchimp, c'est une plateforme qui offre des services de marketing diversifiés pour les petites et moyennes entreprises. L'un des principaux services proposés, et celui qui va nous intéresser aujourd'hui, est celui de la gestion de newsletter.
+Mailchimp une plateforme qui offre des services de marketing diversifiés pour les petites et moyennes entreprises. L'un des principaux services proposés, et celui qui va nous intéresser aujourd'hui, est celui de la gestion de newsletter.
 
 ## Comment ajouter une newsletter sur mon site avec Mailchimp ?
 
@@ -35,7 +35,7 @@ Sur Wordpress, plusieurs options s'offrent à vous. Elles sont toutes relativeme
 
 La première méthode consiste à ajouter un module de code à votre site. Sur votre espace admin de Mailchimp, rendez-vous dans l'onglet "Create" puis "Signup Form" et choisissez "Embedded Form". Appuyez enfin sur "Begin". Copiez-collez le code qui s'y trouve un peu plus bas. Vous pourrez ensuite l'ajouter dans une balise code de votre builder Wordpress.
 
-Une autre possibilité implémentable très facilement est d'utiliser directement les extensions Mailchimp disponibles dans votre gestionnaire de plugins. Au moins 3 extensions s'offrent à vous : "MC4WP: Mailchimp for Wordpress", "Easy Forms for MailChimp" et "Mailchimp for WooCommerce" si vous utilisez WooCommmerce. Téléchargez l'une de ces extensions et suivez les étapes d'installation.
+Une autre possibilité facilement implémentable est d'utiliser directement les extensions Mailchimp disponibles dans votre gestionnaire de plugins. Au moins 3 extensions s'offrent à vous : "MC4WP: Mailchimp for Wordpress", "Easy Forms for MailChimp" et "Mailchimp for WooCommerce" si vous utilisez WooCommmerce. Téléchargez l'une de ces extensions et suivez les étapes d'installation.
 
 ![dashboard Mailchimp](/media/2021-30-06---Ajouter-une-newsletter-facilement-avec-Mailchimp/plugins.png)
 
@@ -67,7 +67,7 @@ plugins: [
 ];
 ```
 
-Vous devez ensuite entrer votre "endpoint". Le "endpoint" est un URL que vous pouvez retrouver sur votre admin Mailchimp, dans le code que nous trouvé dans <a href="#sur-wordpress">cette section</a>. Le lien recherché se trouve dans le "action" de la balise "form" :
+Vous devez ensuite entrer votre "endpoint". Il s'agit d'un URL présent sur votre admin Mailchimp, dans le code trouvé au sein de <a href="#sur-wordpress">cette section</a>. Le lien recherché se trouve dans le "action" de la balise "form" :
 
 ![dashboard Mailchimp](/media/2021-30-06---Ajouter-une-newsletter-facilement-avec-Mailchimp/lien.png)
 
@@ -75,7 +75,7 @@ Après avoir renseigné l'url, le tour est joué ! Il ne reste plus qu'à créer
 
 #### Étape 1 : Créer le formulaire
 
-Nous allons dans un premier temps créer un component ReactJS que l'on va appeler Newsletter. Dans mon dossier components, je crée un nouveau dossier Newsletter, dans lequel je vais créer un fichier `Newsletter.js`. Dans mon cas je privilégie l'utilisation des Hooks React, mais vous aurez le même résultat si vous utilisez les classes.
+Nous allons dans un premier temps créer un component ReactJS que l'on va nommer Newsletter. Dans notre dossier components, Nous créons un nouveau dossier Newsletter, dans lequel nous allons créer un fichier `Newsletter.js`. Dans notre cas nous privilégions l'utilisation des Hooks React, mais le résultat serait le même en utilisant les classes.
 D'abord, on importe React et ce dont on aura besoin :
 
 ```js
@@ -83,7 +83,7 @@ import React, { useState } from "react";
 import addToMailchimp from "gatsby-plugin-mailchimp";
 ```
 
-Puis l'on crée un component Newsletter que l'on va exporter:
+Puis on crée un component Newsletter que l'on va exporter:
 
 ```js
 import React, { useState } from "react";
@@ -94,7 +94,7 @@ const Newsletter = () => {
 };
 ```
 
-Ensuite, il faut créer le module en JSX. Ici, rien de bien compliqué : la fonction return doit retourner une seule balise "div", dans laquelle se trouve une balise "form" (formulaire). Dans cette balise "form", on ajoute un champ pour entrer son email ainsi qu'un bouton s'abonner. Voici à quoi ressemble le JSX :
+Ensuite, il faut créer le module en JSX. Ici, rien de bien compliqué : la fonction return doit retourner une seule balise "div", dans laquelle se trouve une balise "form" (formulaire). Dans cette balise "form", on ajoute un champ pour entrer son email ainsi qu'un bouton "s'abonner". Voici à quoi ressemble le JSX :
 
 ```js
 import React, { useState } from "react";
@@ -199,7 +199,7 @@ Et voilà le résultat :
 
 ![form](/media/2021-30-06---Ajouter-une-newsletter-facilement-avec-Mailchimp/form.png)
 
-La partie front-end est terminée. Maintenant, intéressons-nous au développement du back-end. D'abord, nous allons créer un hook qui va permettre de mettre à jour notre variable "email" qui correspond à l'email de l'utilisateur.
+La partie front-end est terminée. Maintenant, intéressons-nous au développement du back-end. Nous allons d'abord créer un hook qui va permettre de mettre à jour notre variable "email" qui correspond à l'email de l'utilisateur.
 
 ```js
 const[email, setEmail] = useState(''):
@@ -213,7 +213,7 @@ const changeEmailHandler = (event) => {
 };
 ```
 
-On crée également un second hook qui va permettre d'actualiser le message, qui est vide au début :
+On crée également un second hook qui va permettre d'actualiser le message, vide au début :
 
 ```js
 const [validationMessage, setValidationMessage] = useState("");
@@ -229,7 +229,7 @@ const validate = () => {
 
 La fonction ` changeEmailHandler()` est ensuite appelée dès que le champ (dans lequel l'utilisateur entre son email) subit un changement d'état.
 
-Parfait, nous arrivons à récupérer l'email de l'utilisateur et le stocker dans une variable. Maintenant, lorsque l'utilisateur soumet son email, il faut qu'il soit ajouté à notre liste d'emails dans Mailchimp. Pour cela, on va faire appel à la fonction `addToMailchimp()` que l'on a importée. On commence par créer une fonction ` handleSubmit()` qui sera appelée lorsque le formulaire sera soumis (lorsque l'utilisateur aura appuyé sur "s'abonner").
+Parfait, nous arrivons à récupérer l'email de l'utilisateur et à le stocker dans une variable. À présent, lorsque l'utilisateur soumet son email, il faut qu'il soit ajouté à notre liste d'emails dans Mailchimp. Pour cela, on va faire appel à la fonction `addToMailchimp()` que l'on a importée. On commence par créer une fonction ` handleSubmit()` qui sera appelée lorsque le formulaire sera soumis (lorsque l'utilisateur appuie sur "s'abonner").
 
 ```js
 const handleSubmit = (e) => {
@@ -279,11 +279,11 @@ Nous venons d'installer, d'une manière ou d'une autre, un formulaire à notre s
 
 ![choix Format](/media/2021-30-06---Ajouter-une-newsletter-facilement-avec-Mailchimp/choix-mail.png)
 
-Nous allons choisir "Regular" pour débuter, mais libre à vous d'utiliser l'un des nombreux templates à votre disposition. Ensuite, il faut donner un nom à votre campagne. Je vais l'appeler "premier mail". Le mail sera envoyé à votre audience entière, mais cette option est personnalisable.
+Nous allons choisir "Regular" pour débuter, mais libre à vous d'utiliser l'un des nombreux templates à votre disposition. Ensuite, il faut donner un nom à votre campagne. Nous allons l'appeler "premier mail". Le mail sera envoyé à toute votre audience, mais cette option est personnalisable.
 
 ![choix Format](/media/2021-30-06---Ajouter-une-newsletter-facilement-avec-Mailchimp/premier-mail.png)
 
-Nous allons maintenant créer notre premier template. Allez sur l'onglet "Email templates" puis "Create template". Personnellement, je souhaite juste afficher un message de remerciements pour l'abonnement à la newsletter. Je choisis donc le template "Simple Text". Indiquez l'email d'envoi, le sujet et le contenu. Enfin, vous pouvez envoyer votre email grâce au bouton "Send" en haut à droite, et le tour est joué !
+Nous allons maintenant créer notre premier template. Allez sur l'onglet "Email templates" puis "Create template". Dans notre cas, nous souhaitons juste afficher un message de remerciements pour l'abonnement à la newsletter. Nous choisissons donc le template "Simple Text". Indiquez l'email d'envoi, le sujet et le contenu. Enfin, vous pouvez envoyer votre email grâce au bouton "Send" en haut à droite, et le tour est joué !
 
 Mailchimp nous mâche grandement la tâche dans l'implémentation de newsletter, que l'on soit développeur ou non.
 
