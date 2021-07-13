@@ -13,8 +13,8 @@ const Logo = ({ img }: Props) => (
       <img
         src={withPrefix(img)}
         className={styles['logo__photo']}
-        width="75"
-        height="75"
+        width="70"
+        height="70"
         alt="logo"
       />
     </Link>

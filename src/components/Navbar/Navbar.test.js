@@ -2,11 +2,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { useStaticQuery, StaticQuery } from 'gatsby';
-import Sidebar from './Sidebar';
+import Navbar from './Navbar';
 import siteMetadata from '../../../jest/__fixtures__/site-metadata';
 import type { RenderCallback } from '../../types';
 
-describe('Sidebar', () => {
+describe('Navbar', () => {
   beforeEach(() => {
     StaticQuery.mockImplementationOnce(
       ({ render }: RenderCallback) => (
@@ -21,7 +21,7 @@ describe('Sidebar', () => {
   };
 
   it('renders correctly', () => {
-    const tree = renderer.create(<Sidebar {...props} />).toJSON();
+    const tree = renderer.create(<Navbar {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

@@ -10,9 +10,9 @@ exports[`Logo renders correctly 1`] = `
     <img
       alt="logo"
       className="logo__photo"
-      height="75"
+      height="70"
       src="/logo.png"
-      width="75"
+      width="70"
     />
   </a>
 </div>

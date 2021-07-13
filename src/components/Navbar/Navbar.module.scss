@@ -1,0 +1,42 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.navbar {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    padding-top: 10px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    &__inner {
+        &_list {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin: 0;
+            padding: 0 40px;
+
+            &_item {
+                display: inline-block;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@include breakpoint-sm {
+    .navbar {
+        &__inner {
+            padding: 0 10px;
+        }
+    }
+}
+
+@include breakpoint-md {
+    .navbar {
+        &__inner {
+            padding: 0;
+        }
+    }
+}
