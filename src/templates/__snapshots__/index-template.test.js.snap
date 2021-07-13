@@ -381,9 +381,6 @@ exports[`IndexTemplate renders correctly 1`] = `
       <div
         className="footer__newsletter__newsletter"
       >
-        <h6>
-          Abonnez-vous à notre newsletter !
-        </h6>
         <div
           className="newsletter__module"
         >
