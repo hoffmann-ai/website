@@ -25,9 +25,7 @@ const Footer = ({ menu }: Props) => (
             </h6>
           </li>
           <li className={styles['footer__list__text']}>
-            Société par actions simplifiée, spécialisée dans le secteur
-            d'activité du conseil pour les affaires et autres conseils de
-            gestion.
+          Experts en Cloud, DevOps & InfraOps, Web.
           </li>
         </ul>
       </div>

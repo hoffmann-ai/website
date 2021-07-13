@@ -39,7 +39,7 @@ const Newsletter = () => {
               onChange={changeEmailHandler}
               name='email'
               id='email'
-              placeholder='votre email...'
+              placeholder='Email'
               required
             />
             <button
