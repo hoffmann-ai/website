@@ -24,12 +24,10 @@ const Footer = ({ menu }: Props) => (
               HOFFMANN.AI
             </h6>
           </li>
-          <li>
-            <p className={styles['footer__list__text']}>
-              Société par actions simplifiée, spécialisée dans le secteur
-              d'activité du conseil pour les affaires et autres conseils de
-              gestion.
-            </p>
+          <li className={styles['footer__list__text']}>
+            Société par actions simplifiée, spécialisée dans le secteur
+            d'activité du conseil pour les affaires et autres conseils de
+            gestion.
           </li>
         </ul>
       </div>
@@ -95,9 +93,14 @@ const Footer = ({ menu }: Props) => (
             </a>
           </li>
         </ul>
-        <div className={styles['footer__newsletter']}>
-          <Newsletter />
-        </div>
+      </div>
+    </div>
+    <div className={styles['footer__newsletter']}>
+      <div className={styles['footer__newsletter__credits']}>
+        ©2021 HOFFMANN.AI. Tous droits réservés.
+      </div>
+      <div className={styles['footer__newsletter__newsletter']}>
+       <Newsletter />
       </div>
     </div>
   </div>

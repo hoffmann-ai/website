@@ -119,12 +119,10 @@ exports[`NotFoundTemplate renders correctly 1`] = `
               HOFFMANN.AI
             </h6>
           </li>
-          <li>
-            <p
-              className="footer__list__text"
-            >
-              Société par actions simplifiée, spécialisée dans le secteur d'activité du conseil pour les affaires et autres conseils de gestion.
-            </p>
+          <li
+            className="footer__list__text"
+          >
+            Société par actions simplifiée, spécialisée dans le secteur d'activité du conseil pour les affaires et autres conseils de gestion.
           </li>
         </ul>
       </div>
@@ -252,48 +250,55 @@ exports[`NotFoundTemplate renders correctly 1`] = `
             </a>
           </li>
         </ul>
+      </div>
+    </div>
+    <div
+      className="footer__newsletter"
+    >
+      <div
+        className="footer__newsletter__credits"
+      >
+        ©2021 HOFFMANN.AI. Tous droits réservés.
+      </div>
+      <div
+        className="footer__newsletter__newsletter"
+      >
+        <h6>
+          Abonnez-vous à notre newsletter !
+        </h6>
         <div
-          className="footer__newsletter"
+          className="newsletter__module"
         >
           <div
-            className="newsletter__module"
+            className="newsletter__module__inner"
           >
             <div
-              className="newsletter__module__inner"
+              className="newsletter__module__form"
             >
-              <h6
-                className="newsletter__module__title"
+              <form
+                className="newsletter__module__form__subscribe"
+                onSubmit={[Function]}
               >
-                Abonnez-vous à notre newsletter !
-              </h6>
-              <div
-                className="newsletter__module__form"
-              >
-                <form
-                  className="newsletter__module__form__subscribe"
-                  onSubmit={[Function]}
+                <input
+                  className="newsletter__module__form__subscribe__input"
+                  id="email"
+                  name="email"
+                  onChange={[Function]}
+                  placeholder="votre email..."
+                  required={true}
+                  type="email"
+                  value=""
+                />
+                <button
+                  className="newsletter__module__form__subscribe__submit"
+                  type="submit"
                 >
-                  <input
-                    className="newsletter__module__form__subscribe__input"
-                    id="email"
-                    name="email"
-                    onChange={[Function]}
-                    placeholder="votre email..."
-                    required={true}
-                    type="email"
-                    value=""
-                  />
-                  <button
-                    className="newsletter__module__form__subscribe__submit"
-                    type="submit"
-                  >
-                    S'abonner
-                  </button>
-                  <h6>
-                    
-                  </h6>
-                </form>
-              </div>
+                  S'abonner
+                </button>
+                <h6>
+                  
+                </h6>
+              </form>
             </div>
           </div>
         </div>

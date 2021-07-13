@@ -7,11 +7,6 @@ exports[`Newsletter renders correctly 1`] = `
   <div
     className="newsletter__module__inner"
   >
-    <h6
-      className="newsletter__module__title"
-    >
-      Abonnez-vous à notre newsletter !
-    </h6>
     <div
       className="newsletter__module__form"
     >

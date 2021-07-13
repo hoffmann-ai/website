@@ -27,7 +27,6 @@ const Newsletter = () => {
   return (
     <div className={styles['newsletter__module']}>
       <div className={styles['newsletter__module__inner']}>
-        <h6 className={styles['newsletter__module__title']}>Abonnez-vous à notre newsletter !</h6>
         <div className={styles['newsletter__module__form']}>
           <form
             className={styles['newsletter__module__form__subscribe']}
