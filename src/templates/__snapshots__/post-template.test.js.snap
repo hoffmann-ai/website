@@ -192,7 +192,7 @@ exports[`PostTemplate renders correctly 1`] = `
           <li
             className="footer__list__text"
           >
-            Société par actions simplifiée, spécialisée dans le secteur d'activité du conseil pour les affaires et autres conseils de gestion.
+            Experts en Cloud, DevOps & InfraOps, Web.
           </li>
         </ul>
       </div>
@@ -351,7 +351,7 @@ exports[`PostTemplate renders correctly 1`] = `
                   id="email"
                   name="email"
                   onChange={[Function]}
-                  placeholder="votre email..."
+                  placeholder="Email"
                   required={true}
                   type="email"
                   value=""
