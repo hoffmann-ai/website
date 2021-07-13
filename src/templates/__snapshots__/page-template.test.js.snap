@@ -296,7 +296,9 @@ exports[`PageTemplate renders correctly 1`] = `
                 >
                   S'abonner
                 </button>
-                <h6>
+                <h6
+                  className="newsletter__module__form__message"
+                >
                   
                 </h6>
               </form>

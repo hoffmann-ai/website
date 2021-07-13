@@ -48,8 +48,9 @@ const Newsletter = () => {
             >
               S'abonner
             </button>
-            <h6               className={styles['newsletter__module__form__message']}
->{validationMessage}</h6>
+            <h6 className={styles['newsletter__module__form__message']}>
+              {validationMessage}
+            </h6>
           </form>
         </div>
       </div>
