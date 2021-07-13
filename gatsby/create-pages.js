@@ -26,9 +26,39 @@ const createPages = async ({ graphql, actions }) => {
     path: '/categories',
     component: path.resolve('./src/templates/categories-list-template.js'),
   });
+
+  const lastPosts = await graphql(`
+    {
+      allMarkdownRemark(filter: {frontmatter: {template: {eq: "post"}}}, limit: 4, sort: {fields: frontmatter___date, order: DESC}) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              date
+              description
+              title
+              category
+              socialImage {
+                childImageSharp {
+                  fluid {
+                    srcWebp
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  // Home page
   createPage({
     path: '/',
     component: path.resolve('./src/templates/landing-template.js'),
+    context: { lastPosts }
   });
 
   // Posts and pages from markdown
