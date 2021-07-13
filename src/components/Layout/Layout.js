@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import type { Node as ReactNode } from 'react';
 import { useSiteMetadata } from '../../hooks';
 import styles from './Layout.module.scss';
-//no import
+
 type Props = {
   children: ReactNode,
   title: string,
