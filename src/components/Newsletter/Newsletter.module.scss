@@ -65,11 +65,15 @@
   transition: 0.1s ease-in;
   border: 1px solid var(--primary-color);
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .newsletter__module__form__subscribe {
     grid-template-columns: 100%;
+    width:76%;
   }
   .newsletter__module__form__subscribe__submit {
     margin-left: 0px;
   }
+}   
+.newsletter__module__form__message{
+  margin:0;
 }
