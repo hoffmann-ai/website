@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.card {
+  margin: 20px;
+
+  p {
+    color: rgb(130, 130, 130);
+  }
+
+  h4:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  img {
+    width: 100%;
+    border: solid rgb(210, 210, 210) 1px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .category {
+    margin-bottom: 0;
+  }
+
+  .button {
+    border: solid 2px rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+  }
+}
