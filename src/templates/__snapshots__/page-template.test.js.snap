@@ -5,6 +5,78 @@ exports[`PageTemplate renders correctly 1`] = `
   className="layout"
 >
   <div
+    className="navbar"
+  >
+    <nav
+      className="navbar__inner"
+    >
+      <ul
+        className="navbar__inner_list"
+      >
+        <li
+          className="navbar__inner_list_item"
+        >
+          <div
+            className="logo"
+          >
+            <a
+              href="/"
+            >
+              <img
+                alt="logo"
+                className="logo__photo"
+                height="70"
+                width="70"
+              />
+            </a>
+          </div>
+        </li>
+        <li
+          className="navbar__inner_list_item"
+        >
+          <nav
+            className="menu"
+          >
+            <ul
+              className="menu__list"
+            >
+              <li
+                className="menu__list-item"
+              >
+                <a
+                  className="menu__list-item-link"
+                  href="/test/1/"
+                >
+                  Test label 1
+                </a>
+              </li>
+              <li
+                className="menu__list-item"
+              >
+                <a
+                  className="menu__list-item-link"
+                  href="/test/2/"
+                >
+                  Test label 2
+                </a>
+              </li>
+              <li
+                className="menu__list-item"
+              >
+                <a
+                  className="menu__list-item-link"
+                  href="/test/3/"
+                >
+                  Test label 3
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div
     className="page"
   >
     <div
