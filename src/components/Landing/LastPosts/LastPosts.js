@@ -3,7 +3,6 @@ import { Link, navigate } from 'gatsby';
 import styles from './LastPosts.module.scss';
 
 const LastPosts = ({ lastPosts }) => {
-  console.log(lastPosts);
 
   return (
     <div className={styles['container']}>
