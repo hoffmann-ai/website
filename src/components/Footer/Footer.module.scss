@@ -1,0 +1,115 @@
+* {
+  --primary-color: #0873e8;
+  --text-color-dark-light: #d4d4d4;
+  --text-color-dark: #4a4a4a;
+}
+.footer {
+  width: 100%;
+  background-color: transparent;
+  text-align: left;
+}
+.footer__inner {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  border-top: solid 1px rgba(20, 20, 20, 0.164);
+  width: 90%;
+  background-color: transparent;
+  margin: auto;
+}
+.footer__hoffmann__title,
+.footer__liens__title,
+.footer__legal__title,
+.footer__contact__title {
+  align-self: baseline;
+  display: flex;
+  color: var(--text-color-dark);
+  text-transform: uppercase;
+}
+.footer__hoffmann__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer__hoffmann__title__image {
+  width: 30px;
+  height: auto;
+  margin-right: 7px;
+}
+.footer__inner__row,
+.footer__inner__row__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: baseline;
+  background-color: transparent;
+}
+.footer__inner__row__liens {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: baseline;
+  background-color: transparent;
+  padding-left: 50px;
+}
+.footer__list__link {
+  color: var(--text-color-dark);
+  display: flex;
+}
+.footer__list__link img,
+.footer__list__first__row img {
+  height: 20px;
+  width: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+.footer__list__text {
+  max-width: 250px;
+  color: var(--text-color-dark);
+  text-align: left;
+}
+.footer__list {
+  background-color: transparent;
+  list-style: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+.footer__newsletter {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  width:80%;
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.footer__newsletter__credits,
+.footer__newsletter__newsletter {
+  height:auto;
+  color:rgb(128, 128, 128, 0.8);
+}
+@media screen and (max-width: 1200px) {
+  .footer__newsletter {
+    width:90%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer__inner {
+    grid-template-columns: 50% 50%;
+  }
+  .footer__newsletter__credits,
+  .footer__newsletter__newsletter {
+    padding: 20px;
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer__inner__row__contact {
+    margin-left: -25px;
+  }
+  .footer__newsletter__newsletter {
+    margin-left: -50px;
+    width:80%;
+  }
+}

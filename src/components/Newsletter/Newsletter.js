@@ -27,7 +27,6 @@ const Newsletter = () => {
   return (
     <div className={styles['newsletter__module']}>
       <div className={styles['newsletter__module__inner']}>
-        <h4>Abonnez-vous à notre newsletter !</h4>
         <div className={styles['newsletter__module__form']}>
           <form
             className={styles['newsletter__module__form__subscribe']}
@@ -40,7 +39,7 @@ const Newsletter = () => {
               onChange={changeEmailHandler}
               name='email'
               id='email'
-              placeholder='votre email...'
+              placeholder='Email'
               required
             />
             <button
@@ -49,7 +48,9 @@ const Newsletter = () => {
             >
               S'abonner
             </button>
-            <h6>{validationMessage}</h6>
+            <h6 className={styles['newsletter__module__form__message']}>
+              {validationMessage}
+            </h6>
           </form>
         </div>
       </div>

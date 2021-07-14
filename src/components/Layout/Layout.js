@@ -3,6 +3,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import type { Node as ReactNode } from 'react';
 import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 import { useSiteMetadata } from '../../hooks';
 import styles from './Layout.module.scss';
 
@@ -19,7 +20,7 @@ const Layout = ({
   description,
   socialImage = ''
 }: Props) => {
-  const { author, url } = useSiteMetadata();
+  const { author, url, menu } = useSiteMetadata();
   const metaImage = socialImage || author.photo;
   const metaImageUrl = url + metaImage;
 
@@ -38,6 +39,7 @@ const Layout = ({
         <meta name="twitter:image" content={metaImageUrl} />
       </Helmet>
       {children}
+      <Footer menu={menu}/>
     </div>
   );
 };

@@ -7,9 +7,6 @@ exports[`Newsletter renders correctly 1`] = `
   <div
     className="newsletter__module__inner"
   >
-    <h4>
-      Abonnez-vous à notre newsletter !
-    </h4>
     <div
       className="newsletter__module__form"
     >
@@ -22,7 +19,7 @@ exports[`Newsletter renders correctly 1`] = `
           id="email"
           name="email"
           onChange={[Function]}
-          placeholder="votre email..."
+          placeholder="Email"
           required={true}
           type="email"
           value=""
@@ -33,7 +30,9 @@ exports[`Newsletter renders correctly 1`] = `
         >
           S'abonner
         </button>
-        <h6>
+        <h6
+          className="newsletter__module__form__message"
+        >
           
         </h6>
       </form>
