@@ -3,7 +3,11 @@ import React, { useState } from 'react';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 import styles from './Newsletter.module.scss';
 
-const Newsletter = () => {
+type Props = {
+  style: string,
+};
+
+const Newsletter = ({ style }: Props) => {
   const [validationMessage, setValidationMessage] = useState('');
   const [email, setEmail] = useState('');
   const validate = () => {
@@ -29,7 +33,11 @@ const Newsletter = () => {
       <div className={styles['newsletter__module__inner']}>
         <div className={styles['newsletter__module__form']}>
           <form
-            className={styles['newsletter__module__form__subscribe']}
+            className={
+              style === 'footer'
+                ? styles['newsletter__module__form__subscribe__footer']
+                : styles['newsletter__module__form__subscribe']
+            }
             onSubmit={handleSubmit}
           >
             <input

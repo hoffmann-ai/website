@@ -10,7 +10,7 @@
   display: flex;
   border-bottom: 2px solid var(--text-color-dark);
 }
-.tabs__list > li{
+.tabs__list > li {
   margin: 0 1em;
   padding: 0.5em 1em;
   color: 2px solid var(--text-color-dark);
@@ -41,9 +41,8 @@
   height: 200px;
   width: auto;
 }
-li a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@media screen and (max-width: 700px) {
+  .tabs__list {
+    flex-direction: column;
+  }
 }
