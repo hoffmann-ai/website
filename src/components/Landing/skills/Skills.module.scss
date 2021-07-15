@@ -1,6 +1,13 @@
+* {
+  --primary-color: #0873e8;
+  --text-color-dark-light: #d4d4d4;
+  --text-color-dark: #4a4a4a;
+}
+
 .container {
   height: 50em;
   width: 100%;
+  border-bottom: solid 1px var(--text-color-dark);
 }
 
 .text {
@@ -11,7 +18,7 @@
   text-align: center;
 
   h4 {
-    color: #0873e8;
+    color: var(--primary-color);
   }
 }
 
