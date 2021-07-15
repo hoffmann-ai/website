@@ -23,8 +23,7 @@ const Tabs = ({ children }) => {
                 handleClick(e, tab.props.label);
               }}
             >
-              <img className={styles.image} src = {tab.props.label}/>
-              <h4 className={styles.title}>{tab.props.title}</h4>
+              {tab.props.title}
             </a>
           </li>
         ))}

@@ -333,7 +333,7 @@ exports[`PostTemplate renders correctly 1`] = `
               className="newsletter__module__form"
             >
               <form
-                className="newsletter__module__form__subscribe"
+                className="newsletter__module__form__subscribe__footer"
                 onSubmit={[Function]}
               >
                 <input
