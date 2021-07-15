@@ -1,3 +1,9 @@
+* {
+  --primary-color: #0873e8;
+  --text-color-dark-light: #d4d4d4;
+  --text-color-dark: #4a4a4a;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -7,7 +13,7 @@
   margin: 20px;
 
   p {
-    color: rgb(130, 130, 130);
+    color: var(--text-color-dark);
   }
 
   h4:hover {
@@ -17,7 +23,7 @@
 
   img {
     width: 100%;
-    border: solid rgb(210, 210, 210) 1px;
+    border: solid 1px var(--text-color-dark-light);
     border-radius: 3px;
     cursor: pointer;
   }
@@ -27,9 +33,9 @@
   }
 
   .button {
-    border: solid 2px rgb(0, 0, 0);
+    border: solid 2px var(--text-color-dark);
     padding: 5px;
     border-radius: 15px;
-    color: rgb(0, 0, 0);
+    color: var(--text-color-dark);
   }
 }
