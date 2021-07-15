@@ -2,9 +2,7 @@ import React from 'react';
 import { Link, navigate } from 'gatsby';
 import styles from './LastPosts.module.scss';
 
-const LastPosts = ({ lastPosts }) => {
-
-  return (
+const LastPosts = ({ lastPosts }) => (
     <div className={styles['container']}>
       {lastPosts.map((post, i) => (
         <div key={i} className={styles['card']}>
@@ -18,7 +16,6 @@ const LastPosts = ({ lastPosts }) => {
         </div>
       ))}
     </div>
-  );
-};
+);
 
 export default LastPosts;
