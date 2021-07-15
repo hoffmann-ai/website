@@ -5,6 +5,7 @@ import WelcomeModule from './WelcomeModule/WelcomeModule';
 import Newsletter from '../Newsletter/Newsletter';
 import LastPosts from './LastPosts';
 import Clients from './Clients';
+import Skills from './skills';
 
 const Landing = ({ lastPosts }) => (
   <div className={styles['landing__page']}>
@@ -94,6 +95,7 @@ const Landing = ({ lastPosts }) => (
         </Tabs>
       </div>
       <Clients />
+      <Skills />
       <h1>Nos derniers posts</h1>
       <LastPosts lastPosts={lastPosts} />
     </div>
