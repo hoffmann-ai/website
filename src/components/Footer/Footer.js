@@ -26,7 +26,7 @@ const Footer = ({ menu }: Props) => (
             </h6>
           </li>
           <li className={styles['footer__list__text']}>
-          Experts en Cloud, DevOps & InfraOps, Web.
+            Experts en Cloud, DevOps & InfraOps, Web.
           </li>
         </ul>
       </div>
@@ -99,7 +99,7 @@ const Footer = ({ menu }: Props) => (
         ©2021 HOFFMANN.AI. Tous droits réservés.
       </div>
       <div className={styles['footer__newsletter__newsletter']}>
-       <Newsletter />
+        <Newsletter style={'footer'} />
       </div>
     </div>
   </div>
