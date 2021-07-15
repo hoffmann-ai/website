@@ -1,9 +1,15 @@
+* {
+  --primary-color: #0873e8;
+  --text-color-dark-light: #d4d4d4;
+  --text-color-dark: #4a4a4a;
+}
+
 .container {
   width: 100%;
   padding: 20px 0px;
   text-align: center;
-  border-top: solid 1px rgb(0, 0, 0);
-  border-bottom: solid 1px rgb(0, 0, 0);
+  border-top: solid 1px var(--text-color-dark);
+  border-bottom: solid 1px var(--text-color-dark);
   margin-top: 5em;
 
   h1 {
@@ -12,10 +18,10 @@
 
   .logos {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     img {
-      max-height: 100px;
+      height: 80px;
     }
   }
 }
