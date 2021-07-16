@@ -1,5 +1,6 @@
 @import '../../assets/scss/variables';
 @import '../../assets/scss/mixins';
+@import '../../assets/scss/general.scss';
 * {
   --primary-color: #0873e8;
   --text-color-dark-light: #d4d4d4;
@@ -44,26 +45,8 @@
   background-color: transparent;
 }
 .newsletter__module__form__subscribe__submit {
-  font-size: 1rem;
   height: 39px;
   margin-left: 7%;
-  border-radius: 3px;
-  background-color: var(--primary-color);
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  transition: 0.1s ease-in;
-  border: 1px solid rgb(146, 146, 146, 0.5);
-}
-.newsletter__module__form__subscribe__submit:hover {
-  font-size: 1rem;
-  height: 39px;
-  margin-left: 7%;
-  border-radius: 3px;
-  background-color: rgb(255, 255, 255);
-  color: var(--primary-color);
-  cursor: pointer;
-  transition: 0.1s ease-in;
-  border: 1px solid var(--primary-color);
 }
 @media screen and (max-width: 700px) {
   .newsletter__module__form__subscribe__footer {
