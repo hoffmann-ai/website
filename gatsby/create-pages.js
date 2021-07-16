@@ -42,7 +42,16 @@ const createPages = async ({ graphql, actions }) => {
               category
               socialImage {
                 childImageSharp {
+<<<<<<< HEAD
                   gatsbyImageData
+=======
+                  fluid {
+                    aspectRatio
+                    src
+                    srcSet
+                    sizes
+                  }
+>>>>>>> e6ade3f (fix: last post : set categorie to uppercase, install and use gatsby-image)
                 }
               }
             }
