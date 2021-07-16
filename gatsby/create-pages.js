@@ -42,12 +42,7 @@ const createPages = async ({ graphql, actions }) => {
               category
               socialImage {
                 childImageSharp {
-                  fluid {
-                    aspectRatio
-                    src
-                    srcSet
-                    sizes
-                  }
+                  gatsbyImageData
                 }
               }
             }
@@ -58,12 +53,7 @@ const createPages = async ({ graphql, actions }) => {
         edges {
           node {
             childImageSharp {
-              fixed (height: 64, width: 64) {
-                width
-                height
-                src
-                srcSet
-              }
+              gatsbyImageData(width: 64, height: 64)
             }
           }
         }

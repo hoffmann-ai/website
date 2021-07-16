@@ -241,6 +241,7 @@ module.exports = {
         tidioKey: 'vvpxm8l7zkpnekbx2teb4pvobrfchevp',
         enableDuringDevelop: false,
       },
-    }
+    },
+    'gatsby-plugin-image'
   ]
 };
