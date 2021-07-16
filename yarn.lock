@@ -1443,10 +1443,17 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+<<<<<<< HEAD
 "@babel/runtime@^7.14.0":
   version "7.14.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.6.tgz#535203bc0892efc7dec60bdc27b2ecf6e409062d"
   integrity sha512-/PCB2uJ7oM44tz8YhC4Z/6PeOKXp4K588f+5M3clr1M4zbqztlo0XEfJ2LEzj/FgwfgGcIdl8n7YYjTCI0BYwg==
+=======
+"@babel/runtime@^7.12.0", "@babel/runtime@^7.13.10", "@babel/runtime@^7.8.7":
+  version "7.14.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.0.tgz#46794bc20b612c5f75e62dd071e24dfd95f1cbe6"
+  integrity sha512-JELkvo/DlpNdJ7dlyw/eY7E0suy5i5GQH+Vlxaq1nsNJ+H7f4Vtv3jMeCEgRhZZQFXTjldYfQgv2qmM6M1v5wA==
+>>>>>>> 2980d51 (fix: remove deprecated gatsby-image and use gatsby-plugin-image instead)
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -4051,6 +4058,11 @@ babel-plugin-remove-graphql-queries@^2.16.1:
   resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-2.16.1.tgz#bacfcd87eabdfffe025072c11602a9586cd0285a"
   integrity sha512-PkHJuRodMp4p617a/ZVhV8elBhRoFpOTpdu2DaApXJFIsDJWhjZ8d4BGbbFCT/yKJrhRDTdqg1r5AhWEaEUKkw==
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aa86b62 (fix: remove deprecated gatsby-image and use gatsby-plugin-image instead)
 babel-plugin-remove-graphql-queries@^3.9.0:
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-3.9.0.tgz#73732b5632a944ad4d623a30b8dca69c529ffceb"
@@ -4061,6 +4073,10 @@ babel-plugin-syntax-jsx@^6.18.0:
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
   integrity sha1-CvMqmm4Tyno/1QaeYtew9Y0NiUY=
 
+<<<<<<< HEAD
+=======
+>>>>>>> 2980d51 (fix: remove deprecated gatsby-image and use gatsby-plugin-image instead)
+>>>>>>> aa86b62 (fix: remove deprecated gatsby-image and use gatsby-plugin-image instead)
 babel-plugin-syntax-object-rest-spread@^6.8.0:
   version "6.13.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-object-rest-spread/-/babel-plugin-syntax-object-rest-spread-6.13.0.tgz#fd6536f2bce13836ffa3a5458c4903a597bb3bf5"
@@ -8231,15 +8247,6 @@ gatsby-graphiql-explorer@^0.11.0:
   integrity sha512-mmxQhQSDUkbtOhQUek9a9sSg6LpiQUytNNR2hec8iklau2D4MDA5CvHTk9GUGhjdUgtnHSe/MPyZVJGmXSnYAA==
   dependencies:
     "@babel/runtime" "^7.12.5"
-
-gatsby-image@^3.9.0:
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-3.9.0.tgz#fb36db0ac8b08fbb8a03cf3e715ac861db9e746c"
-  integrity sha512-VL/T/M1VNeIdJA9MKnXiHyPG6ruuCkXKoC7E+auS6O7S2Jm6TWXtWhpYX+Jt8ofGHK6TzHCIGhYtENGTW9mtrQ==
-  dependencies:
-    "@babel/runtime" "^7.14.0"
-    object-fit-images "^3.2.4"
-    prop-types "^15.7.2"
 
 gatsby-legacy-polyfills@^0.7.1:
   version "0.7.1"
@@ -13189,11 +13196,6 @@ object-copy@^0.1.0:
     copy-descriptor "^0.1.0"
     define-property "^0.2.5"
     kind-of "^3.0.3"
-
-object-fit-images@^3.2.4:
-  version "3.2.4"
-  resolved "https://registry.yarnpkg.com/object-fit-images/-/object-fit-images-3.2.4.tgz#6c299d38fdf207746e5d2d46c2877f6f25d15b52"
-  integrity sha512-G+7LzpYfTfqUyrZlfrou/PLLLAPNC52FTy5y1CBywX+1/FkxIloOyQXBmZ3Zxa2AWO+lMF0JTuvqbr7G5e5CWg==
 
 object-hash@^1.1.4:
   version "1.3.1"

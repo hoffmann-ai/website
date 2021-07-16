@@ -7,6 +7,7 @@ import type { Edges } from '../types';
 
 type Props = {
   pageContext: {
+<<<<<<< HEAD
     lastPosts: {
       data: {
         allMarkdownRemark: {
@@ -27,14 +28,24 @@ type Props = {
           edges: Edges
         }
       }
+=======
+    data: {
+      allFile: Edges,
+      allMarkdownRemark: Edges
+>>>>>>> aa86b62 (fix: remove deprecated gatsby-image and use gatsby-plugin-image instead)
     }
   }
 }
 
 const LandingTemplate = ({ pageContext }: Props) => {
+<<<<<<< HEAD
   const lastPosts = pageContext.lastPosts ? pageContext.lastPosts.data.allMarkdownRemark.edges : [];
   const clients = pageContext.clients ? pageContext.clients.data.allFile.edges : [];
   const skills = pageContext.skills ? pageContext.skills.data.allFile.edges : [];
+=======
+  const landingContext = pageContext.data;
+  console.log(pageContext);
+>>>>>>> aa86b62 (fix: remove deprecated gatsby-image and use gatsby-plugin-image instead)
 
   return (
     <Layout title={'Accueil - HOFFMANN.AI'}>
