@@ -29,7 +29,11 @@ const createPages = async ({ graphql, actions }) => {
 
   const lastPosts = await graphql(`
     {
-      allMarkdownRemark(filter: {frontmatter: {template: {eq: "post"}}}, limit: 4, sort: {fields: frontmatter___date, order: DESC}) {
+      allMarkdownRemark(
+        filter: { frontmatter: { template: { eq: "post" } } }
+        limit: 4
+        sort: { fields: frontmatter___date, order: DESC }
+      ) {
         edges {
           node {
             fields {
@@ -42,16 +46,7 @@ const createPages = async ({ graphql, actions }) => {
               category
               socialImage {
                 childImageSharp {
-<<<<<<< HEAD
                   gatsbyImageData
-=======
-                  fluid {
-                    aspectRatio
-                    src
-                    srcSet
-                    sizes
-                  }
->>>>>>> e6ade3f (fix: last post : set categorie to uppercase, install and use gatsby-image)
                 }
               }
             }
@@ -63,7 +58,7 @@ const createPages = async ({ graphql, actions }) => {
 
   const skills = await graphql(`
     {
-      allFile(filter: {relativeDirectory: {eq: "skills"}}) {
+      allFile(filter: { relativeDirectory: { eq: "skills" } }) {
         edges {
           node {
             childImageSharp {
@@ -78,7 +73,7 @@ const createPages = async ({ graphql, actions }) => {
 
   const clients = await graphql(`
     {
-      allFile(filter: {relativeDirectory: {eq: "clients"}}) {
+      allFile(filter: { relativeDirectory: { eq: "clients" } }) {
         edges {
           node {
             childImageSharp {
@@ -95,7 +90,7 @@ const createPages = async ({ graphql, actions }) => {
   createPage({
     path: '/',
     component: path.resolve('./src/templates/landing-template.js'),
-    context: { lastPosts, skills, clients }
+    context: { lastPosts, skills, clients },
   });
 
   // Posts and pages from markdown
