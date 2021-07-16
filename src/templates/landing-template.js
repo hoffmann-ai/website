@@ -7,21 +7,39 @@ import type { Edges } from '../types';
 
 type Props = {
   pageContext: {
-    data: {
-      allFile: Edges,
-      allMarkdownRemark: Edges
+    lastPosts: {
+      data: {
+        allMarkdownRemark: {
+          edges: Edges
+        }
+      }
+    },
+    clients: {
+      data: {
+        allFile: {
+          edges: Edges
+        }
+      }
+    },
+    skills: {
+      data: {
+        allFile: {
+          edges: Edges
+        }
+      }
     }
   }
 }
 
 const LandingTemplate = ({ pageContext }: Props) => {
-  const landingContext = pageContext.data;
-  console.log(pageContext);
+  const lastPosts = pageContext.lastPosts.data.allMarkdownRemark.edges;
+  const clients = pageContext.clients.data.allFile.edges;
+  const skills = pageContext.skills.data.allFile.edges;
 
   return (
     <Layout title={'Accueil - HOFFMANN.AI'}>
       <Page>
-        <Landing landingContext={landingContext} />
+        <Landing lastPosts={lastPosts} clients={clients} skills={skills} />
       </Page>
     </Layout>
   );
