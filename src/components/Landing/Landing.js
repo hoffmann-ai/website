@@ -7,16 +7,20 @@ import LastPosts from './LastPosts';
 import Clients from './Clients';
 import Skills from './skills';
 
-const Landing = ({ lastPosts }) => (
-  <div className={styles['landing__page']}>
-    <WelcomeModule />
-    <h4 className={styles['landing__page__subscribe__message']}>
-      Abonnez-vous à notre newseltter pour être à jour sur nos articles !
-    </h4>
-    <Newsletter style={'landing'} />
-    <p className={styles['landing__page__unsubscribe__message']}>
-      Vous pouvez vous désabonner à tout moment.
-    </p>
+const Landing = ({ landingContext }) => {
+  const lastPosts = landingContext.allMarkdownRemark.edges;
+  const skillsLogos = landingContext.allFile.edges;
+
+  return (
+    <div className={styles['landing__page']}>
+      <WelcomeModule />
+      <h4 className={styles['landing__page__subscribe__message']}>
+        Abonnez-vous à notre newseltter pour être à jour sur nos articles !
+      </h4>
+      <Newsletter style={'landing'} />
+      <p className={styles['landing__page__unsubscribe__message']}>
+        Vous pouvez vous désabonner à tout moment.
+      </p>
       <div className={styles['services']}>
         <h1>Nos services</h1>
         <Tabs>
@@ -95,10 +99,11 @@ const Landing = ({ lastPosts }) => (
         </Tabs>
       </div>
       <Clients />
-      <Skills />
+      <Skills logos={skillsLogos} />
       <h1>Nos derniers posts</h1>
       <LastPosts lastPosts={lastPosts} />
     </div>
-);
+  );
+};
 
 export default Landing;

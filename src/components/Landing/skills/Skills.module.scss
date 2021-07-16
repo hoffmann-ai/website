@@ -5,19 +5,19 @@
 }
 
 .container {
-  height: 50em;
+  position: relative;
+  height: 30em;
   width: 100%;
   border-bottom: solid 1px var(--text-color-dark-light);
 }
 
 .text {
-  display: inline-block;
-  position: relative;
+  position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 
-  h4 {
+  h3 {
     color: var(--primary-color);
   }
 
@@ -27,6 +27,6 @@
 }
 
 .logo {
-  height: 80px;
-  position: relative;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }

@@ -27,7 +27,7 @@ const createPages = async ({ graphql, actions }) => {
     component: path.resolve('./src/templates/categories-list-template.js'),
   });
 
-  const lastPosts = await graphql(`
+  const landingContext = await graphql(`
     {
       allMarkdownRemark(filter: {frontmatter: {template: {eq: "post"}}}, limit: 4, sort: {fields: frontmatter___date, order: DESC}) {
         edges {
@@ -54,6 +54,20 @@ const createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      allFile(filter: {relativeDirectory: {eq: "skills"}}) {
+        edges {
+          node {
+            childImageSharp {
+              fixed (height: 64, width: 64) {
+                width
+                height
+                src
+                srcSet
+              }
+            }
+          }
+        }
+      }
     }
   `);
 
@@ -61,7 +75,7 @@ const createPages = async ({ graphql, actions }) => {
   createPage({
     path: '/',
     component: path.resolve('./src/templates/landing-template.js'),
-    context: { lastPosts }
+    context: landingContext
   });
 
   // Posts and pages from markdown
