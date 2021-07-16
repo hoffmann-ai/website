@@ -14,12 +14,12 @@ type Props = {
 }
 
 const LandingTemplate = ({ pageContext }: Props) => {
-  const lastPosts = pageContext.lastPosts.data.allMarkdownRemark.edges;
+  const landingContext = pageContext.data;
 
   return (
     <Layout title={'Accueil - HOFFMANN.AI'}>
       <Page>
-        <Landing lastPosts={lastPosts} />
+        <Landing landingContext={landingContext} />
       </Page>
     </Layout>
   );
