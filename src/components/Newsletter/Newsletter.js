@@ -51,7 +51,7 @@ const Newsletter = ({ style }: Props) => {
               required
             />
             <button
-              className={styles['newsletter__module__form__subscribe__submit']}
+              className={`${styles['newsletter__module__form__subscribe__submit']} ${styles['button']}`}
               type='submit'
             >
               S'abonner
