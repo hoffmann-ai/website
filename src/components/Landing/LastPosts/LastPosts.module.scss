@@ -1,8 +1,4 @@
-* {
-  --primary-color: #0873e8;
-  --text-color-dark-light: #d4d4d4;
-  --text-color-dark: #4a4a4a;
-}
+@import 'src/assets/scss/general.scss';
 
 .container {
   display: grid;
@@ -30,12 +26,5 @@
 
   .category {
     margin-bottom: 0;
-  }
-
-  .button {
-    border: solid 2px var(--text-color-dark);
-    padding: 5px;
-    border-radius: 15px;
-    color: var(--text-color-dark);
   }
 }
