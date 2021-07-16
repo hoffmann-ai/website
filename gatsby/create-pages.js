@@ -43,7 +43,10 @@ const createPages = async ({ graphql, actions }) => {
               socialImage {
                 childImageSharp {
                   fluid {
-                    srcWebp
+                    aspectRatio
+                    src
+                    srcSet
+                    sizes
                   }
                 }
               }
