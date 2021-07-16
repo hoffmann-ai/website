@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import styles from './Skills.module.scss';
 
 const Skills = ({ logos }) => (
@@ -8,12 +8,12 @@ const Skills = ({ logos }) => (
       <h3>Notre expertise</h3>
       <p>pour rester à la pointe de la technologie</p>
     </div>
-    <Img fixed={logos[0].node.childImageSharp.fixed} className={styles['logo']} style={{ top: '35%', left: '25%' }}/>
-    <Img fixed={logos[1].node.childImageSharp.fixed} className={styles['logo']} style={{ top: '80%', left: '30%' }}/>
-    <Img fixed={logos[2].node.childImageSharp.fixed} className={styles['logo']} style={{ top: '20%', left: '30%' }}/>
-    <Img fixed={logos[3].node.childImageSharp.fixed} className={styles['logo']} style={{ top: '80%', left: '40%' }}/>
-    <Img fixed={logos[4].node.childImageSharp.fixed} className={styles['logo']} style={{ top: '20%', left: '40%' }}/>
-    <Img fixed={logos[5].node.childImageSharp.fixed} className={styles['logo']} style={{ top: '65%', left: '45%' }}/>
+    <GatsbyImage image={logos[0].node.childImageSharp.gatsbyImageData} alt="aws" className={styles['logo']} style={{ top: '20%', left: '30%' }}/>
+    <GatsbyImage image={logos[1].node.childImageSharp.gatsbyImageData} alt="azure" className={styles['logo']} style={{ top: '20%', left: '50%' }}/>
+    <GatsbyImage image={logos[2].node.childImageSharp.gatsbyImageData} alt="cloud" className={styles['logo']} style={{ top: '20%', left: '70%' }}/>
+    <GatsbyImage image={logos[3].node.childImageSharp.gatsbyImageData} alt="docker" className={styles['logo']} style={{ top: '80%', left: '30%' }}/>
+    <GatsbyImage image={logos[4].node.childImageSharp.gatsbyImageData} alt="kubernetes" className={styles['logo']} style={{ top: '80%', left: '50%' }}/>
+    <GatsbyImage image={logos[5].node.childImageSharp.gatsbyImageData} alt="prometheus" className={styles['logo']} style={{ top: '80%', left: '70%' }}/>
   </div>
 );
 
