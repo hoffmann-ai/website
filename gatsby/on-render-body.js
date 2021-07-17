@@ -11,8 +11,8 @@ const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
 
   if (useKatex) {
     setHeadComponents([
-      React.createElement("style", {
-        key: "katex-inline-stylesheet",
+      React.createElement('style', {
+        key: 'katex-inline-stylesheet',
         dangerouslySetInnerHTML: { __html: katexStylesheet.toString() },
       }),
     ]);
@@ -29,13 +29,14 @@ const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
           };
           (function(d, s) {
             var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
-            e.async = true; e.src = "//static.axept.io/sdk-slim.js";
+            e.async = true;
+            e.src = "//static.axept.io/sdk-slim.js";
             t.parentNode.insertBefore(e, t);
           })(document, "script");
       `,
       }}
     />,
-  ])
+  ]);
 };
 
 module.exports = onRenderBody;
