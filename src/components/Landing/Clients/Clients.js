@@ -7,7 +7,7 @@ const Clients = ({ clients }) => (
     <h1>Ils nous font confiance</h1>
     <div className={styles['logos']}>
       {clients.map((client, i) => (
-        <GatsbyImage image={client.node.childImageSharp.gatsbyImageData} alt="client" key={i} />
+        <GatsbyImage className={styles['logo']} image={client.node.childImageSharp.gatsbyImageData} alt="client" key={i} imgStyle={{ objectFit: 'contain' }} />
       ))}
     </div>
   </div>
