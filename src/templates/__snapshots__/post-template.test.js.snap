@@ -347,7 +347,7 @@ exports[`PostTemplate renders correctly 1`] = `
                   value=""
                 />
                 <button
-                  className="newsletter__module__form__subscribe__submit"
+                  className="newsletter__module__form__subscribe__submit button"
                   type="submit"
                 >
                   S'abonner
