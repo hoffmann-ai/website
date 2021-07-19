@@ -8,13 +8,18 @@ const Skills = ({ skills }) => (
       <h3>Notre expertise</h3>
       <p>pour rester à la pointe de la technologie</p>
     </div>
-    {skills[0] && <GatsbyImage image={skills[0].node.childImageSharp.gatsbyImageData} alt="aws" className={styles['logo']} style={{ top: '20%', left: '30%' }}/>}
-    {skills[1] && <GatsbyImage image={skills[1].node.childImageSharp.gatsbyImageData} alt="azure" className={styles['logo']} style={{ top: '20%', left: '50%' }}/>}
-    {skills[2] && <GatsbyImage image={skills[2].node.childImageSharp.gatsbyImageData} alt="cloud" className={styles['logo']} style={{ top: '20%', left: '70%' }}/>}
-    {skills[3] && <GatsbyImage image={skills[3].node.childImageSharp.gatsbyImageData} alt="docker" className={styles['logo']} style={{ top: '80%', left: '30%' }}/>}
-    {skills[4] && <GatsbyImage image={skills[4].node.childImageSharp.gatsbyImageData} alt="kubernetes" className={styles['logo']} style={{ top: '80%', left: '50%' }}/>}
-    {skills[5] && <GatsbyImage image={skills[5].node.childImageSharp.gatsbyImageData} alt="prometheus" className={styles['logo']} style={{ top: '80%', left: '70%' }}/>}
+    {displaySkills(skills)}
   </div>
 );
+
+const displaySkills = (skills: any[]) => {
+  const render = [];
+  skills.forEach((skill, i) => {
+    const angle = (i * (360 / skills.length)) * (Math.PI / 180);
+    render.push(<GatsbyImage image={skill.node.childImageSharp.gatsbyImageData} alt="aws" className={styles['logo']}
+      style={{ top: `${50 + Math.cos(angle) * 40}%`, left: `${50 + Math.sin(angle) * 40}%` }} />);
+  });
+  return render;
+};
 
 export default Skills;
