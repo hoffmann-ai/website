@@ -1,4 +1,6 @@
+// @ts-nocheck
 import React, { useState } from 'react';
+import addToMailchimp from 'gatsby-plugin-mailchimp';
 import styles from './ContactForm.module.scss';
 
 const ContactForm = () => {
@@ -9,40 +11,39 @@ const ContactForm = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [submit, setSubmit] = useState(false);
+  const [newsletterAgree, setSewsletterAgree] = useState(false);
+  const handleClickCheckBox = () => setSewsletterAgree(!newsletterAgree);
+
   // empty inputs messages
   const error = 'Ce champ est requis.';
 
   const handleSubmit = (e) => {
-    e.preventDefault();
     setSubmit(true);
-    sendFeedback('***TEMPLATE_ID***', {
-      name,
-      firstname,
-      phone,
-      email,
-      message,
-    });
+    if (email.length !== 0 && name.length !== 0 && firstname.length !== 0) {
+      sendFeedback();
+    } else {
+      e.preventDefault();
+    }
   };
 
   // reeceives templateId, variables in parameters
   const sendFeedback = () => {
-    // window.emailjs
-    //   .send('gmail', templateId, variables)
-    //   .then(() => {
-    //     setName('');
-    //     setFirstname('');
-    //     setPhone('');
-    //     setEmail('');
-    //     setMessage('');
-    //   })
-    //   .catch(() => {
-    //     document.querySelector('.form-message').innerHTML =
-    //       'Une erreur s est produite, veuillez réessayer.';
-    //   });
+    if (newsletterAgree) addToMailchimp(email);
+    setName('');
+    setFirstname('');
+    setPhone('');
+    setEmail('');
+    setMessage('');
   };
 
   return (
-    <form className={styles['form__module']}>
+    <form
+      className={styles['form__module']}
+      name='contact'
+      method='POST'
+      data-netlify='true'
+    >
+      <input type='hidden' name='form-name' value='contact' />
       <h1 className={styles['form__title']}>
         Un projet en tête ? Contactez-nous !
       </h1>
@@ -130,6 +131,8 @@ const ContactForm = () => {
           name='checkbox'
           className={styles['form__inner__grid__element__checkbox']}
           type='checkbox'
+          onChange={handleClickCheckBox}
+          checked={newsletterAgree}
         />
         <label className={styles['form__inner__grid__element__child']}>
           J'accepte de recevoir d'autres communications de HOFFMANN.AI. Vous
@@ -143,7 +146,7 @@ const ContactForm = () => {
       <div className={styles['form__inner__grid__element__message']}>
         <input
           className={styles['form__input']}
-          type='button'
+          type='submit'
           value='Envoyer'
           onClick={handleSubmit}
         />

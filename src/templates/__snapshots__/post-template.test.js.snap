@@ -165,7 +165,15 @@ exports[`PostTemplate renders correctly 1`] = `
   </div>
   <form
     className="form__module"
+    form={true}
+    name="contact"
+    netlify={true}
   >
+    <input
+      name="form-name"
+      type="hidden"
+      value="contact"
+    />
     <h1
       className="form__title"
     >
@@ -300,8 +308,10 @@ exports[`PostTemplate renders correctly 1`] = `
       className="form__inner__grid__element__terms"
     >
       <input
+        checked={false}
         className="form__inner__grid__element__checkbox"
         name="checkbox"
+        onChange={[Function]}
         type="checkbox"
       />
       <label
@@ -322,7 +332,7 @@ exports[`PostTemplate renders correctly 1`] = `
       <input
         className="form__input"
         onClick={[Function]}
-        type="button"
+        type="submit"
         value="Envoyer"
       />
       <div
