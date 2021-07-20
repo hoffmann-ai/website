@@ -4,10 +4,10 @@ module.exports = {
   url: 'https://hoffmann.ai',
   pathPrefix: '/',
   title: 'HOFFMANN.AI',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-  copyright: '© All rights reserved.',
+  subtitle: 'HOFFMANN.AI est une société spécialisée dans le domaine du service informatique. Nous intervenons sur des problématiques de digitalisation afin d\'accompagner nos clients dans leurs objectifs de communication, notoriété, marketing et création de logiciel.',
+  copyright: '© HOFFMANN.AI.',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: 'UA-167118343-1',
   useKatex: false,
   logo: '/logo.png',
   menu: [
@@ -26,10 +26,10 @@ module.exports = {
   ],
   author: {
     name: 'Alexander Hoffmann',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    photo: '/logo.png',
+    bio: 'CEO & Founder @ HOFFMANN.AI - J\'aime créer de nouvelles choses chaque jour.',
     contacts: {
-      email: '',
+      email: 'alexander@hoffmann.ai',
       facebook: '',
       telegram: '',
       twitter: '',
