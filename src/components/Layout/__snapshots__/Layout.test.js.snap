@@ -79,9 +79,9 @@ exports[`Layout renders correctly 1`] = `
   test
   <form
     className="form__module"
-    form={true}
+    data-netlify="true"
+    method="POST"
     name="contact"
-    netlify={true}
   >
     <input
       name="form-name"
