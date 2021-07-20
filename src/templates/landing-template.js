@@ -11,20 +11,21 @@ type Props = {
     lastPosts: {
       data: {
         allMarkdownRemark: {
-          edges: Edges
-        }
-      }
+          edges: Edges,
+        },
+      },
     },
     clients: {
       data: {
         allFile: {
-          edges: Edges
-        }
-      }
+          edges: Edges,
+        },
+      },
     },
     skills: {
       data: {
         allFile: {
+<<<<<<< HEAD
           edges: Edges
         }
       }
@@ -46,11 +47,46 @@ const LandingTemplate = ({ pageContext }: Props) => {
   const landingContext = pageContext.data;
   console.log(pageContext);
 >>>>>>> aa86b62 (fix: remove deprecated gatsby-image and use gatsby-plugin-image instead)
+=======
+          edges: Edges,
+        },
+      },
+    },
+    landing: {
+      data: {
+        allFile: {
+          edges: Edges,
+        },
+      },
+    },
+    services: {
+      data: {
+        allFile: {
+          edges: Edges,
+        },
+      },
+    },
+  },
+};
+
+const LandingTemplate = ({ pageContext }: Props) => {
+  const lastPosts = pageContext.lastPosts.data.allMarkdownRemark.edges;
+  const clients = pageContext.clients.data.allFile.edges;
+  const skills = pageContext.skills.data.allFile.edges;
+  const landing = pageContext.landing.data.allFile.edges;
+  const services = pageContext.services.data.allFile.edges;
+>>>>>>> 3bfb3f3 (changed loading method for images, added a grid block, changes footer mobile version)
 
   return (
     <Layout title={'Accueil - HOFFMANN.AI'}>
       <Page>
-        <Landing lastPosts={lastPosts} clients={clients} skills={skills} />
+        <Landing
+          lastPosts={lastPosts}
+          clients={clients}
+          skills={skills}
+          landing={landing}
+          services={services}
+        />
       </Page>
     </Layout>
   );
