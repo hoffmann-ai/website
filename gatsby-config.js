@@ -111,12 +111,6 @@ module.exports = {
         plugins: [
           'gatsby-remark-relative-images',
           {
-            resolve: 'gatsby-remark-katex',
-            options: {
-              strict: 'ignore'
-            }
-          },
-          {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 960,
@@ -187,7 +181,7 @@ module.exports = {
         background_color: '#FFF',
         theme_color: '#F7A046',
         display: 'standalone',
-        icon: 'static/photo.jpg'
+        icon: 'static/logo.png'
       },
     },
     {
