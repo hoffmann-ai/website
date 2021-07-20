@@ -235,6 +235,7 @@ module.exports = {
     },
     'gatsby-plugin-flow',
     'gatsby-plugin-optimize-svgs',
+    'gatsby-plugin-image',
     {
       resolve: 'gatsby-plugin-tidio-chat',
       options: {
