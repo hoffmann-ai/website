@@ -85,12 +85,44 @@ const createPages = async ({ graphql, actions }) => {
       }
     }
   `);
+  const landing = await graphql(`
+    {
+      allFile(filter: { relativeDirectory: { eq: "landing" } }) {
+        edges {
+          node {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+      }
+    }
+  `);
+  const services = await graphql(`
+    {
+      allFile(filter: { relativeDirectory: { eq: "services" } }) {
+        edges {
+          node {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
+      }
+    }
+  `);
 
   // Home page
   createPage({
     path: '/',
     component: path.resolve('./src/templates/landing-template.js'),
+<<<<<<< HEAD
     context: { lastPosts, skills, clients },
+=======
+    context: {
+      lastPosts, skills, clients, landing, services
+    },
+>>>>>>> 3bfb3f3 (changed loading method for images, added a grid block, changes footer mobile version)
   });
 
   // Posts and pages from markdown
