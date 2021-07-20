@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import styles from './Footer.module.scss';
+import { StaticImage } from 'gatsby-plugin-image';
 import Newsletter from '../Newsletter/Newsletter';
+import styles from './Footer.module.scss';
 
 type Props = {
   menu: {
@@ -16,7 +17,14 @@ const Footer = ({ menu }: Props) => (
       <div className={styles['footer__inner__row']}>
         <ul className={styles['footer__list']}>
           <li>
-            <h6 className={styles['footer__hoffmann__title']}>HOFFMANN.AI</h6>
+            <h6 className={styles['footer__hoffmann__title']}>
+              <StaticImage
+                className={styles['footer__hoffmann__title__image']}
+                src='../../../static/logo.webp'
+                alt='mini-logo'
+              />
+              HOFFMANN.AI
+            </h6>
           </li>
           <li className={styles['footer__list__text']}>
             Experts en Cloud, DevOps & InfraOps, Web.

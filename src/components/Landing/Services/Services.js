@@ -7,11 +7,11 @@ const Services = ({ services }) => (
     <div className={styles['services__module__innergrid']}>
       <div className={styles['services__module__innergrid__comp']}>
         <GatsbyImage
-          image={services[0].node.childImageSharp.gatsbyImageData}
+          image={services[1].node.childImageSharp.gatsbyImageData}
           alt='Strategy'
-          className={styles['logo']}
+          className={styles['services__module__innergrid__comp__image']}
         />
-        <h4>Strategy & Architecture</h4>
+        <h4>Cloud</h4>
         <p className={styles['services__module__innergrid__comp__text']}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
           vestibulum aliquam metus.
@@ -19,62 +19,35 @@ const Services = ({ services }) => (
       </div>
       <div className={styles['services__module__innergrid__comp']}>
         <GatsbyImage
-          image={services[0].node.childImageSharp.gatsbyImageData}
+          image={services[2].node.childImageSharp.gatsbyImageData}
           alt='Strategy'
-          className={styles['logo']}
+          className={styles['services__module__innergrid__comp__image']}
         />
-        <h4>Strategy & Architecture</h4>
+        <h4>DevOps & InfraOps</h4>
         <p className={styles['services__module__innergrid__comp__text']}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          vestibulum aliquam metus.
+          Ansible, Docker, Git, Kubernetes, Maven, Unix, Vagrant
         </p>
       </div>
       <div className={styles['services__module__innergrid__comp']}>
         <GatsbyImage
           image={services[0].node.childImageSharp.gatsbyImageData}
           alt='Strategy'
-          className={styles['logo']}
+          className={styles['services__module__innergrid__comp__image']}
         />
-        <h4>Strategy & Architecture</h4>
+        <h4>Database</h4>
         <p className={styles['services__module__innergrid__comp__text']}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          vestibulum aliquam metus.
+          MongoDB, MySQL, PostgreSQL
         </p>
       </div>
       <div className={styles['services__module__innergrid__comp']}>
         <GatsbyImage
-          image={services[0].node.childImageSharp.gatsbyImageData}
+          image={services[3].node.childImageSharp.gatsbyImageData}
           alt='Strategy'
-          className={styles['logo']}
+          className={styles['services__module__innergrid__comp__image']}
         />
-        <h4>Strategy & Architecture</h4>
+        <h4>Technologies Web</h4>
         <p className={styles['services__module__innergrid__comp__text']}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          vestibulum aliquam metus.
-        </p>
-      </div>
-      <div className={styles['services__module__innergrid__comp']}>
-        <GatsbyImage
-          image={services[0].node.childImageSharp.gatsbyImageData}
-          alt='Strategy'
-          className={styles['logo']}
-        />
-        <h4>Strategy & Architecture</h4>
-        <p className={styles['services__module__innergrid__comp__text']}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          vestibulum aliquam metus.
-        </p>
-      </div>
-      <div className={styles['services__module__innergrid__comp']}>
-        <GatsbyImage
-          image={services[0].node.childImageSharp.gatsbyImageData}
-          alt='Strategy'
-          className={styles['logo']}
-        />
-        <h4>Strategy & Architecture</h4>
-        <p className={styles['services__module__innergrid__comp__text']}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          vestibulum aliquam metus.
+          AWS, CSS, HTML, Java Spring, NodeJS, ReactJS, Shopify, Wordpress
         </p>
       </div>
     </div>
