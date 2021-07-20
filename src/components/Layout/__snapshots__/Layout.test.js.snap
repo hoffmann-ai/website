@@ -108,20 +108,14 @@ exports[`Layout renders correctly 1`] = `
           >
              *
           </span>
-          <span
-            className="form__inner__error__message"
-          >
-            
-          </span>
         </label>
         <input
           autoComplete="off"
           className="form__inner__grid__element__child"
           name="name"
-          onChange={[Function]}
           placeholder="Saisir votre prénom"
+          required={true}
           type="text"
-          value=""
         />
       </div>
       <div
@@ -136,19 +130,13 @@ exports[`Layout renders correctly 1`] = `
           >
              *
           </span>
-          <span
-            className="form__inner__error__message"
-          >
-            
-          </span>
         </label>
         <input
           className="form__inner__grid__element__child"
           name="firstname"
-          onChange={[Function]}
           placeholder="Saisir votre Nom"
+          required={true}
           type="text"
-          value=""
         />
       </div>
       <div
@@ -162,10 +150,8 @@ exports[`Layout renders correctly 1`] = `
         <input
           className="form__inner__grid__element__child"
           name="phone"
-          onChange={[Function]}
           placeholder="ex : 06 32 32 32 32"
           type="text"
-          value=""
         />
       </div>
       <div
@@ -180,11 +166,6 @@ exports[`Layout renders correctly 1`] = `
           >
              *
           </span>
-          <span
-            className="form__inner__error__message"
-          >
-            
-          </span>
         </label>
         <label
           className="form__not-email"
@@ -197,8 +178,8 @@ exports[`Layout renders correctly 1`] = `
           name="email"
           onChange={[Function]}
           placeholder="email *"
+          required={true}
           type="mail"
-          value=""
         />
       </div>
     </div>
@@ -213,9 +194,7 @@ exports[`Layout renders correctly 1`] = `
       <textarea
         className="form__inner__grid__element__child"
         name="message"
-        onChange={[Function]}
         placeholder="Saisir votre message"
-        value=""
       />
     </div>
     <div
