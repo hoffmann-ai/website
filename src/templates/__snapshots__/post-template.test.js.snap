@@ -165,15 +165,9 @@ exports[`PostTemplate renders correctly 1`] = `
   </div>
   <form
     className="form__module"
-    data-netlify="true"
     method="POST"
     name="contact"
   >
-    <input
-      name="form-name"
-      type="hidden"
-      value="contact"
-    />
     <h1
       className="form__title"
     >

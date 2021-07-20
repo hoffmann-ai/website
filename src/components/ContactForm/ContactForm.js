@@ -13,13 +13,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form
-      className={styles['form__module']}
-      name='contact'
-      method='POST'
-      data-netlify='true'
-    >
-      <input type='hidden' name='form-name' value='contact' />
+    <form className={styles['form__module']} name='contact' method='POST'>
       <h1 className={styles['form__title']}>
         Un projet en tête ? Contactez-nous !
       </h1>
