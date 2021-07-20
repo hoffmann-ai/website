@@ -34,7 +34,7 @@ const Newsletter = ({ style }: Props) => {
         <div className={styles['newsletter__module__form']}>
           <form
             className={
-              style === 'footer'
+              style === 'responsive'
                 ? styles['newsletter__module__form__subscribe__footer']
                 : styles['newsletter__module__form__subscribe']
             }

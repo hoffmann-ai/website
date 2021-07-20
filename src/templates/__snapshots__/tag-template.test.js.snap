@@ -235,10 +235,6 @@ exports[`TagTemplate renders correctly 1`] = `
             <h6
               className="footer__hoffmann__title"
             >
-              <img
-                className="footer__hoffmann__title__image"
-                src="/logo.png"
-              />
               HOFFMANN.AI
             </h6>
           </li>
@@ -396,7 +392,7 @@ exports[`TagTemplate renders correctly 1`] = `
               className="newsletter__module__form"
             >
               <form
-                className="newsletter__module__form__subscribe__footer"
+                className="newsletter__module__form__subscribe"
                 onSubmit={[Function]}
               >
                 <input
