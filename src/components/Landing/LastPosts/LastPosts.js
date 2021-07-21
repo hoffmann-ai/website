@@ -4,6 +4,8 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import styles from './LastPosts.module.scss';
 
 const LastPosts = ({ lastPosts }) => (
+  <>
+    <h1>Nos derniers posts</h1>
     <div className={styles['container']}>
       {lastPosts.map((post, i) => (
         <div key={i} className={styles['card']}>
@@ -18,6 +20,7 @@ const LastPosts = ({ lastPosts }) => (
         </div>
       ))}
     </div>
+  </>
 );
 
 export default LastPosts;
