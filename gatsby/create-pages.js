@@ -116,13 +116,9 @@ const createPages = async ({ graphql, actions }) => {
   createPage({
     path: '/',
     component: path.resolve('./src/templates/landing-template.js'),
-<<<<<<< HEAD
-    context: { lastPosts, skills, clients },
-=======
     context: {
       lastPosts, skills, clients, landing, services
     },
->>>>>>> 3bfb3f3 (changed loading method for images, added a grid block, changes footer mobile version)
   });
 
   // Posts and pages from markdown
