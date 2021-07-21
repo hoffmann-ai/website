@@ -60,6 +60,7 @@ const createPages = async ({ graphql, actions }) => {
             childImageSharp {
               gatsbyImageData(width: 64, height: 64)
             }
+            name
           }
         }
       }
@@ -74,6 +75,7 @@ const createPages = async ({ graphql, actions }) => {
             childImageSharp {
               gatsbyImageData(height: 80)
             }
+            name
           }
         }
       }
