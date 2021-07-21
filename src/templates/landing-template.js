@@ -1,13 +1,12 @@
 // @flow strict
-import React from 'react';
-import Layout from '../components/Layout';
-import Page from '../components/Page';
-import Landing from '../components/Landing/Landing';
-import type { Edges } from '../types';
+import React from "react";
+import Layout from "../components/Layout";
+import Page from "../components/Page";
+import Landing from "../components/Landing/Landing";
+import type { Edges } from "../types";
 
 type Props = {
   pageContext: {
-<<<<<<< HEAD
     lastPosts: {
       data: {
         allMarkdownRemark: {
@@ -25,29 +24,6 @@ type Props = {
     skills: {
       data: {
         allFile: {
-<<<<<<< HEAD
-          edges: Edges
-        }
-      }
-=======
-    data: {
-      allFile: Edges,
-      allMarkdownRemark: Edges
->>>>>>> aa86b62 (fix: remove deprecated gatsby-image and use gatsby-plugin-image instead)
-    }
-  }
-}
-
-const LandingTemplate = ({ pageContext }: Props) => {
-<<<<<<< HEAD
-  const lastPosts = pageContext.lastPosts ? pageContext.lastPosts.data.allMarkdownRemark.edges : [];
-  const clients = pageContext.clients ? pageContext.clients.data.allFile.edges : [];
-  const skills = pageContext.skills ? pageContext.skills.data.allFile.edges : [];
-=======
-  const landingContext = pageContext.data;
-  console.log(pageContext);
->>>>>>> aa86b62 (fix: remove deprecated gatsby-image and use gatsby-plugin-image instead)
-=======
           edges: Edges,
         },
       },
@@ -70,15 +46,14 @@ const LandingTemplate = ({ pageContext }: Props) => {
 };
 
 const LandingTemplate = ({ pageContext }: Props) => {
-  const lastPosts = pageContext.lastPosts.data.allMarkdownRemark.edges;
-  const clients = pageContext.clients.data.allFile.edges;
-  const skills = pageContext.skills.data.allFile.edges;
+  const lastPosts = pageContext.lastPosts ? pageContext.lastPosts.data.allMarkdownRemark.edges : [];
+  const clients = pageContext.clients ? pageContext.clients.data.allFile.edges : [];
+  const skills = pageContext.skills ? pageContext.skills.data.allFile.edges : [];
   const landing = pageContext.landing.data.allFile.edges;
   const services = pageContext.services.data.allFile.edges;
->>>>>>> 3bfb3f3 (changed loading method for images, added a grid block, changes footer mobile version)
 
   return (
-    <Layout title={'Accueil - HOFFMANN.AI'}>
+    <Layout title={"Accueil - HOFFMANN.AI"}>
       <Page>
         <Landing
           lastPosts={lastPosts}

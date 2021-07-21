@@ -7,12 +7,12 @@
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 34% 34% 34%;
   background-color: rgba(128, 128, 128, 0.26);
   grid-gap: 1px;
 }
 .services__module__innergrid__comp {
-  padding:20px 0 0 20px;
+  padding:20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,16 +26,7 @@
   font-size: 17px;
   text-align: center !important;
 }
-.services__module__innergrid__comp__image {
-  width : 35%;
- height:auto;
-}
-@media screen and (max-width: 1000px) {
-  .services__module__innergrid {
-    grid-template-columns: 50% 50%;
-  }
-}
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .services__module__innergrid {
     grid-template-columns: 100%;
   }
