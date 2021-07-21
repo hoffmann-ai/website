@@ -1,9 +1,9 @@
 // @flow strict
-import React from "react";
-import Layout from "../components/Layout";
-import Page from "../components/Page";
-import Landing from "../components/Landing/Landing";
-import type { Edges } from "../types";
+import React from 'react';
+import Layout from '../components/Layout';
+import Page from '../components/Page';
+import Landing from '../components/Landing/Landing';
+import type { Edges } from '../types';
 
 type Props = {
   pageContext: {
@@ -53,7 +53,7 @@ const LandingTemplate = ({ pageContext }: Props) => {
   const services = pageContext.services.data.allFile.edges;
 
   return (
-    <Layout title={"Accueil - HOFFMANN.AI"}>
+    <Layout title={'Accueil - HOFFMANN.AI'}>
       <Page>
         <Landing
           lastPosts={lastPosts}
