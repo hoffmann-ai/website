@@ -8,18 +8,20 @@ const Skills = ({ skills }) => (
       <h3>Notre expertise</h3>
       <p>pour rester à la pointe de la technologie</p>
     </div>
-    {displaySkills(skills)}
+    {skills.map((skill, i) => {
+      const angle = (i * (360 / skills.length)) * (Math.PI / 180);
+      return (
+        <GatsbyImage
+          image={skill.node.childImageSharp.gatsbyImageData}
+          height={skill.node.childImageSharp.gatsbyImageData.height}
+          width={skill.node.childImageSharp.gatsbyImageData.width}
+          alt={skill.node.name}
+          key={skill.node.name}
+          className={styles['logo']}
+          style={{ top: `${50 + Math.cos(angle) * 30}%`, left: `${50 + Math.sin(angle) * 30}%` }} />
+      );
+    })}
   </div>
 );
-
-const displaySkills = (skills: any[]) => {
-  const render = [];
-  skills.forEach((skill, i) => {
-    const angle = (i * (360 / skills.length)) * (Math.PI / 180);
-    render.push(<GatsbyImage image={skill.node.childImageSharp.gatsbyImageData} alt="aws" className={styles['logo']}
-      style={{ top: `${50 + Math.cos(angle) * 40}%`, left: `${50 + Math.sin(angle) * 40}%` }} />);
-  });
-  return render;
-};
 
 export default Skills;

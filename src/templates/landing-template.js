@@ -32,9 +32,9 @@ type Props = {
 }
 
 const LandingTemplate = ({ pageContext }: Props) => {
-  const lastPosts = pageContext.lastPosts.data.allMarkdownRemark.edges;
-  const clients = pageContext.clients.data.allFile.edges;
-  const skills = pageContext.skills.data.allFile.edges;
+  const lastPosts = pageContext.lastPosts ? pageContext.lastPosts.data.allMarkdownRemark.edges : [];
+  const clients = pageContext.clients ? pageContext.clients.data.allFile.edges : [];
+  const skills = pageContext.skills ? pageContext.skills.data.allFile.edges : [];
 
   return (
     <Layout title={'Accueil - HOFFMANN.AI'}>
