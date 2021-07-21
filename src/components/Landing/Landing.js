@@ -96,7 +96,6 @@ const Landing = ({ lastPosts, clients, skills }) => (
     </div>
     <Clients clients={clients} />
     <Skills skills={skills} />
-    <h1>Nos derniers posts</h1>
     <LastPosts lastPosts={lastPosts} />
   </div>
 );
