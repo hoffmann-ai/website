@@ -9,7 +9,7 @@ tags:
   - "No Code"
   - "Application web"
 description: "Création d'une application météo avec Bubble.io, une plateforme No Code conçue pour la création d'applications mobile et web."
-socialImage: "/media/2021-24-06---Créer-une-application-météo-avec-Bubble-io-sans-coder/bubble.jpg"
+socialImage: "/media/2021-24-06---Créer-une-application-météo-avec-Bubble-io-sans-coder/Bubble.jpg"
 ---
 
 Bubble est une plateforme No Code conçue pour la création de logiciels et d'applications web. Mon objectif était de créer une application météo : d’abord pour Paris, puis pour n’importe quelle ville du monde. Dans un premier temps j’ai suivi différents tutoriels proposés par la plateforme qui m’ont appris quelques fonctionnalités de base. Voici le premier rendu, simple et fonctionnel, affichant la météo actuelle à Paris :
