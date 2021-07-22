@@ -243,6 +243,5 @@ module.exports = {
         enableDuringDevelop: false,
       },
     },
-    'gatsby-plugin-image'
   ]
 };
