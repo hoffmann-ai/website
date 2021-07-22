@@ -85,6 +85,7 @@ const createPages = async ({ graphql, actions }) => {
       }
     }
   `);
+
   const landing = await graphql(`
     {
       allFile(filter: { relativeDirectory: { eq: "landing" } }) {
@@ -93,11 +94,13 @@ const createPages = async ({ graphql, actions }) => {
             childImageSharp {
               gatsbyImageData(width: 800, height: 400)
             }
+            name
           }
         }
       }
     }
   `);
+
   const services = await graphql(`
     {
       allFile(filter: { relativeDirectory: { eq: "services" } }) {

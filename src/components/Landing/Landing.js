@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Landing.module.scss';
 import Services from './Services/Services';
-import WelcomeModule from './WelcomeModule/WelcomeModule';
+import Hero from './HeroModule/HeroModule';
 import Newsletter from '../Newsletter/Newsletter';
 import LastPosts from './LastPosts';
 import Clients from './Clients';
@@ -11,7 +11,7 @@ const Landing = ({
   lastPosts, clients, skills, landing, services
 }) => (
   <div className={styles['landing__page']}>
-    <WelcomeModule landing={landing} />
+    <Hero landing={landing} />
     <h4 className={styles['landing__page__subscribe__message']}>
       Abonnez-vous à notre newseltter pour être à jour sur nos articles !
     </h4>
