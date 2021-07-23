@@ -36,9 +36,11 @@
   "dependencies": {
     "@sentry/gatsby": "^6.5.1",
     "@sentry/tracing": "^6.5.1",
+    "axios": "^0.21.1",
     "bluebird": "^3.7.2",
     "classnames": "^2.3.1",
     "codecov": "^3.8.2",
+    "cors": "^2.8.5",
     "gatsby": "^2.32.13",
     "gatsby-link": "^2.11.0",
     "gatsby-plugin-catch-links": "^2.10.0",
