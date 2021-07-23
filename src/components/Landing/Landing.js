@@ -5,7 +5,7 @@ import Hero from './HeroModule/HeroModule';
 import Newsletter from '../Newsletter/Newsletter';
 import LastPosts from './LastPosts';
 import Clients from './Clients';
-import Skills from './skills';
+import Skills from './Skills';
 
 const Landing = ({
   lastPosts, clients, skills, landing, services
