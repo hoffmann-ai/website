@@ -3,7 +3,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Newsletter from '../Newsletter/Newsletter';
 import styles from './Footer.module.scss';
-import { useSiteMetadata } from '../../hooks';
 import MiniLogo from './MiniLogo';
 
 type Props = {
@@ -13,16 +12,14 @@ type Props = {
   }[],
 };
 
-const Footer = ({ menu }: Props) => {
-  const { logo } = useSiteMetadata();
-  return (
+const Footer = ({ menu }: Props) => (
     <div className={styles['footer']}>
       <div className={styles['footer__inner']}>
         <div className={styles['footer__inner__row']}>
           <ul className={styles['footer__list']}>
             <li>
               <h6 className={styles['footer__hoffmann__title']}>
-                <MiniLogo img={logo} />
+                <MiniLogo />
                 HOFFMANN.AI
               </h6>
             </li>
@@ -107,6 +104,5 @@ const Footer = ({ menu }: Props) => {
         </div>
       </div>
     </div>
-  );
-};
+);
 export default Footer;
