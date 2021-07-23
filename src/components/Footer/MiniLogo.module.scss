@@ -5,7 +5,9 @@
   &__photo {
     display: inline-block;
     margin-bottom: 0;
-    background-clip: padding-box
+    background-clip: padding-box;
+    height: 30px;
+    width: 30px;
   }
 
   &__title {

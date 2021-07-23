@@ -20,6 +20,11 @@
             &_item {
                 display: inline-block;
                 margin: 0;
+
+                &_logo {
+                    height: 70px;
+                    width: 70px;
+                }
             }
         }
     }

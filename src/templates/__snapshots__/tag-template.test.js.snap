@@ -15,22 +15,7 @@ exports[`TagTemplate renders correctly 1`] = `
       >
         <li
           className="navbar__inner_list_item"
-        >
-          <div
-            className="logo"
-          >
-            <a
-              href="/"
-            >
-              <img
-                alt="logo"
-                className="logo__photo"
-                height="70"
-                width="70"
-              />
-            </a>
-          </div>
-        </li>
+        />
         <li
           className="navbar__inner_list_item"
         >
@@ -240,14 +225,7 @@ exports[`TagTemplate renders correctly 1`] = `
               >
                 <a
                   href="/"
-                >
-                  <img
-                    alt="logo"
-                    className="logo__photo"
-                    height="30"
-                    width="30"
-                  />
-                </a>
+                />
               </div>
               HOFFMANN.AI
             </h6>
