@@ -1,4 +1,4 @@
-// @ts-nocheck
+// @flow strict
 import React, { useState } from 'react';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 import styles from './Newsletter.module.scss';
