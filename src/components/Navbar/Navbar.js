@@ -17,7 +17,8 @@ const Navbar = () => {
             <GatsbyImage
               className={styles['navbar__inner_list_item_logo']}
               image={logo?.childImageSharp?.gatsbyImageData}
-              alt="Hoffmann" />
+              alt="logo"
+            />
           </li>
           <li className={styles['navbar__inner_list_item']}>
             <Menu menu={menu} />

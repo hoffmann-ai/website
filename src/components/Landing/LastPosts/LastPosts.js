@@ -1,9 +1,27 @@
+// @flow strict
 import React from 'react';
 import { Link } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, gatsbyImageData } from 'gatsby-plugin-image';
 import styles from './LastPosts.module.scss';
 
-const LastPosts = ({ lastPosts }) => (
+type Props = {
+  node: {
+    name: string,
+    frontmatter: {
+      title: string,
+      description: string,
+      socialImage: {
+        childImageSharp: typeof gatsbyImageData,
+      },
+      category: string
+    },
+    fields: {
+      slug: string
+    }
+  }
+}
+
+const LastPosts = ({ lastPosts } : { lastPosts : Array<Props> }) => (
   <>
     <h1>Nos derniers posts</h1>
     <div className={styles['container']}>

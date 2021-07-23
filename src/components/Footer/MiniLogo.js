@@ -14,8 +14,6 @@ const MiniLogo = () => {
         <GatsbyImage
           image={logo?.childImageSharp?.gatsbyImageData}
           className={styles['logo__photo']}
-          width="30"
-          height="30"
           alt="logo"
         />
       </Link>

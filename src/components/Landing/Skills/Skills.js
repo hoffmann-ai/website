@@ -1,8 +1,16 @@
+// @flow strict
 import React from 'react';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, gatsbyImageData } from 'gatsby-plugin-image';
 import styles from './Skills.module.scss';
 
-const Skills = ({ skills }) => (
+type Props = {
+  node: {
+    childImageSharp: typeof gatsbyImageData,
+    name: string
+  }
+}
+
+const Skills = ({ skills } : { skills : Array<Props> }) => (
   <div className={styles['container']}>
     <div className={styles['text']}>
       <h3>Notre expertise</h3>

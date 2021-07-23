@@ -1,8 +1,16 @@
+// @flow strict
 import React from 'react';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, gatsbyImageData } from 'gatsby-plugin-image';
 import styles from './Services.module.scss';
 
-const Services = ({ services }) => (
+type Props = {
+  node: {
+    childImageSharp: typeof gatsbyImageData,
+    name: string
+  }
+}
+
+const Services = ({ services } : { services : Array<Props> }) => (
   <div className={styles['services__module']}>
     <div className={styles['services__module__innergrid']}>
       <div className={styles['services__module__innergrid__comp']}>
