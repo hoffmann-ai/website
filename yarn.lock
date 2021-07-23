@@ -7889,11 +7889,6 @@ gatsby-plugin-sitemap@^2.12.0:
     pify "^3.0.0"
     sitemap "^1.13.0"
 
-gatsby-plugin-tidio-chat@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-tidio-chat/-/gatsby-plugin-tidio-chat-1.0.0.tgz#d9e27222ce7fce2e7e899c16a28e358a53a0bb97"
-  integrity sha512-rUcpnFSwNiqBPEtsH6GsQmpZN9BbePFduBm7AL/UGb1XqCrUSroq6ZNED2H44Gp5WJ0aCKkV/Tg1eratY6oAlQ==
-
 gatsby-plugin-typescript@^2.12.1:
   version "2.12.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.12.1.tgz#cb2f009d5c015a7703578b86608e90d71b55e9ae"

@@ -235,13 +235,6 @@ module.exports = {
     },
     'gatsby-plugin-flow',
     'gatsby-plugin-optimize-svgs',
-    'gatsby-plugin-image',
-    {
-      resolve: 'gatsby-plugin-tidio-chat',
-      options: {
-        tidioKey: 'vvpxm8l7zkpnekbx2teb4pvobrfchevp',
-        enableDuringDevelop: false,
-      },
-    },
+    'gatsby-plugin-image'
   ]
 };
