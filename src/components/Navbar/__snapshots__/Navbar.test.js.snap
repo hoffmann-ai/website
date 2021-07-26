@@ -12,7 +12,11 @@ exports[`Navbar renders correctly 1`] = `
     >
       <li
         className="navbar__inner_list_item"
-      />
+      >
+        <a
+          href="/"
+        />
+      </li>
       <li
         className="navbar__inner_list_item"
       >
