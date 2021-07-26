@@ -1,56 +1,57 @@
 // @flow strict
 import React, { useState } from 'react';
-import addToMailchimp from 'gatsby-plugin-mailchimp';
-import styles from './Newsletter.module.scss';
+// import addToMailchimp from 'gatsby-plugin-mailchimp';
 
 const Newsletter = () => {
   const [validationMessage, setValidationMessage] = useState('');
+
   const [email, setEmail] = useState('');
+
   const validate = () => {
     setValidationMessage('Merci pour votre abonnement.');
-    setEmail('');
   };
   const changeEmailHandler = (event) => {
     setEmail(event.target.value);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    addToMailchimp(email)
-      .then(() => {
-        validate();
-      })
-      .catch(() => {
-        setValidationMessage('Une erreur est survenue.');
-      });
+    validate();
+    // //addToMailchimp(email)
+    //   .then((data) => {
+    //     console.log(data);
+    //   })
+    //   .catch(() => {
+    //     console.log('failed adding email to newsletter.');
+    //   });
+    // setEmail('');
   };
 
   return (
-    <div className={styles['newsletter__module']}>
-      <div className={styles['newsletter__module__inner']}>
-        <div className={styles['newsletter__module__form']}>
+    <div className='newsletter__module'>
+      <div className='newsletter__module__inner'>
+        <h4>Abonnez-vous à notre newsletter !</h4>
+        <div className='newsletter__module__form'>
           <form
-            className={styles['newsletter__module__form__subscribe']}
+            className='newsletter__module__form__subscribe'
             onSubmit={handleSubmit}
           >
             <input
               value={email}
-              className={styles['newsletter__module__form__subscribe__input']}
+              className='newsletter__module__form__subscribe__input'
               type='email'
               onChange={changeEmailHandler}
               name='email'
               id='email'
-              placeholder='Email'
+              placeholder='votre email...'
               required
             />
             <button
-              className={styles['newsletter__module__form__subscribe__submit']}
+              className='newsletter__module__form__subscribe__submit'
               type='submit'
             >
               S'abonner
             </button>
-            <h6 className={styles['newsletter__module__form__message']}>
-              {validationMessage}
-            </h6>
+            <h6>{validationMessage}</h6>
           </form>
         </div>
       </div>

@@ -7,18 +7,11 @@ exports[`Author renders correctly 1`] = `
   <p
     className="author__bio"
   >
+    <strong>
+      Test name
+    </strong>
+    <br />
     Test bio
-    <a
-      className="author__bio-twitter"
-      href="https://www.twitter.com/#"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <strong>
-        Test name
-      </strong>
-       on Twitter
-    </a>
   </p>
 </div>
 `;
