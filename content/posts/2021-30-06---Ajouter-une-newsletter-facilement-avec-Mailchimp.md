@@ -19,7 +19,7 @@ Si vous souhaitez regrouper les données de votre audience et communiquer facile
 
 ![Logo Mailchimp](/media/2021-30-06---Ajouter-une-newsletter-facilement-avec-Mailchimp/Mailchimp-logo.jpg)
 
-Mailchimp une plateforme qui offre des services de marketing diversifiés pour les petites et moyennes entreprises. L'un des principaux services proposés, et celui qui va nous intéresser aujourd'hui, est celui de la gestion de newsletter.
+Mailchimp est une plateforme qui offre des services de marketing diversifiés pour les petites et moyennes entreprises. L'un des principaux services proposés, et celui qui va nous intéresser aujourd'hui, est celui de la gestion de newsletter.
 
 ## Comment ajouter une newsletter sur mon site avec Mailchimp ?
 
