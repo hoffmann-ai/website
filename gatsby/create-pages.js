@@ -46,7 +46,7 @@ const createPages = async ({ graphql, actions }) => {
               category
               socialImage {
                 childImageSharp {
-                  gatsbyImageData
+                  gatsbyImageData(width: 450, height: 164)
                 }
               }
             }
