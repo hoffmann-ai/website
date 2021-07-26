@@ -1,5 +1,6 @@
 // @flow strict
 import React from 'react';
+import { Link } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import Menu from './Menu';
 import styles from './Navbar.module.scss';
@@ -14,11 +15,13 @@ const Navbar = () => {
       <nav className={styles['navbar__inner']}>
         <ul className={styles['navbar__inner_list']}>
           <li className={styles['navbar__inner_list_item']}>
-            <GatsbyImage
-              className={styles['navbar__inner_list_item_logo']}
-              image={logo?.childImageSharp?.gatsbyImageData}
-              alt="logo"
-            />
+            <Link to='/'>
+              <GatsbyImage
+                className={styles['navbar__inner_list_item_logo']}
+                image={logo?.childImageSharp?.gatsbyImageData}
+                alt='logo'
+              />
+            </Link>
           </li>
           <li className={styles['navbar__inner_list_item']}>
             <Menu menu={menu} />
