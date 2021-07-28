@@ -4,6 +4,8 @@ import { Link } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import Menu from './Menu';
 import styles from './Navbar.module.scss';
+import Newsletter from '../Newsletter/Newsletter';
+
 import { useGlobalData, useSiteMetadata } from '../../hooks';
 
 const Navbar = () => {
@@ -25,6 +27,7 @@ const Navbar = () => {
           </li>
           <li className={styles['navbar__inner_list_item']}>
             <Menu menu={menu} />
+          <Newsletter className={styles['navbar__inner_list_item']} style={'responsive'} />
           </li>
         </ul>
       </nav>

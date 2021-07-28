@@ -61,6 +61,44 @@ exports[`PageTemplate renders correctly 1`] = `
               </li>
             </ul>
           </nav>
+          <div
+            className="newsletter__module"
+          >
+            <div
+              className="newsletter__module__inner"
+            >
+              <div
+                className="newsletter__module__form"
+              >
+                <form
+                  className="newsletter__module__form__subscribe__navbar"
+                  onSubmit={[Function]}
+                >
+                  <input
+                    className="newsletter__module__form__subscribe__input"
+                    id="email"
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="Newsletter"
+                    required={true}
+                    type="email"
+                    value=""
+                  />
+                  <button
+                    className="newsletter__module__form__subscribe__submit button"
+                    type="submit"
+                  >
+                    S'abonner
+                  </button>
+                  <h6
+                    className="newsletter__module__form__message"
+                  >
+                    
+                  </h6>
+                </form>
+              </div>
+            </div>
+          </div>
         </li>
       </ul>
     </nav>
@@ -273,7 +311,7 @@ exports[`PageTemplate renders correctly 1`] = `
                   id="email"
                   name="email"
                   onChange={[Function]}
-                  placeholder="Email"
+                  placeholder="Newsletter"
                   required={true}
                   type="email"
                   value=""

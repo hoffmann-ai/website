@@ -1,3 +1,6 @@
+
+@import '../../../assets/scss/mixins';
+@import '../../../assets/scss/variables';
 .services__module {
   padding: 0;
   margin: 0;
@@ -22,7 +25,7 @@
   border: none;
 }
 .services__module__innergrid__comp__text {
-  color: rgba(0, 0, 0, 0.6);
+  color: $color-primary;
   font-size: 17px;
   text-align: center !important;
 }
