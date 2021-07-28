@@ -35,7 +35,7 @@ const Newsletter = ({ style }: Props) => {
           <form
             className={
               style === 'responsive'
-                ? styles['newsletter__module__form__subscribe__footer']
+                ? styles['newsletter__module__form__subscribe__navbar']
                 : styles['newsletter__module__form__subscribe']
             }
             onSubmit={handleSubmit}
@@ -47,7 +47,7 @@ const Newsletter = ({ style }: Props) => {
               onChange={changeEmailHandler}
               name='email'
               id='email'
-              placeholder='Email'
+              placeholder='Newsletter'
               required
             />
             <button

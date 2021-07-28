@@ -1,7 +1,8 @@
-@import '../../assets/scss/variables';
+@import '../../assets/scss/_variables.scss';
 @import '../../assets/scss/mixins';
 
 .navbar {
+  border-bottom: solid 1px rgba(204, 204, 204, 0.527);
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
@@ -16,7 +17,7 @@
       justify-content: space-between;
       align-items: center;
       margin: 0;
-      padding: 0 40px;
+      padding: 0 0px;
 
       &_item {
         display: flex;

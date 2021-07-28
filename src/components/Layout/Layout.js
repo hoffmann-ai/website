@@ -15,10 +15,7 @@ type Props = {
 };
 
 const Layout = ({
-  children,
-  title,
-  description,
-  socialImage = ''
+  children, title, description, socialImage = ''
 }: Props) => {
   const { author, url, menu } = useSiteMetadata();
   const metaImage = socialImage || author.photo;
@@ -39,7 +36,7 @@ const Layout = ({
         <meta name="twitter:image" content={metaImageUrl} />
       </Helmet>
       {children}
-      <Footer menu={menu}/>
+      <Footer menu={menu} />
     </div>
   );
 };
