@@ -5,7 +5,7 @@ import Hero from './HeroModule/HeroModule';
 import LastPosts from './LastPosts';
 import Clients from './Clients';
 import Skills from './Skills';
-import CallToAction from '../CallToAction/CallToAction';
+import CallToAction from '../CallToAction';
 
 const Landing = ({
   lastPosts, clients, skills, landing, services

@@ -1,10 +1,11 @@
 import React from 'react';
-import Link from 'gatsby';
+import { Link } from 'gatsby';
+import styles from './CallToAction.module.scss';
 
 const CallToAction = () => (
   <div>
     <Link to={'/contact'}>
-      <button className="button">Nous contacter</button>
+      <button className={styles['button']}>Nous contacter</button>
     </Link>
   </div>
 );
