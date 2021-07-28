@@ -14,7 +14,6 @@ const Landing = ({
     <Hero landing={landing} />
     <CallToAction />
     <div className={styles['services']}>
-      <h2>Nos services</h2>
       <Services services={services} />
     </div>
     <Clients clients={clients} />

@@ -1,14 +1,9 @@
+@import 'src/assets/scss/variables';
+
 .container {
   width: 100%;
-  padding: 20px 0px;
-  text-align: center;
-  border-top: solid 1px var(--text-color-dark-light);
-  border-bottom: solid 1px var(--text-color-dark-light);
-  margin-top: 5em;
-
-  h1 {
-    margin-top: 0px !important;
-  }
+  padding-bottom: 4em;
+  border-bottom: solid 1px $color-primary;
 
   .logos {
     display: flex;

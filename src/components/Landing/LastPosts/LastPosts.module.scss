@@ -1,6 +1,10 @@
 @import 'src/assets/scss/general.scss';
+@import 'src/assets/scss/variables';
 
 .container {
+  padding-bottom: 5em;
+  margin-bottom: 1em;
+  border-bottom: solid 1px $color-primary;
   display: grid;
   grid-template-columns: repeat(2, auto);
 }
@@ -9,7 +13,7 @@
   margin: 20px;
 
   p {
-    color: var(--text-color-dark);
+    color: $color-base;
   }
 
   h4:hover {
@@ -19,7 +23,7 @@
 
   img {
     width: 100%;
-    border: solid 1px var(--text-color-dark-light);
+    border: solid 1px $color-primary;
     border-radius: 3px;
     cursor: pointer;
   }
