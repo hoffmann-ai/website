@@ -12,7 +12,8 @@ type Props = {
 
 const Clients = ({ clients } : { clients : Array<Props> }) => (
   <div className={styles['container']}>
-    <h1>Ils nous font confiance</h1>
+    <h2>Ils nous font confiance</h2>
+    <h6>Les sociétés qui ont travaillé avec nous</h6>
     <div className={styles['logos']}>
       {clients.map((client) => (
         <GatsbyImage

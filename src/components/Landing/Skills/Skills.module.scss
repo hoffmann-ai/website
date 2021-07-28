@@ -1,8 +1,12 @@
+@import 'src/assets/scss/variables';
+
 .container {
   position: relative;
   height: 30em;
   width: 100%;
-  border-bottom: solid 1px var(--text-color-dark-light);
+  padding-bottom: 5em;
+  margin-bottom: 1em;
+  border-bottom: solid 1px $color-primary;
 }
 
 .text {
@@ -12,11 +16,11 @@
   text-align: center;
 
   h3 {
-    color: var(--primary-color);
+    color: $color-secondary;
   }
 
   p {
-    color: var(--text-color-dark);
+    color: $color-primary;
   }
 }
 

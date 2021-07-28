@@ -12,6 +12,7 @@ type Props = {
 
 const Services = ({ services } : { services : Array<Props> }) => (
   <div className={styles['services__module']}>
+    <h2>Nos services</h2>
     <div className={styles['services__module__innergrid']}>
       <div className={styles['services__module__innergrid__comp']}>
         {services[1] && (

@@ -1,17 +1,18 @@
-
 @import '../../../assets/scss/mixins';
 @import '../../../assets/scss/variables';
+
 .services__module {
-  padding: 0;
-  margin: 0;
   width: 100%;
+  padding-bottom: 5em;
+  margin-bottom: 1em;
+  border-bottom: solid 1px $color-primary;
 }
 .services__module__innergrid {
   padding: 0;
   margin: 0;
   display: grid;
   grid-template-columns: 33% 34% 33%;
-  background-color: rgba(128, 128, 128, 0.26);
+  background-color: $color-primary;
   grid-gap: 1px;
 }
 .services__module__innergrid__comp {
@@ -25,7 +26,7 @@
   border: none;
 }
 .services__module__innergrid__comp__text {
-  color: $color-primary;
+  color: $color-base;
   font-size: 17px;
   text-align: center !important;
 }
