@@ -4,7 +4,7 @@
 .container {
   padding-bottom: 5em;
   margin-bottom: 1em;
-  border-bottom: solid 1px $color-primary;
+  border-bottom: solid 1px $color-gray-border;
   display: grid;
   grid-template-columns: repeat(2, auto);
 }
