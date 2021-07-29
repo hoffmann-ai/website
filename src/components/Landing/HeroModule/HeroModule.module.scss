@@ -1,8 +1,7 @@
-* {
-  --primary-color: #0873e8;
-  --text-color-dark-light: #d4d4d4;
-  --text-color-dark: #4a4a4a;
-}
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+@import '../../../assets/scss/general';
+
 .hero__module {
   width: 100%;
   display: flex;
@@ -22,11 +21,6 @@
   margin: 0px;
   max-height: 550px;
   object-fit: cover;
-}
-.hero__module__text {
-  margin-top: 23px;
-  color: rgba(0, 0, 0, 0.5);
-  font-weight: 500;
 }
 @media screen and (max-width: 700px) {
   .hero__module__title {

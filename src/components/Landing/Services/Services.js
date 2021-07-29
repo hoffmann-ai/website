@@ -26,7 +26,7 @@ const Services = ({ services } : { services : Array<Props> }) => (
               className={styles['services__module__innergrid__comp__image']}
             />
             <h4>Cloud</h4>
-            <p className={styles['services__module__innergrid__comp__text']}>
+            <p className={styles['text_light']}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
               vestibulum aliquam metus.
             </p>
@@ -45,7 +45,7 @@ const Services = ({ services } : { services : Array<Props> }) => (
               className={styles['services__module__innergrid__comp__image']}
             />
             <h4>DevOps & InfraOps</h4>
-            <p className={styles['services__module__innergrid__comp__text']}>
+            <p className={styles['text_light']}>
               Ansible, Docker, Git, Kubernetes, Maven, Unix, Vagrant
             </p>
           </>
@@ -63,7 +63,7 @@ const Services = ({ services } : { services : Array<Props> }) => (
               className={styles['services__module__innergrid__comp__image']}
             />
             <h4>Technologies Web</h4>
-            <p className={styles['services__module__innergrid__comp__text']}>
+            <p className={styles['text_light']}>
               AWS, CSS, HTML, Java Spring, NodeJS, ReactJS, Shopify, Wordpress
             </p>
           </>

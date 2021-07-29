@@ -22,7 +22,7 @@ const Hero = ({ landing } : { landing : Array<Props> }) => (
           key={landing[0].node.name}
         />
         <h1 className={styles['hero__module__title']}>HOFFMANN.AI</h1>
-        <h6 className={styles['hero__module__text']}>
+        <h6 className={styles['text_light']}>
           Une Agence spécialisée dans la digitalisation, qui met son expertise
           au service des particuliers et professionnels évoluant en France.
         </h6>

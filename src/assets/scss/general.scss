@@ -1,3 +1,5 @@
+@import '../scss/variables';
+@import '../scss/mixins';
 .button {
   font-size: 1rem;
   border-radius: 3px;
@@ -17,4 +19,9 @@
   cursor: pointer;
   transition: 0.1s ease-in;
   border: 1px solid var(--primary-color);
+}
+.text_light {
+  margin-top: 13px;
+  color: $color-gray;
+  font-weight: 500;
 }
