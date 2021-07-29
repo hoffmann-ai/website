@@ -1,5 +1,6 @@
 @import 'src/assets/scss/general.scss';
 @import 'src/assets/scss/variables';
+@import 'src/assets/scss/general';
 
 .container {
   padding-bottom: 5em;
@@ -15,9 +16,6 @@
 .card {
   margin: 20px;
 
-  p {
-    color: $color-base;
-  }
 
   h4:hover {
     text-decoration: underline;

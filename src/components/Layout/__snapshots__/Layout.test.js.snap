@@ -265,7 +265,11 @@ exports[`Layout renders correctly 1`] = `
       <div
         className="footer__newsletter__credits"
       >
-        ©2021 HOFFMANN.AI. Tous droits réservés.
+        <p
+          className="text_light"
+        >
+          ©2021 HOFFMANN.AI. Tous droits réservés.
+        </p>
       </div>
       <div
         className="footer__newsletter__newsletter"
