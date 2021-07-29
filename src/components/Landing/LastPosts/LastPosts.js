@@ -24,6 +24,7 @@ type Props = {
 const LastPosts = ({ lastPosts } : { lastPosts : Array<Props> }) => (
   <div className={styles['container']}>
     <h2>Nos derniers posts</h2>
+    <p className={styles['text_light']}>Retrouvez nos derniers articles</p>
     <div className={styles['grid']}>
       {lastPosts.map((post) => (
         <Link to={post.node.fields.slug} key={post.node.fields.slug} className={styles['card']}>

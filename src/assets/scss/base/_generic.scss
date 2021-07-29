@@ -1,8 +1,11 @@
 /** 
  * Generic
  */
+ @import '../variables';
+ @import '../mixins';
 html {
   font-size: $typographic-root-font-size;
+  background-color: $color-whitesmoke;
 }
 
 body {
