@@ -12,23 +12,27 @@ type Props = {
 
 const Skills = ({ skills } : { skills : Array<Props> }) => (
   <div className={styles['container']}>
-    <div className={styles['text']}>
-      <h3>Notre expertise</h3>
-      <p>pour rester à la pointe de la technologie</p>
+    <h2>Notre expertise</h2>
+    <h6>pour rester à la pointe de la technologie</h6>
+    <div className={styles['grid']}>
+      {skills.map((skill) => (
+        <div className={styles['cell']}>
+          <div className={styles['logo']}>
+            <GatsbyImage
+              image={skill.node.childImageSharp.gatsbyImageData}
+              height={skill.node.childImageSharp.gatsbyImageData.height}
+              width={skill.node.childImageSharp.gatsbyImageData.width}
+              alt={skill.node.name}
+              key={skill.node.name} />
+          </div>
+          <h4>{skill.node.name}</h4>
+          <p>
+            Animante vel ut ut praedito cultuque ut ut vicissitudine redamare delectari est vestitu
+            corporis ita ita non possit ut inanimis.
+          </p>
+        </div>
+      ))}
     </div>
-    {skills.map((skill, i) => {
-      const angle = (i * (360 / skills.length)) * (Math.PI / 180);
-      return (
-        <GatsbyImage
-          image={skill.node.childImageSharp.gatsbyImageData}
-          height={skill.node.childImageSharp.gatsbyImageData.height}
-          width={skill.node.childImageSharp.gatsbyImageData.width}
-          alt={skill.node.name}
-          key={skill.node.name}
-          className={styles['logo']}
-          style={{ top: `${50 + Math.cos(angle) * 30}%`, left: `${50 + Math.sin(angle) * 30}%` }} />
-      );
-    })}
   </div>
 );
 
