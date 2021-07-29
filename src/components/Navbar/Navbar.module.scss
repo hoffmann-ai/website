@@ -50,3 +50,12 @@
     }
   }
 }
+@media screen and (max-width: 700px) {
+  .navbar {
+    &__inner {
+      &_list {
+        justify-content: space-around;
+      }
+    }
+  }
+}
