@@ -1,3 +1,5 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
 * {
   --primary-color: #0873e8;
   --text-color-dark-light: #d4d4d4;
@@ -7,6 +9,8 @@
   width: 100%;
   background-color: transparent;
   text-align: left;
+  border-top: solid 1px $color-gray-border;
+  padding-top: 35px;
 }
 .footer__inner {
   display: grid;
