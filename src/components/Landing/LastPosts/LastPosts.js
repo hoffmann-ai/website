@@ -22,9 +22,9 @@ type Props = {
 }
 
 const LastPosts = ({ lastPosts } : { lastPosts : Array<Props> }) => (
-  <>
-    <h1>Nos derniers posts</h1>
-    <div className={styles['container']}>
+  <div className={styles['container']}>
+    <h2>Nos derniers posts</h2>
+    <div className={styles['grid']}>
       {lastPosts.map((post) => (
         <Link to={post.node.fields.slug} key={post.node.fields.slug} className={styles['card']}>
           <p className={styles['category']}>{post.node.frontmatter.category.toUpperCase()}</p>
@@ -39,7 +39,7 @@ const LastPosts = ({ lastPosts } : { lastPosts : Array<Props> }) => (
         </Link>
       ))}
     </div>
-  </>
+  </div>
 );
 
 export default LastPosts;
