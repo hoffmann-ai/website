@@ -58,13 +58,18 @@ const createPages = async ({ graphql, actions }) => {
 
   const skills = await graphql(`
     {
-      allFile(filter: { relativeDirectory: { eq: "skills" } }) {
+      allMarkdownRemark(filter: {frontmatter: {template: {eq: "skills"}}}) {
         edges {
           node {
-            childImageSharp {
-              gatsbyImageData(width: 64, height: 64)
+            frontmatter {
+              name
+              description
+              logo {
+                childImageSharp {
+                  gatsbyImageData(width: 64, height: 64)
+                }
+              }
             }
-            name
           }
         }
       }
