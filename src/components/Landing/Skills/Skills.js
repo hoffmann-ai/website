@@ -5,8 +5,15 @@ import styles from './Skills.module.scss';
 
 type Props = {
   node: {
-    childImageSharp: typeof gatsbyImageData,
-    name: string
+    frontmatter: {
+      name: string;
+      description: string;
+      logo: {
+        childImageSharp: {
+          gatsbyImageData: typeof gatsbyImageData
+        }
+      }
+    }
   }
 }
 
@@ -19,17 +26,14 @@ const Skills = ({ skills } : { skills : Array<Props> }) => (
         <div className={styles['cell']}>
           <div className={styles['logo']}>
             <GatsbyImage
-              image={skill.node.childImageSharp.gatsbyImageData}
-              height={skill.node.childImageSharp.gatsbyImageData.height}
-              width={skill.node.childImageSharp.gatsbyImageData.width}
-              alt={skill.node.name}
-              key={skill.node.name} />
+              image={skill.node.frontmatter.logo.childImageSharp.gatsbyImageData}
+              height={skill.node.frontmatter.logo.childImageSharp.gatsbyImageData.height}
+              width={skill.node.frontmatter.logo.childImageSharp.gatsbyImageData.width}
+              alt={skill.node.frontmatter.name}
+              key={skill.node.frontmatter.name} />
           </div>
-          <h4>{skill.node.name}</h4>
-          <p className={styles['text_light']}>
-            Animante vel ut ut praedito cultuque ut ut vicissitudine redamare delectari est vestitu
-            corporis ita ita non possit ut inanimis.
-          </p>
+          <h4>{skill.node.frontmatter.name}</h4>
+          <p className={styles['text_light']}>{skill.node.frontmatter.description}</p>
         </div>
       ))}
     </div>

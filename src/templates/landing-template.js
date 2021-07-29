@@ -23,7 +23,7 @@ type Props = {
     },
     skills: {
       data: {
-        allFile: {
+        allMarkdownRemark: {
           edges: Edges,
         },
       },
@@ -48,7 +48,7 @@ type Props = {
 const LandingTemplate = ({ pageContext }: Props) => {
   const lastPosts = pageContext.lastPosts ? pageContext.lastPosts.data.allMarkdownRemark.edges : [];
   const clients = pageContext.clients ? pageContext.clients.data.allFile.edges : [];
-  const skills = pageContext.skills ? pageContext.skills.data.allFile.edges : [];
+  const skills = pageContext.skills ? pageContext.skills.data.allMarkdownRemark.edges : [];
   const landing = pageContext.landing.data.allFile.edges;
   const services = pageContext.services.data.allFile.edges;
 
