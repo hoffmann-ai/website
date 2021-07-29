@@ -17,6 +17,16 @@
   text-align: center;
 }
 
+@media (max-width: 425px) {
+  .grid {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    background-color: $color-gray-border;
+    text-align: center;
+  }
+}
+
 .cell {
   padding: 1em 3em;
   background-color: $color-whitesmoke;
