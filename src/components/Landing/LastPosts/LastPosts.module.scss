@@ -1,6 +1,5 @@
-@import 'src/assets/scss/general.scss';
 @import 'src/assets/scss/variables';
-@import 'src/assets/scss/general';
+@import '../../../assets/scss/base/generic';
 
 .container {
   padding-bottom: 5em;
@@ -36,10 +35,10 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .container {
+  .grid {
     grid-template-columns: repeat(1, auto);
   }
-  .description {
+  .grid p {
     display: none;
   }
 }
