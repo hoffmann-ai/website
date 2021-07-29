@@ -97,7 +97,7 @@ const Footer = ({ menu }: Props) => (
       </div>
       <div className={styles['footer__newsletter']}>
         <div className={styles['footer__newsletter__credits']}>
-          ©2021 HOFFMANN.AI. Tous droits réservés.
+          <p className={styles['text_light']}>©2021 HOFFMANN.AI. Tous droits réservés.</p>
         </div>
         <div className={styles['footer__newsletter__newsletter']}>
           <Newsletter style={'footer'} />

@@ -34,7 +34,7 @@ const LastPosts = ({ lastPosts } : { lastPosts : Array<Props> }) => (
             height={post.node.frontmatter.socialImage.childImageSharp.gatsbyImageData.height}
             width={post.node.frontmatter.socialImage.childImageSharp.gatsbyImageData.width}/>
           <h4>{post.node.frontmatter.title}</h4>
-          <p className={styles['description']}>{post.node.frontmatter.description}</p>
+          <p className={styles['text_light']}>{post.node.frontmatter.description}</p>
           <button className={styles['button']}>Voir l'article</button>
         </Link>
       ))}
