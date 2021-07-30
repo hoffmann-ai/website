@@ -1,42 +1,37 @@
-@import '../../../assets/scss/mixins';
 @import '../../../assets/scss/variables';
 @import '../../../assets/scss/base/generic';
 
-.services__module {
+.container_serv{
+    margin-top: 5em;
+    border-bottom: solid 1px $color-gray-border;
+}
+.service_container {
+  display: grid;
+  grid-template-columns: 60% 30%;
+  grid-gap: 10%;
   width: 100%;
   padding-bottom: 5em;
   margin-bottom: 1em;
-  border-bottom: solid 1px $color-gray-border;
+  padding-right: 5em;
+}
+.service_container:nth-child(even) {
+  direction: rtl;
+}
+.service_container_image {
+  object-fit: contain;
+}
+
+.service_container_content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start !important;
+  direction: ltr;
+
 }
-.services__module__innergrid {
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 33% 34% 33%;
-  background-color: transparent;
-  grid-gap: 0px;
-}
-.services__module__innergrid__comp {
-  padding:20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: $color-whitesmoke;
-  border: none;
-}
-.services__module__innergrid__comp__text {
-  color: $color-base;
-  font-size: 17px;
-  text-align: center !important;
-}
-@media screen and (max-width: 800px) {
-  .services__module__innergrid {
-    grid-template-columns: 100%;
-  }
+@media (max-width: 725px) {
+    .service_container {
+        display: grid;
+        grid-template-columns: 100%;
+      }
 }
