@@ -13,10 +13,10 @@ const Landing = ({
   <div className={styles['landing__page']}>
     <Hero landing={landing} />
     <CallToAction />
+    <Clients clients={clients} />
     <div className={styles['services']}>
       <Services services={services} />
     </div>
-    <Clients clients={clients} />
     <Skills skills={skills} />
     <LastPosts lastPosts={lastPosts} />
   </div>
