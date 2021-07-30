@@ -18,7 +18,7 @@ type Props = {
 };
 const Services = ({ services }: { services: Array<Props> }) => (
   <div className={styles['container_serv']}>
-    <h2>Nos services</h2>
+    <h2 className={styles['landing_title']}>Nos services</h2>
     <h6 className={styles['text_light']}>les services dans lesquels nous sommes experts</h6>
     {services.map((service) => (
       <div className={styles['service_container']}>

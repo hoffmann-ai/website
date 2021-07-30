@@ -44,9 +44,10 @@ h2 {
   @include margin-top(2.5);
   @include margin-bottom(0);
   color: $color-base;
+}
+.landing_title{
   text-align: center;
 }
-
 h3 {
   font-size: $typographic-base-font-size * 1.375;
   @include line-height(1);

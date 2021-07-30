@@ -19,7 +19,7 @@ type Props = {
 
 const Skills = ({ skills } : { skills : Array<Props> }) => (
   <div className={styles['container']}>
-    <h2>Notre expertise</h2>
+    <h2 className={styles['landing_title']}>Notre expertise</h2>
     <h6 className={styles['text_light']}>pour rester à la pointe de la technologie</h6>
     <div className={styles['grid']}>
       {skills.map((skill) => (
