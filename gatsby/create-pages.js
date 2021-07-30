@@ -97,7 +97,7 @@ const createPages = async ({ graphql, actions }) => {
         edges {
           node {
             childImageSharp {
-              gatsbyImageData(width: 800, height: 400)
+              gatsbyImageData(height: 500)
             }
             name
           }
@@ -107,19 +107,24 @@ const createPages = async ({ graphql, actions }) => {
   `);
 
   const services = await graphql(`
-    {
-      allFile(filter: { relativeDirectory: { eq: "services" } }) {
-        edges {
-          node {
-            childImageSharp {
-              gatsbyImageData(width: 100, height: 100)
-            }
+  {
+    allMarkdownRemark(filter: {frontmatter: {template: {eq: "services"}}}) {
+      edges {
+        node {
+          frontmatter {
             name
+            description
+            logo {
+              childImageSharp {
+                gatsbyImageData(height: 500)
+              }
+            }
           }
         }
       }
     }
-  `);
+  }
+`);
 
   // Home page
   createPage({
