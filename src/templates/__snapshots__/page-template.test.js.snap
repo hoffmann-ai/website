@@ -234,16 +234,6 @@ exports[`PageTemplate renders correctly 1`] = `
               Conditions d'utilisation
             </a>
           </li>
-          <li
-            className="footer__list__other__row"
-          >
-            <a
-              className="footer__list__link"
-              href="/#"
-            >
-              Cookies
-            </a>
-          </li>
         </ul>
       </div>
       <div
