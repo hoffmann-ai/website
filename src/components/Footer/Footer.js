@@ -64,11 +64,6 @@ const Footer = ({ menu }: Props) => (
                 Conditions d'utilisation
               </Link>
             </li>
-            <li className={styles['footer__list__other__row']}>
-              <Link to='/#' className={styles['footer__list__link']}>
-                Cookies
-              </Link>
-            </li>
           </ul>
         </div>
         <div className={styles['footer__inner__row__contact']}>
