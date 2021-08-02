@@ -1,22 +1,11 @@
+// @flow strict
 import React from 'react';
-import { GatsbyImage, gatsbyImageData } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import CallToAction from '../../CallToAction';
+import type { ServiceData } from '../../../types';
 import styles from './Services.module.scss';
 
-type Props = {
-  node: {
-    frontmatter: {
-      name: string,
-      description: string,
-      logo: {
-        childImageSharp: {
-          gatsbyImageData: typeof gatsbyImageData
-        }
-      }
-    }
-  }
-};
-const Services = ({ services }: { services: Array<Props> }) => (
+const Services = ({ services }: { services: ServiceData[] }) => (
   <div className={styles['container_serv']}>
     <h2 className={styles['landing_title']}>Nos services</h2>
     <h6 className={styles['text_light']}>les services dans lesquels nous sommes experts</h6>

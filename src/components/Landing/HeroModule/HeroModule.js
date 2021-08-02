@@ -1,16 +1,10 @@
 // @flow strict
 import React from 'react';
-import { GatsbyImage, gatsbyImageData } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import type { GatsbyImages } from '../../../types';
 import styles from './HeroModule.module.scss';
 
-type Props = {
-  node: {
-    childImageSharp: typeof gatsbyImageData,
-    name: string
-  }
-}
-
-const Hero = ({ landing } : { landing : Array<Props> }) => (
+const Hero = ({ landing } : { landing : GatsbyImages }) => (
   <div className={styles['hero__module']}>
     {landing[0] && (
       <>
