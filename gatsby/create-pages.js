@@ -97,7 +97,7 @@ const createPages = async ({ graphql, actions }) => {
         edges {
           node {
             childImageSharp {
-              gatsbyImageData(height: 500)
+              gatsbyImageData(height: 300)
             }
             name
           }

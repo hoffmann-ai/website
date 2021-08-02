@@ -1,8 +1,8 @@
 /** 
  * Generic
  */
- @import '../variables';
- @import '../mixins';
+@import '../variables';
+@import '../mixins';
 html {
   font-size: $typographic-root-font-size;
   background-color: $color-whitesmoke;
@@ -45,28 +45,25 @@ h2 {
   @include margin-bottom(0);
   color: $color-base;
 }
-.landing_title{
-  text-align: center;
-}
 h3 {
   font-size: $typographic-base-font-size * 1.375;
   @include line-height(1);
   @include margin-top(2);
-  @include margin-bottom(.5);
+  @include margin-bottom(0.5);
 }
 
 h4 {
   font-size: $typographic-base-font-size * 1.2;
   @include line-height(1);
   @include margin-top(1.5);
-  @include margin-bottom(.5);
+  @include margin-bottom(0.5);
 }
 
 h5 {
   font-size: $typographic-base-font-size;
   @include line-height(1);
   @include margin-top(2.5);
-  @include margin-bottom(.5);
+  @include margin-bottom(0.5);
 }
 
 img {
@@ -86,7 +83,15 @@ hr {
   margin-right: auto;
   margin-left: auto;
   background-size: 100% 26px;
-  background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, $color-base 11px, $color-base 15px, transparent 15px, transparent 26px);
+  background-image: linear-gradient(
+    to bottom,
+    transparent 1px,
+    transparent 11px,
+    $color-base 11px,
+    $color-base 15px,
+    transparent 15px,
+    transparent 26px
+  );
   width: 100px;
 }
 
@@ -94,14 +99,13 @@ a {
   color: $typographic-link-p-font-color;
   text-decoration: none;
 
-  &:focus{
+  &:focus {
     color: $typographic-link-s-font-color;
   }
   &:hover,
-  &:active{
+  &:active {
     color: #0873e8;
   }
-
 }
 
 b,
@@ -117,7 +121,6 @@ ul {
     padding: 0 5px;
     margin-bottom: 10px;
   }
-
 }
 
 p {
@@ -138,8 +141,8 @@ figure {
 }
 
 figcaption {
-  @include line-height(.75);
-  @include margin-top(.25);
+  @include line-height(0.75);
+  @include margin-top(0.25);
   color: $color-base;
   font-size: $typographic-small-font-size;
   font-style: italic;
@@ -166,13 +169,12 @@ figcaption {
   .float-left {
     float: left;
   }
-
 }
 
 .button {
   font-size: 1rem;
   border-radius: 3px;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   background-color: var(--primary-color);
   color: rgb(255, 255, 255);
   cursor: pointer;
@@ -193,5 +195,8 @@ figcaption {
   color: $color-gray;
   font-weight: 500;
   font-size: 17px;
+  text-align: center;
+}
+.landing_title {
   text-align: center;
 }
