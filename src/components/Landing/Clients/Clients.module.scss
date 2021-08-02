@@ -9,13 +9,25 @@
   border-bottom: solid 1px $color-gray-border;
 
   .logos {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .logo {
-    aspect-ratio: 2/1;
-    height: 48px;
     opacity: .8;
+    justify-self: center;
+  }
+
+  @media (max-width: 425px) {
+    .logos {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .logo {
+      opacity: .8;
+      justify-self: center;
+      margin: 10px 0;
+    }
   }
 }
