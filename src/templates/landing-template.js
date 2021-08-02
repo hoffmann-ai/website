@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
 import Landing from '../components/Landing/Landing';
-import type { Edges } from '../types';
+import type { Edges, GatsbyImages, ServiceData } from '../types';
 
 type Props = {
   pageContext: {
@@ -31,14 +31,14 @@ type Props = {
     landing: {
       data: {
         allFile: {
-          edges: Edges,
+          edges: GatsbyImages,
         },
       },
     },
     services: {
       data: {
         allMarkdownRemark: {
-          edges: Edges,
+          edges: ServiceData[],
         },
       },
     },
@@ -51,6 +51,7 @@ const LandingTemplate = ({ pageContext }: Props) => {
   const skills = pageContext.skills ? pageContext.skills.data.allMarkdownRemark.edges : [];
   const landing = pageContext.landing.data.allFile.edges;
   const services = pageContext.services ? pageContext.services.data.allMarkdownRemark.edges : [];
+
   return (
     <Layout title={'Accueil - HOFFMANN.AI'}>
       <Page>

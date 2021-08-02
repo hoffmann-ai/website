@@ -1,5 +1,6 @@
 // @flow strict
 import type { Node as ReactNode } from 'react';
+import { gatsbyImageData } from 'gatsby-plugin-image';
 
 export type RenderCallback = {
   // $FlowFixMe
@@ -57,5 +58,26 @@ export type AllMarkdownRemark = {
     totalCount: number
   }[]
 };
+
+export type GatsbyImage = {
+  node: {
+    childImageSharp: typeof gatsbyImageData;
+    name?: string;
+  }
+}
+
+export type GatsbyImages = GatsbyImage[];
+
+export type ServiceData = {
+  node: {
+    frontmatter: {
+      description: string,
+      name: string,
+      logo: {
+        childImageSharp: typeof gatsbyImageData;
+      }
+    }
+  }
+}
 
 export type MarkdownRemark = Node;
