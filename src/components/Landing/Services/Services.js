@@ -21,7 +21,7 @@ const Services = ({ services }: { services: Array<Props> }) => (
     <h2 className={styles['landing_title']}>Nos services</h2>
     <h6 className={styles['text_light']}>les services dans lesquels nous sommes experts</h6>
     {services.map((service) => (
-      <div className={styles['service_container']}>
+      <div className={styles['service_container']} key={service.node.frontmatter.name}>
         <div className={styles['service_container_content']}>
           <GatsbyImage
             image={service.node.frontmatter.logo.childImageSharp.gatsbyImageData}
