@@ -9,19 +9,15 @@ import ContactForm from '../components/ContactForm';
 
 type Props = {
   data: {
-    markdownRemark: MarkdownRemark,
-  },
+    markdownRemark: MarkdownRemark
+  }
 };
 
 const PageTemplate = ({ data }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
   const { html: pageBody } = data.markdownRemark;
   const { frontmatter } = data.markdownRemark;
-  const {
-    title: pageTitle,
-    description: pageDescription = '',
-    socialImage,
-  } = frontmatter;
+  const { title: pageTitle, description: pageDescription = '', socialImage } = frontmatter;
   const metaDescription = pageDescription || siteSubtitle;
   const socialImageUrl = socialImage?.publicURL;
 
@@ -33,8 +29,8 @@ const PageTemplate = ({ data }: Props) => {
     >
       <Page title={pageTitle}>
         <div dangerouslySetInnerHTML={{ __html: pageBody }} />
+        {pageTitle === 'Contact' && <ContactForm />}
       </Page>
-      {pageTitle === 'Contact me' && <ContactForm />}
     </Layout>
   );
 };

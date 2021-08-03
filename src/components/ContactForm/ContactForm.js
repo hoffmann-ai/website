@@ -1,6 +1,9 @@
+// @flow strict
 import axios from 'axios';
 import React, { useState } from 'react';
 import styles from './ContactForm.module.scss';
+
+const url = process.env.GATSBY_WEBHOOK_URL;
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -12,22 +15,22 @@ const ContactForm = () => {
     'En validant, vous autorisez HOFMANN.AI à stocker les données personnelles soumises afin qu\'elles fournissent le contenu souhaité.'
   );
   const [contactCheck, setContactCheck] = useState('');
-
+  if (url === null || url === undefined) return <></>;
   const handleSubmit = (e) => {
     e.preventDefault();
     const contact = {
-      name, firstname, phone, email, message
+      name,
+      firstname,
+      phone,
+      email,
+      message
     };
     axios
-      .post(
-        'https://hooks.zapier.com/hooks/catch/10583025/b28wqv3/silent/',
-        contact,
-        {
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-          },
+      .post(url, contact, {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
         }
-      )
+      })
       .then(() => {
         setName('');
         setFirstname('');
@@ -38,19 +41,20 @@ const ContactForm = () => {
         setCredits(
           'Nous avons bien pris en compte votre contact\n. Nous reviendrons vers vous dans les plus brefs délais.'
         );
+      })
+      .catch(() => {
+        setCredits('Une erreur est survenue. Veuillez recommencer plus tard.');
       });
   };
 
   return (
     <form
       className={styles['form__module']}
-      name='contact'
+      name="contact"
       onSubmit={handleSubmit}
-      encType='multipart/form-data'
+      encType="multipart/form-data"
     >
-      <h1 className={styles['form__title']}>
-        Un projet en tête ? Contactez-nous !
-      </h1>
+      <h1 className={styles['form__title']}>Un projet en tête ? Contactez-nous !</h1>
       <div className={styles['form__inner__grid']}>
         <div className={styles['form__inner__grid__element']}>
           <label className={styles['form__inner__grid__element__child']}>
@@ -58,10 +62,10 @@ const ContactForm = () => {
             <span className={styles['form__inner__star']}> *</span>
           </label>
           <input
-            type='name'
+            type="name"
             className={styles['form__inner__grid__element__child']}
-            name='name'
-            placeholder='Saisir votre prénom'
+            name="name"
+            placeholder="Saisir votre prénom"
             required
             value={firstname}
             onChange={(e) => setFirstname(e.target.value)}
@@ -72,24 +76,22 @@ const ContactForm = () => {
             Nom <span className={styles['form__inner__star']}> *</span>
           </label>
           <input
-            type='name'
+            type="name"
             className={styles['form__inner__grid__element__child']}
-            name='firstname'
-            placeholder='Saisir votre nom'
+            name="firstname"
+            placeholder="Saisir votre nom"
             required
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
         </div>
         <div className={styles['form__inner__grid__element']}>
-          <label className={styles['form__inner__grid__element__child']}>
-            Téléphone
-          </label>
+          <label className={styles['form__inner__grid__element__child']}>Téléphone</label>
           <input
-            type='text'
+            type="text"
             className={styles['form__inner__grid__element__child']}
-            name='phone'
-            placeholder='ex : 06 32 32 32 32'
+            name="phone"
+            placeholder="ex : 06 32 32 32 32"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
           />
@@ -100,24 +102,22 @@ const ContactForm = () => {
           </label>
           <label className={styles['form__not-email']}>Email non valide</label>
           <input
-            type='mail'
+            type="mail"
             className={styles['form__inner__grid__element__child']}
-            name='email'
+            name="email"
             onChange={(e) => setEmail(e.target.value)}
-            placeholder='email *'
+            placeholder="email *"
             value={email}
             required
           />
         </div>
       </div>
       <div className={styles['form__inner__grid__element__message']}>
-        <label className={styles['form__inner__grid__element__child']}>
-          Message
-        </label>
+        <label className={styles['form__inner__grid__element__child']}>Message</label>
         <textarea
           className={styles['form__inner__grid__element__child']}
-          name='message'
-          placeholder='Saisir votre message'
+          name="message"
+          placeholder="Saisir votre message"
           onChange={(e) => setMessage(e.target.value)}
           value={message}
         />
@@ -126,9 +126,7 @@ const ContactForm = () => {
         <span className={styles['form__inner__checkbox__message']}>
           {contactCheck !== '' && (
             <>
-              <span
-                className={styles['form__inner__checkbox__message__submit']}
-              >
+              <span className={styles['form__inner__checkbox__message__submit']}>
                 {contactCheck}
               </span>
               <br></br>
@@ -138,12 +136,7 @@ const ContactForm = () => {
         </span>
       </div>
       <div className={styles['form__inner__grid__element__message']}>
-        <input
-          className={styles['form__input']}
-          name='submit'
-          type='submit'
-          value='Envoyer'
-        />
+        <input className={styles['form__input']} name="submit" type="submit" value="Envoyer" />
         <div className={styles['form__message']}></div>
       </div>
     </form>
