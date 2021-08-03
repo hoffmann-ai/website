@@ -179,19 +179,18 @@ figcaption {
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: 0.1s ease-in;
-  border: 2px solid darken($color-secondary, 10%);
+  border: 1px solid darken($color-secondary, 10%);
 }
 .button:hover {
   background-color: darken($color-secondary, 10%);
   transition: 0.1s ease-in;
-  border: 2px solid darken($color-secondary, 20%);
+  border: 1px solid darken($color-secondary, 20%);
 }
 .text_light {
   margin-top: 13px;
   color: $color-gray;
   font-weight: 500;
   font-size: 17px;
-  //text-align: center;
 }
 .landing_title {
   text-align: center;

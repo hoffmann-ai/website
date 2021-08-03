@@ -25,7 +25,7 @@ const Services = ({ services }: { services: ServiceData[] }) => (
           <h4 className={styles['service_container_content_title']}>
             {service.node.frontmatter.name}
           </h4>
-          <p className={styles['service_container_content_text']}>
+          <p className={styles['text_light']}>
             {service.node.frontmatter.description}
           </p>
           <CallToAction />
