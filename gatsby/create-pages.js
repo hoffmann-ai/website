@@ -46,7 +46,7 @@ const createPages = async ({ graphql, actions }) => {
               category
               socialImage {
                 childImageSharp {
-                  gatsbyImageData(width: 450, height: 164)
+                  gatsbyImageData(width: 450, height: 164 quality:100)
                 }
               }
             }
@@ -66,7 +66,7 @@ const createPages = async ({ graphql, actions }) => {
               description
               logo {
                 childImageSharp {
-                  gatsbyImageData(width: 64, height: 64)
+                  gatsbyImageData(width: 64, height: 64 quality:100)
                 }
               }
             }
@@ -82,7 +82,7 @@ const createPages = async ({ graphql, actions }) => {
         edges {
           node {
             childImageSharp {
-              gatsbyImageData(height: 64)
+              gatsbyImageData(height: 64 quality:100)
             }
             name
           }
@@ -97,7 +97,7 @@ const createPages = async ({ graphql, actions }) => {
         edges {
           node {
             childImageSharp {
-              gatsbyImageData(height: 300)
+              gatsbyImageData(height: 300 quality:100)
             }
             name
           }
@@ -116,7 +116,7 @@ const createPages = async ({ graphql, actions }) => {
             description
             logo {
               childImageSharp {
-                gatsbyImageData(height: 500)
+                gatsbyImageData(height: 500 quality:100)
               }
             }
           }
