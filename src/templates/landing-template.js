@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
 import Landing from '../components/Landing/Landing';
-import type { Edges, GatsbyImages, ServiceData } from '../types';
+import type { Edges, GatsbyImagesType, ServiceData } from '../types';
 
 type Props = {
   pageContext: {
@@ -31,7 +31,7 @@ type Props = {
     landing: {
       data: {
         allFile: {
-          edges: GatsbyImages,
+          edges: GatsbyImagesType,
         },
       },
     },

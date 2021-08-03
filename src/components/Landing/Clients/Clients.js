@@ -1,16 +1,10 @@
 // @flow strict
 import React from 'react';
-import { GatsbyImage, gatsbyImageData } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import type { GatsbyImagesType } from '../../../types/index';
 import styles from './Clients.module.scss';
 
-type Props = {
-  node: {
-    childImageSharp: typeof gatsbyImageData,
-    name: string
-  }
-}
-
-const Clients = ({ clients } : { clients : Array<Props> }) => (
+const Clients = ({ clients } : { clients : GatsbyImagesType }) => (
   <div className={styles['container']}>
     <h6 className={styles['text_light']}>Les sociétés qui ont travaillé avec nous</h6>
     <div className={styles['logos']}>
