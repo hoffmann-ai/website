@@ -8,6 +8,7 @@ import Clients from './Clients';
 import Skills from './Skills';
 import CallToAction from '../CallToAction';
 import Stats from './Stats';
+import EndingCallToAction from './EndingCallToAction/EndingCallToAction';
 import type { Edges, GatsbyImages, ServiceData } from '../../types';
 
 interface Props {
@@ -29,6 +30,8 @@ const Landing = ({
     <Stats />
     <Skills skills={skills} />
     <LastPosts lastPosts={lastPosts} />
+    <EndingCallToAction landing={landing} />
+
   </div>
 );
 
