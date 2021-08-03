@@ -59,14 +59,14 @@ export type AllMarkdownRemark = {
   }[]
 };
 
-export type GatsbyImage = {
+export type GatsbyImageType = {
   node: {
     childImageSharp: typeof gatsbyImageData;
     name?: string;
   }
 }
 
-export type GatsbyImages = GatsbyImage[];
+export type GatsbyImagesType = GatsbyImageType[];
 
 export type ServiceData = {
   node: {
@@ -76,6 +76,23 @@ export type ServiceData = {
       logo: {
         childImageSharp: typeof gatsbyImageData;
       }
+    }
+  }
+}
+
+export type LastPostsData = {
+  node: {
+    name: string,
+    frontmatter: {
+      title: string,
+      description: string,
+      socialImage: {
+        childImageSharp: typeof gatsbyImageData,
+      },
+      category: string
+    },
+    fields: {
+      slug: string
     }
   }
 }

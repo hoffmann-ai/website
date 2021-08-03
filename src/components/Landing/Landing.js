@@ -9,13 +9,13 @@ import Skills from './Skills';
 import CallToAction from '../CallToAction';
 import Stats from './Stats';
 import EndingCallToAction from './EndingCallToAction/EndingCallToAction';
-import type { Edges, GatsbyImages, ServiceData } from '../../types';
+import type { Edges, GatsbyImagesType, ServiceData } from '../../types';
 
 interface Props {
   lastPosts: Edges;
   clients: Edges;
   skills: Edges;
-  landing: GatsbyImages;
+  landing: GatsbyImagesType;
   services: ServiceData[];
 }
 
@@ -31,7 +31,6 @@ const Landing = ({
     <Skills skills={skills} />
     <LastPosts lastPosts={lastPosts} />
     <EndingCallToAction landing={landing} />
-
   </div>
 );
 
