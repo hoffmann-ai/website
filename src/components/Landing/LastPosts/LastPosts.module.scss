@@ -2,8 +2,8 @@
 @import '../../../assets/scss/base/generic';
 
 .container {
-  padding-bottom: 5em;
-  margin-bottom: 1em;
+  padding-bottom: $padding-containers;
+  margin-bottom: $margin-containers;
   display: flex;
   flex-direction: column;
   justify-content: center;
