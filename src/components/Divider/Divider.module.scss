@@ -1,0 +1,12 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+@import '../../assets/scss/base/generic';
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: $color-gray-border;
+  margin-top: $margin-divider;
+  margin-bottom: $margin-divider;
+  padding: $padding-containers;
+}

@@ -2,8 +2,7 @@
 @import '../../../assets/scss/base/generic';
 
 .container_serv{
-    margin-top: 5em;
-    border-bottom: solid 1px $color-gray-border;
+    margin-top: $margin-containers;
     text-align: center;
 
     h1 {
@@ -21,7 +20,7 @@
   grid-template-columns: 40% 50%;
   grid-gap: 10%;
   width: 100%;
-  padding-bottom: 5em;
+  padding-bottom: $padding-containers;
 }
 .service_container:nth-child(even) {
   direction: rtl;

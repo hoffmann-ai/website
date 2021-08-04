@@ -8,6 +8,7 @@ import Clients from './Clients';
 import Skills from './Skills';
 import CallToAction from '../CallToAction';
 import Stats from './Stats';
+import Divider from '../Divider';
 import EndingCallToAction from './EndingCallToAction/EndingCallToAction';
 import type { Edges, GatsbyImagesType, ServiceData } from '../../types';
 
@@ -25,11 +26,16 @@ const Landing = ({
   <div className={styles['landing__page']}>
     <Hero landing={landing} />
     <CallToAction />
+    <Divider />
     <Clients clients={clients} />
+    <Divider />
     <Services services={services} />
     <Stats />
+    <Divider />
     <Skills skills={skills} />
+    <Divider />
     <LastPosts lastPosts={lastPosts} />
+    <Divider />
     <EndingCallToAction landing={landing} />
   </div>
 );
