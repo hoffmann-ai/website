@@ -30,9 +30,10 @@ const Landing = ({
     <Clients clients={clients} />
     <Divider />
     <Services services={services} />
-    <Stats />
     <Divider />
     <Skills skills={skills} />
+    <Divider />
+    <Stats />
     <Divider />
     <LastPosts lastPosts={lastPosts} />
     <Divider />
