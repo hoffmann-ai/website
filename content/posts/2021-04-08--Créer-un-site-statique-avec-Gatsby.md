@@ -1,10 +1,17 @@
 ---
-title: Créer un site statique avec Gatsby
+title: Comment Gatsby vous permet de créer des sites statiques ultras performants
 date: "2021-08-04T23:46:37.121Z"
 template: "post"
 draft: false
 slug: "creer-un-site-statique-avec-gatsby"
 socialImage: "/media/2021-04-08--Créer-un-site-statique-avec-Gatsby/Garsby.jpg"
+category: "Web"
+tags:
+  - "site statique"
+  - "performance"
+  - "SEO"
+  - "Gatsby"
+description: "Création d'un site statique performant avec Gatsby. Quel sont les avantages et comment ça marche ?"
 ---
 
 ##Qu'est ce que Gatsby
@@ -17,92 +24,80 @@ Gatsby est un Framework javascript basé sur React, qui permet la génération d
 
 Le principal avantage de la construction d’un site statique avec Gatsby est la vitesse, que les webmasters ont essayé d’optimiser depuis l’annonce de Google, concernant l'utilisation de la vitesse du site dans le classement de recherche web. Les fortes performances des sites contruits avec Garsby permettent d'avoir un meilleur référencement, donc plus de visibilité.
 
-##Prérequis
+##Site statique vs site dynamique, quelle est la différence ?
+
+Un site web dynamique n'affiche pas toujours les mêmes informations à chaque fois, en fonction de l'utilisateur, du lieu de la connexion ou encore de l'heure. Dans un site dynamique, le client envoie une requête au serveur, contenant certaines informations, par exemple ses identifiants. Le serveur à l'aide de ces informations va générer la page à afficher, éventuellement chercher des informations dans une base de données, puis la renvoyer au client. L'avantage d'un site dynamique est donc la très grande souplesse d'affichage. Avec un seul code source, on peut générer de nombreuses pages différentes en fonctions des données envoyé par le client.
+
+![site dynamique](/media/2021-04-08--Créer-un-site-statique-avec-Gatsby/site_dynamique.jpg)
+
+Un site statique, lui, diffère d'un site dynamique par le fait qu'il affichera toujours le même contenu à chaque fois. À moins, bien sûr qu'on modifie le code source. La page est déjà générée, et lorsque un client fait une requête au serveur, celui-ci peut directement lui renvoyer la page. Coté client, on verra donc la page se charger beaucoup plus rapidement. L'avantage d'un site statique est surtout la performance élevée dont il fait preuve.
+
+![site statique](/media/2021-04-08--Créer-un-site-statique-avec-Gatsby/site-statique.jpg)
+
+##Comment Gatsby fonctionne
+
+On peut résumer la génération d'un site Gatsby en 3 étapes.
+Premièrement, Gatsby récupère les différentes données dont il a besoin pour le site. Ces données peuvent venir de fichier local, comme des images ou des fichiers markdown, mais aussi d'api ou de CMS.
+Ensuite, le site va être compilé pour générer une page statique qui pourra être affichée par un navigateur.
+Enfin, lorsque le site est hébergé, quand un client va faire une requête pour obtenir une page web, le serveur va lui renvoyer instantanément la page qui aura été générée à l'avance
+
+![fonctionnement gatsby](/media/2021-04-08--Créer-un-site-statique-avec-Gatsby/how-Gatsby-work.png)
+
+Bien que ça apporte beaucoup d'avantages, le défaut de cette méthode est que le site à besoin d'être recompilé à chaque fois que le contenu est modifié.
+
+##Les avantages de Gatsby
+
+L'avantage le plus notable de Gatsby est, vous l'aurez compris, la forte performance des sites. Cela est en grande partie dû au fait qu'il s'agit de sites statiques, donc rapides à charge. Mais pas que, Gatsby est complètement optimisé dans ce but. Il permet par exemple de faire du LazyLoading, c'est-à-dire du chargement asynchrone. Par exemple : si les images peuvent parfois ralentir le changement du site, Gatsby propose dès les charger en parallèle, sans bloquer l'affichage de la page.
+Gatsby est un avantage aussi au niveau du SEO. En effet la performance du site à des conséquences directes sur le référencement, depuis l'annonce de Google disant inclure la vitesse d'affichage comme facteur pour le référencement.
+Le dernier avantage important de Gatsby est la sécurité. Comme les pages sont pré-généré, il n’y a pas de connexion directe à la base de données, aux dépendances, aux données utilisateur ou à d’autres informations sensibles.
+
+##Gatsby vs Nextjs
+
+NextJS est un autre framework permettant de générer des sites statiques.
+La principale différence entre NextJS et Gatsby se situe au niveau du chargement des données.
+Si Gatsby est si avantageux au niveau des performances, c'est parce que les données sont téléchargées au moment du build. Le désavantage, c'est que le site doit repasser par une phase de build à chaque fois que l'on souhaite en modifier le contenu.
+Next.js en revanche propose un rendu côté serveur. Cela signifie que les pages sont traitées par un serveur NodeJS au moment de la requête par le client et le HTML est envoyé tel-quel. Une surcouche JavaScript va ensuite permettre de dynamiser le contenu ainsi récupéré.
+
+Il est donc préférable d'utiliser Gatsby si votre site n'a pas vocation à être modifieé régulièrement. Autrement, NextJS est une bonne alternative, en dépit d'une petite perte de performance.
+
+![comparaison framework site statique](/media/2021-04-08--Créer-un-site-statique-avec-Gatsby/comparatifs.png)
+
+##Créer votre site avec Gatsby
 
 l'installation de Gatsby nécessite d'avoir au préalable NodeJS et de git d'installé sur votre machine.
-Pour tester l'instalation de ces deux paquets, utilisez les commandes suivantes : 
-
-```console
-# Node
-$ node -v
-
-# Git
-$ git --version
-```
-
 Attention, la version de node doit être au minimum v12.13, ou une version ultérieure.
-
-Si il vous manque l'un de ces paquets, voici comment les installer :
-
-Node :
-```console
-# ubuntu
-$ sudo apt install nodejs
-```
-
-Git : 
-
-```console
-# ubuntu
-$ sudo apt install git
-```
-
-##Gatsby-CLI
 
 L'interface de ligne de commande Gatsby (CLI) est un outil qui vous permet de créer rapidement de nouveaux sites alimentés par Gatsby et d'exécuter des commandes pour développer des sites Gatsby.
 L'interface CLI est un paquet npm, ce qui signifie que vous pouvez l'installer à l'aide de npm.
 
 Installez le CLI de Gatsby globalement en exécutant la commande ci-dessous. (Vous avez installé une ancienne version de Gatsby CLI ? Cette commande vous mettra également à jour vers la dernière version).
-
 ```console
 $ npm install -g gatsby-cli
 ```
 
-Vérifiez que vous avez la bonne version installée en exécutant la commande ci-dessous. Vous devez avoir la version 3 ou une version plus récente.
-
-```console
-$ gatsby --version
-```
-
-##Créer votre premier site avec Gatsby !
-
-Exécutez la commande suivante dans le terminal. Cela lancera un formulaire interactif qui vous aidera à créer un nouveau site Gatsby.
+Pour créer votre site, exécutez la commande suivante dans le terminal. Cela lancera un formulaire interactif qui vous aidera à créer un nouveau site Gatsby.
 ```console
 $ gatsby new
 ```
 
-Entrez un nom pour votre projet
+Suivez le formulaire en selectionnant vos options.
+Voici les options que je vous conseil:
 ```console
-What would you like to call your site?
-✔ · My First Gatsby Site
-```
+✔ What would you like to call your site?
+· My First Gatsby Site
 
-Lorsque l'invite demande "Comment voulez-vous nommer le dossier dans lequel votre site sera créé ?", utilisez le nom de dossier par défaut, qui sera basé sur le nom du site que vous avez choisi.
-```console
-What would you like to name the folder where your site will be created?
-✔ my-first-gatsby-site
-```
+✔ What would you like to name the folder where your site will be created?
+· my-first-gatsby-site
 
-Lorsque l'invite demande "Utiliserez-vous un CMS ?", sélectionnez "Non (ou je l'ajouterai plus tard)".
-```console
 ✔ Will you be using a CMS?
 · No (or I'll add it later)
-```
 
-Lorsque l'invite demande "Voulez-vous installer un système de style ?", sélectionnez "Non (ou je l'ajouterai plus tard)". (Vous ajouterez les styles manuellement plus tard).
-```console
 ✔ Would you like to install a styling system?
 · No (or I'll add it later)
-```
 
-Quand Gatsby vous demande "Would you like to install additional features with other plugins?", vous pouvez selectionner "Done" pour passer cette étape.
-```console
 ✔ Would you like to install additional features with other plugins?
 · Done
-```
 
-L'invite vous montrera un résumé de ce que gatsby new va faire. Cela devrait ressembler à quelque chose comme ci-dessous.
-```console
 Thanks! Here's what we'll now do:
 
   🛠  Create a new Gatsby site in the folder my-first-gatsby-site
