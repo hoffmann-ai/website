@@ -5,6 +5,7 @@ import Layout from '../components/Layout';
 import Page from '../components/Page';
 import { useSiteMetadata } from '../hooks';
 import type { MarkdownRemark } from '../types';
+import ContactForm from '../components/ContactForm';
 
 type Props = {
   data: {
@@ -21,9 +22,14 @@ const PageTemplate = ({ data }: Props) => {
   const socialImageUrl = socialImage?.publicURL;
 
   return (
-    <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
+    <Layout
+      title={`${pageTitle} - ${siteTitle}`}
+      description={metaDescription}
+      socialImage={socialImageUrl}
+    >
       <Page title={pageTitle}>
         <div dangerouslySetInnerHTML={{ __html: pageBody }} />
+        {pageTitle === 'Contact' && <ContactForm />}
       </Page>
     </Layout>
   );
