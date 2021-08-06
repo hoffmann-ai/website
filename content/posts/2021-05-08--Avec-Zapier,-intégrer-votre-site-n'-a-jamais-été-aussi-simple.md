@@ -19,11 +19,11 @@ Si vous voulez personnaliser les actions qui suivent l'envoi d'un formulaire, pa
 
 ![Logo Zapier](/media/2021-05-08--Avec-Zapier,-intégrer-votre-site-n'-a-jamais-été-aussi-simple/logoZapier.png)
 
-Zapier est une société mondiale à distance qui permet aux utilisateurs finaux d'intégrer les applications Web qu'ils utilisent. C'est une plateforme qui va permettre le lien entre différentes applications (Google sheets, Airtable, Google Calendar, etc.) très facilement. 
+Zapier est une société qui permet aux utilisateurs finaux d'intégrer les applications Web qu'ils utilisent, telles que Google sheets, Airtable, Google Calendar, etc. C'est une plateforme qui va permettre le lien entre différentes applications très facilement. 
 
 ## Quels sont les avantages ?
 
-Il y a plusieurs avantages à utiliser Zapier. Le premier avantage est la facilité d'utilisation. 
+Il y a plusieurs avantages à utiliser Zapier. La facilité d'utilisation, le grand nombre d'applications, ainsi que  le gain de temps et  de performances font de Zapier un outil incontournable.
 
 #### 1.Facile à utiliser
 Les Zaps ont été conçus pour être très faciles à utiliser pour n'importe qui. L'interface est très intuitive même pour une personne débutante. 
@@ -36,7 +36,7 @@ Zapier propose plus de 3000 applications que vous pouvez lier entre elles. Parmi
 ![examples applications](/media/2021-05-08--Avec-Zapier,-intégrer-votre-site-n'-a-jamais-été-aussi-simple/apps.png)
 
 #### 3. Permet un gain de temps considérable
-Le but principal de Zapier est d'automatiser toutes les actions qui peuvent être faites manuellement mais qui demandent de longues semaines de travail. Avec Zapier, vous n'avez plus à devoir gérer des dixaines d'intégrations d'applications différentes, puisque tout se passe désormais sur une seule plateforme.
+Le but principal de Zapier est d'automatiser toutes les actions qui peuvent être faites manuellement mais qui demandent de longues semaines de travail. Avec Zapier, vous n'avez plus à devoir gérer l'intégration de vos différentes applications, puisque tout se passe désormais sur une seule plateforme.
 
 
 #### 4. Très performant
