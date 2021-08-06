@@ -12,7 +12,7 @@ const ContactForm = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [credits, setCredits] = useState(
-    'En validant, vous autorisez HOFMANN.AI à stocker les données personnelles soumises afin qu\'elles fournissent le contenu souhaité.'
+    'En validant, vous autorisez HOFFMANN.AI à stocker les données personnelles soumises afin qu\'elles fournissent le contenu souhaité.'
   );
   const [contactCheck, setContactCheck] = useState('');
   if (url === null || url === undefined) return <></>;
