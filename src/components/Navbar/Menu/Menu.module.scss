@@ -21,16 +21,26 @@
         color: $typographic-base-font-color;
         font-weight: normal;
         border: 0;
+        padding-top:2px;
+        padding-bottom:7px;
+        padding-left:7px;
+        padding-right:7px;
+        transition: 0.2s ease;
+        border-radius: 3px;
 
         &:hover,
         &:focus {
           color: $color-primary;
-          border-bottom: 1px solid $color-primary;
+          background-color: lighten($color-secondary, 35%);
+          transition: 0.2s ease;
+
         }
 
         &--active {
           color: $color-base;
-          border-bottom: 1px solid $color-base;
+          background-color: lighten($color-secondary, 45%);
+          transition: 0.2s ease;
+
         }
       }
     }
