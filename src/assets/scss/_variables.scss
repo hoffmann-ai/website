@@ -1,13 +1,14 @@
 /** 
  * Variables
  */
-
 // Colors
 $color-base: #222;
-$color-primary: #5D93FF;
-$color-secondary: #F7A046;
+$color-primary: #4a4a4a;
+$color-secondary: #0873e8;
 
 $color-white: #FFF;
+$color-whitesmoke: rgb(248, 248, 248);
+$color-whitesmoke-dense: #f3efeb;
 $color-gray: lighten($color-base, 40%);
 $color-gray-border: lighten($color-base, 77%);
 $color-gray-bg: lighten($color-base, 79%);
@@ -39,3 +40,8 @@ $layout-width: 1070px;
 $layout-breakpoint-sm: 685px;
 $layout-breakpoint-md: 960px;
 $layout-breakpoint-lg: 1100px;
+
+// Margins & paddings
+$margin-containers : 0px;
+$padding-containers : 0px;
+$margin-divider : 3.5em;

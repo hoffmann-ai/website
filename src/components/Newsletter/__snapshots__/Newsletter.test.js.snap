@@ -19,13 +19,13 @@ exports[`Newsletter renders correctly 1`] = `
           id="email"
           name="email"
           onChange={[Function]}
-          placeholder="Email"
+          placeholder="Newsletter"
           required={true}
           type="email"
           value=""
         />
         <button
-          className="newsletter__module__form__subscribe__submit"
+          className="newsletter__module__form__subscribe__submit button"
           type="submit"
         >
           S'abonner

@@ -1,8 +1,11 @@
 /** 
  * Generic
  */
+@import '../variables';
+@import '../mixins';
 html {
   font-size: $typographic-root-font-size;
+  background-color: $color-whitesmoke;
 }
 
 body {
@@ -38,36 +41,29 @@ h1 {
 h2 {
   font-size: $typographic-base-font-size * 1.6875;
   @include line-height(1.5);
-  @include margin-top(2);
-  @include margin-bottom(.5);
+  @include margin-top($margin-containers);
+  @include margin-bottom(0);
+  color: $color-base;
 }
-
 h3 {
   font-size: $typographic-base-font-size * 1.375;
   @include line-height(1);
   @include margin-top(2);
-  @include margin-bottom(.5);
+  @include margin-bottom(0.5);
 }
 
 h4 {
   font-size: $typographic-base-font-size * 1.2;
   @include line-height(1);
   @include margin-top(1.5);
-  @include margin-bottom(.5);
+  @include margin-bottom(0.5);
 }
 
 h5 {
   font-size: $typographic-base-font-size;
   @include line-height(1);
   @include margin-top(2.5);
-  @include margin-bottom(.5);
-}
-
-h6 {
-  font-size: $typographic-base-font-size;
-  @include line-height(1);
-  @include margin-top(2.5);
-  @include margin-bottom(.5);
+  @include margin-bottom(0.5);
 }
 
 img {
@@ -87,7 +83,15 @@ hr {
   margin-right: auto;
   margin-left: auto;
   background-size: 100% 26px;
-  background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, $color-base 11px, $color-base 15px, transparent 15px, transparent 26px);
+  background-image: linear-gradient(
+    to bottom,
+    transparent 1px,
+    transparent 11px,
+    $color-base 11px,
+    $color-base 15px,
+    transparent 15px,
+    transparent 26px
+  );
   width: 100px;
 }
 
@@ -95,14 +99,13 @@ a {
   color: $typographic-link-p-font-color;
   text-decoration: none;
 
-  &:focus{
+  &:focus {
     color: $typographic-link-s-font-color;
   }
   &:hover,
-  &:active{
-    color: #0873e8;
+  &:active {
+    color: $color-secondary;
   }
-
 }
 
 b,
@@ -118,7 +121,6 @@ ul {
     padding: 0 5px;
     margin-bottom: 10px;
   }
-
 }
 
 p {
@@ -139,8 +141,8 @@ figure {
 }
 
 figcaption {
-  @include line-height(.75);
-  @include margin-top(.25);
+  @include line-height(0.75);
+  @include margin-top(0.25);
   color: $color-base;
   font-size: $typographic-small-font-size;
   font-style: italic;
@@ -167,5 +169,31 @@ figcaption {
   .float-left {
     float: left;
   }
+}
 
+.button {
+  font-size: 1rem;
+  border-radius: 3px;
+  padding: 0.5rem 1.5rem;
+  background-color: $color-secondary;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.1s ease-in;
+  border: 1px solid darken($color-secondary, 10%);
+}
+.button:hover {
+  background-color: darken($color-secondary, 10%);
+  transition: 0.1s ease-in;
+  border: 1px solid darken($color-secondary, 20%);
+}
+.text_light {
+  color: $color-gray;
+  font-weight: 500;
+  font-size: $typographic-base-font-size;
+  @include line-height(1);
+  @include margin-top(1);
+  @include margin-bottom(1);
+}
+.landing_title {
+  text-align: center;
 }

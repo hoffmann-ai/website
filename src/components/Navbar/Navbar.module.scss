@@ -1,42 +1,61 @@
-@import '../../assets/scss/variables';
+@import '../../assets/scss/_variables.scss';
 @import '../../assets/scss/mixins';
 
 .navbar {
-    width: 100%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-    padding-top: 10px;
-    background-color: rgb(255, 255, 255);
-    z-index: 1;
-    &__inner {
-        &_list {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            margin: 0;
-            padding: 0 40px;
+  border-bottom: solid 1px rgba(204, 204, 204, 0.527);
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $color-whitesmoke;
+  z-index: 1;
+  &__inner {
+    &_list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0 0px;
 
-            &_item {
-                display: inline-block;
-                margin: 0;
-            }
+      &_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        &_logo {
+          height: 48px;
+          width: 48px;
+          margin: auto;
         }
+      }
     }
+  }
 }
 
 @include breakpoint-sm {
-    .navbar {
-        &__inner {
-            padding: 0 10px;
-        }
+  .navbar {
+    &__inner {
+      padding: 0 10px;
     }
+  }
 }
 
 @include breakpoint-md {
-    .navbar {
-        &__inner {
-            padding: 0;
-        }
+  .navbar {
+    &__inner {
+      padding: 0;
     }
+  }
+}
+@media screen and (max-width: 700px) {
+  .navbar {
+    &__inner {
+      &_list {
+        justify-content: space-around;
+      }
+    }
+  }
 }

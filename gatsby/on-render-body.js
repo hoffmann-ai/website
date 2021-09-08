@@ -20,7 +20,7 @@ const onRenderBody = ({ setPostBodyComponents }) => {
           })(document, "script");
       `,
       }}
-    />,
+    />
   ]);
 };
 

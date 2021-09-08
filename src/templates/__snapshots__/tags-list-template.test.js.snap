@@ -16,20 +16,9 @@ exports[`TagsListTemplate renders correctly 1`] = `
         <li
           className="navbar__inner_list_item"
         >
-          <div
-            className="logo"
-          >
-            <a
-              href="/"
-            >
-              <img
-                alt="logo"
-                className="logo__photo"
-                height="70"
-                width="70"
-              />
-            </a>
-          </div>
+          <a
+            href="/"
+          />
         </li>
         <li
           className="navbar__inner_list_item"
@@ -72,6 +61,44 @@ exports[`TagsListTemplate renders correctly 1`] = `
               </li>
             </ul>
           </nav>
+          <div
+            className="newsletter__module"
+          >
+            <div
+              className="newsletter__module__inner"
+            >
+              <div
+                className="newsletter__module__form"
+              >
+                <form
+                  className="newsletter__module__form__subscribe__navbar"
+                  onSubmit={[Function]}
+                >
+                  <input
+                    className="newsletter__module__form__subscribe__input"
+                    id="email"
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="Newsletter"
+                    required={true}
+                    type="email"
+                    value=""
+                  />
+                  <button
+                    className="newsletter__module__form__subscribe__submit button"
+                    type="submit"
+                  >
+                    S'abonner
+                  </button>
+                  <h6
+                    className="newsletter__module__form__message"
+                  >
+                    
+                  </h6>
+                </form>
+              </div>
+            </div>
+          </div>
         </li>
       </ul>
     </nav>
@@ -131,10 +158,13 @@ exports[`TagsListTemplate renders correctly 1`] = `
             <h6
               className="footer__hoffmann__title"
             >
-              <img
-                className="footer__hoffmann__title__image"
-                src="/logo.png"
-              />
+              <div
+                className="logo"
+              >
+                <a
+                  href="/"
+                />
+              </div>
               HOFFMANN.AI
             </h6>
           </li>
@@ -223,16 +253,6 @@ exports[`TagsListTemplate renders correctly 1`] = `
               Conditions d'utilisation
             </a>
           </li>
-          <li
-            className="footer__list__other__row"
-          >
-            <a
-              className="footer__list__link"
-              href="/#"
-            >
-              Cookies
-            </a>
-          </li>
         </ul>
       </div>
       <div
@@ -277,7 +297,11 @@ exports[`TagsListTemplate renders correctly 1`] = `
       <div
         className="footer__newsletter__credits"
       >
-        ©2021 HOFFMANN.AI. Tous droits réservés.
+        <p
+          className="text_light"
+        >
+          ©2021 HOFFMANN.AI. Tous droits réservés.
+        </p>
       </div>
       <div
         className="footer__newsletter__newsletter"
@@ -300,13 +324,13 @@ exports[`TagsListTemplate renders correctly 1`] = `
                   id="email"
                   name="email"
                   onChange={[Function]}
-                  placeholder="Email"
+                  placeholder="Newsletter"
                   required={true}
                   type="email"
                   value=""
                 />
                 <button
-                  className="newsletter__module__form__subscribe__submit"
+                  className="newsletter__module__form__subscribe__submit button"
                   type="submit"
                 >
                   S'abonner

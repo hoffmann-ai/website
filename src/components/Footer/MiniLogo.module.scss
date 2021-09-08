@@ -1,13 +1,17 @@
-@import '../../../assets/scss/variables';
-@import '../../../assets/scss/mixins';
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
 
 .logo {
   &__photo {
     display: inline-block;
     margin-bottom: 0;
-    background-clip: padding-box
+    background-clip: padding-box;
+    height: 32px;
+    width: 32px;
+    margin-right: 5px;
+    margin-top: -7px;
   }
-
   &__title {
     font-size: $typographic-base-font-size * 1.125;
     font-weight: 600;

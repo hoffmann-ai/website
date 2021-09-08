@@ -16,10 +16,6 @@ module.exports = {
       path: '/blog'
     },
     {
-      label: 'A propos',
-      path: '/about'
-    },
-    {
       label: 'Contact',
       path: '/contact'
     }

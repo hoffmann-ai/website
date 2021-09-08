@@ -1,0 +1,32 @@
+@import '../../../assets/scss/mixins';
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/base/generic';
+
+.container {
+  width: 100%;
+  padding-bottom: $padding-containers;
+  text-align: center;
+
+  .logos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .logo {
+    opacity: .8;
+    justify-self: center;
+  }
+
+  @media (max-width: 425px) {
+    .logos {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .logo {
+      opacity: .8;
+      justify-self: center;
+      margin: 10px 0;
+    }
+  }
+}

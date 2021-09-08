@@ -12,27 +12,133 @@ const createPages = async ({ graphql, actions }) => {
   // 404
   createPage({
     path: '/404',
-    component: path.resolve('./src/templates/not-found-template.js')
+    component: path.resolve('./src/templates/not-found-template.js'),
   });
 
   // Tags list
   createPage({
     path: '/tags',
-    component: path.resolve('./src/templates/tags-list-template.js')
+    component: path.resolve('./src/templates/tags-list-template.js'),
   });
 
   // Categories list
   createPage({
     path: '/categories',
-    component: path.resolve('./src/templates/categories-list-template.js')
+    component: path.resolve('./src/templates/categories-list-template.js'),
+  });
+
+  const lastPosts = await graphql(`
+    {
+      allMarkdownRemark(
+        filter: { frontmatter: { template: { eq: "post" } } }
+        limit: 4
+        sort: { fields: frontmatter___date, order: DESC }
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            frontmatter {
+              date
+              description
+              title
+              category
+              socialImage {
+                childImageSharp {
+                  gatsbyImageData(width: 450, height: 164 quality:100)
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const skills = await graphql(`
+    {
+      allMarkdownRemark(filter: {frontmatter: {template: {eq: "skills"}}}) {
+        edges {
+          node {
+            frontmatter {
+              name
+              description
+              logo {
+                childImageSharp {
+                  gatsbyImageData(width: 64, height: 64 quality:100)
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const clients = await graphql(`
+    {
+      allFile(filter: { relativeDirectory: { eq: "clients" } }) {
+        edges {
+          node {
+            childImageSharp {
+              gatsbyImageData(height: 64 quality:100)
+            }
+            name
+          }
+        }
+      }
+    }
+  `);
+
+  const landing = await graphql(`
+    {
+      allFile(filter: { relativeDirectory: { eq: "landing" } }) {
+        edges {
+          node {
+            childImageSharp {
+              gatsbyImageData(height: 300 quality:100)
+            }
+            name
+          }
+        }
+      }
+    }
+  `);
+
+  const services = await graphql(`
+  {
+    allMarkdownRemark(filter: {frontmatter: {template: {eq: "services"}}}) {
+      edges {
+        node {
+          frontmatter {
+            name
+            description
+            logo {
+              childImageSharp {
+                gatsbyImageData(height: 500 quality:100)
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`);
+
+  // Home page
+  createPage({
+    path: '/',
+    component: path.resolve('./src/templates/landing-template.js'),
+    context: {
+      lastPosts, skills, clients, landing, services
+    },
   });
 
   // Posts and pages from markdown
   const result = await graphql(`
     {
-      allMarkdownRemark(
-        filter: { frontmatter: { draft: { ne: true } } }
-      ) {
+      allMarkdownRemark(filter: { frontmatter: { draft: { ne: true } } }) {
         edges {
           node {
             frontmatter {
@@ -54,13 +160,13 @@ const createPages = async ({ graphql, actions }) => {
       createPage({
         path: edge.node.fields.slug,
         component: path.resolve('./src/templates/page-template.js'),
-        context: { slug: edge.node.fields.slug }
+        context: { slug: edge.node.fields.slug },
       });
     } else if (_.get(edge, 'node.frontmatter.template') === 'post') {
       createPage({
         path: edge.node.fields.slug,
         component: path.resolve('./src/templates/post-template.js'),
-        context: { slug: edge.node.fields.slug }
+        context: { slug: edge.node.fields.slug },
       });
     }
   });

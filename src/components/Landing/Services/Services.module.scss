@@ -1,0 +1,50 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/base/generic';
+
+.container_serv{
+    margin-top: $margin-containers;
+    text-align: center;
+
+    h1 {
+      text-align: center;
+      padding: 0;
+      margin-top: 40px;
+    }
+
+    div p {
+      text-align: justify;
+    }
+}
+.service_container {
+  display: grid;
+  grid-template-columns: 40% 50%;
+  grid-gap: 10%;
+  width: 100%;
+  margin-bottom: 3em;
+  margin-top: 3em;
+}
+.service_container:nth-child(even) {
+  direction: rtl;
+}
+.service_container_image {
+  object-fit: contain;
+  width: 80%;
+  margin: auto;
+}
+
+.service_container_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start !important;
+  direction: ltr;
+}
+@media (max-width: 725px) {
+  .service_container {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .service_container_image {
+    margin-top:2em;
+  }
+}

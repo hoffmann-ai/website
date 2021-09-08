@@ -1,0 +1,44 @@
+@import 'src/assets/scss/variables';
+@import '../../../assets/scss/base/generic';
+
+.container {
+  padding-bottom: $padding-containers;
+  margin-bottom: $margin-containers;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.card {
+  margin: 20px;
+
+
+  h4:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .category {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(1, auto);
+  }
+  .grid p {
+    display: none;
+  }
+}

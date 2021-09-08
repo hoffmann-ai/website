@@ -3,7 +3,11 @@ import React, { useState } from 'react';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 import styles from './Newsletter.module.scss';
 
-const Newsletter = () => {
+type Props = {
+  style: string,
+};
+
+const Newsletter = ({ style }: Props) => {
   const [validationMessage, setValidationMessage] = useState('');
   const [email, setEmail] = useState('');
   const validate = () => {
@@ -29,7 +33,11 @@ const Newsletter = () => {
       <div className={styles['newsletter__module__inner']}>
         <div className={styles['newsletter__module__form']}>
           <form
-            className={styles['newsletter__module__form__subscribe']}
+            className={
+              style === 'responsive'
+                ? styles['newsletter__module__form__subscribe__navbar']
+                : styles['newsletter__module__form__subscribe']
+            }
             onSubmit={handleSubmit}
           >
             <input
@@ -39,11 +47,11 @@ const Newsletter = () => {
               onChange={changeEmailHandler}
               name='email'
               id='email'
-              placeholder='Email'
+              placeholder='Newsletter'
               required
             />
             <button
-              className={styles['newsletter__module__form__subscribe__submit']}
+              className={`${styles['newsletter__module__form__subscribe__submit']} ${styles['button']}`}
               type='submit'
             >
               S'abonner
