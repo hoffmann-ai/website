@@ -17,10 +17,10 @@ type Props = {
   }
 }
 
-const Skills = ({ skills } : { skills : Array<Props> }) => (
+const Skills = ({ skills }: { skills: Array<Props> }) => (
   <div className={styles['container']}>
     <h2 className={styles['landing_title']}>Notre expertise</h2>
-    <h6 className={styles['text_light']}>pour rester à la pointe de la technologie</h6>
+    <h6 className={styles['text_light']}><br></br></h6>
     <div className={styles['grid']}>
       {skills.map((skill) => (
         <div className={styles['cell']} key={skill.node.frontmatter.name}>

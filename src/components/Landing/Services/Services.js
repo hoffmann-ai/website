@@ -8,7 +8,7 @@ import styles from './Services.module.scss';
 const Services = ({ services }: { services: ServiceData[] }) => (
   <div className={styles['container_serv']}>
     <h2 className={styles['landing_title']}>Nos services</h2>
-    <h6 className={styles['text_light']}>les services dans lesquels nous sommes experts</h6>
+    <h6 className={styles['text_light']}></h6>
     {services.map((service) => (
       <div className={styles['service_container']} key={service.node.frontmatter.name}>
         <div className={styles['service_container_content']}>

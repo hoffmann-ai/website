@@ -1,6 +1,6 @@
 ---
 template: "skills"
 name: "kubernetes"
-description: "how the hell am i suppose to pronounce that"
+description: "Facilitez la gestion des conteneurs dans votre infrastructure"
 logo: "/media/skills/kubernetes.webp"
 ---

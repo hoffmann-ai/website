@@ -1,6 +1,6 @@
 ---
 template: "skills"
-name: "aws"
-description: "aws is amazing"
+name: "AWS"
+description: "Nous migrons votre infrastructure dans le cloud Amazon"
 logo: "/media/skills/aws.webp"
 ---

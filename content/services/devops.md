@@ -1,6 +1,6 @@
 ---
 template: "services"
 name: "DevOps & InfraOps"
-description: "Phasellus elementum mi massa. Phasellus ex tortor, bibendum eget ornare a, gravida a dui. Nullam pretium et nisl a porttitor. Vivamus ac neque purus. Integer quis blandit dolor. Ut at viverra dui, in sagittis diam. Pellentesque imperdiet odio in sodales vehicula. Nullam ut leo eget ex ornare suscipit at nec ante."
+description: "Vous lancez une nouvelle plateforme, et vous avez besoin de construire l’infrastructure cloud pour la soutenir ou vous souhaitez ajouter des briques à votre infrastructure existante ? Nos équipes DevOps conçoivent et construisent toute votre infrastructure sur mesure, de la création des environnements à la chaîne de CI/CD."
 logo: "/media/services/pic1.webp"
 ---
