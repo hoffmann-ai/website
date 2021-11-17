@@ -1,6 +1,6 @@
 ---
 template: "skills"
-name: "prometheus"
-description: "look like a bad movie name"
+name: "Prometheus"
+description: "Optimisez vos mesures et vos alertes, contrôlez votre infrastructure"
 logo: "/media/skills/prometheus.webp"
 ---
